@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+  --font-serif: 'Libre Baskerville', 'Georgia', 'serif';
+  --font-monospace: 'Inconsolata', 'Source Code Pro', 'Courier New', 'monospace';
+
+  --color-rosso-500: #a81525;
+  --color-azzurro-500: #025b7b;
+  --color-giallo-500: #FFDD11;
+  --color-chiaro-50: hsl(200, 35%, 96%); 
+
+
+  
+}
+
+body {
+  @apply  text-gray-900 font-serif bg-chiaro-50;
+}
+
+.hor_pattern {
+  background-image: url('/horizontal-lines.svg');
+  background-repeat: repeat;
+  background-size: 100px 96px;
+}

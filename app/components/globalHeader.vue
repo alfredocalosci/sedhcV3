@@ -1,0 +1,38 @@
+<template>
+  <header class="container mx-auto mt-6 border-b pb-0.5 max-w-5xl">
+      <nav class="border-b-3 pb-4 flex justify-between items-center">
+        
+        <div>
+          <p class="italic text-sm text-gray-600">Sociedad Española de Historia de la Construcción</p>
+        </div>
+        
+        <ul class="flex space-x-4 font-mono uppercase justify-end text-sm font-light">
+          <li><NuxtLink to="/">Home</NuxtLink></li>
+          <li><NuxtLink to="/noticias">Noticias</NuxtLink></li>
+          <li><NuxtLink to="/publicaciones">Publicaciones</NuxtLink></li>
+          <li><NuxtLink to="/eventos">Eventos</NuxtLink></li>
+          <li><NuxtLink to="/sociedad">La Sociedad</NuxtLink></li>
+          <li><NuxtLink to="/tratados">Tratados</NuxtLink></li>
+        </ul>
+
+      </nav>
+    </header>
+</template>
+
+<script lang="ts" setup>
+
+</script>
+
+<style scoped>
+  @reference "tailwindcss";
+  @reference "~/assets/css/main.css";
+
+  nav li a {
+    @apply text-gray-600 hover:underline decoration-rosso-500 transition-colors duration-300 underline-offset-4;
+  }
+
+  nav li a.router-link-active, nav li a.router-link-exact-active{
+    @apply text-rosso-500 font-bold;
+  }
+
+</style>
