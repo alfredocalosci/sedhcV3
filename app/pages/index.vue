@@ -1,105 +1,101 @@
 <template>
-  <div>
-    <header class="container mx-auto mt-6 border-b pb-1 max-w-5xl">
-      <nav class="border-b-3 pb-4 flex justify-between items-center">
-        
-        <div>
-          <p class="italic text-sm text-gray-600">Sociedad Española de Historia de la Construcción</p>
-        </div>
-        
-        <ul class="flex space-x-4 font-mono uppercase justify-end text-sm font-light">
-          <li><a href="/" class=" hover:underline">Home</a></li>
-          <li><a href="/about" class=" hover:underline">About</a></li>
-          <li><a href="/contact" class=" hover:underline">Contact</a></li>
-        </ul>
+  <div class="grid grid-cols-[300px_720px_1fr] ">
+    
+    <div class="bg-chiaro-50 flex flex-col ">
+       <aside class="py-6 px-8 aspect-square  text-2xl transition-colors duration-300 border-b border-white">
 
+        <NuxtLink to="/" class="h-full w-full block">
+            <img src="/img/sedhc_logo_ilustracion.png" alt="sedhc" class="h-30 w-auto mt-2 mix-blend-multiply bg-white">
 
-      </nav>
-    </header>
-
-    <div class="container mx-auto mt-6 grid grid-cols-1 md:grid-cols-4 gap-6 max-w-5xl">
-
-
-      <div class="mt-6">
-        <h1 class="text-4xl/11 font-serif">Home page test Helgoland</h1>
-        <p class="text-2xl/11 font-serif font-bold pb-6 text-rosso-500">this is bold</p>
-        <p class="text-lg italic font-serif">Home page test - Carlo Rovelli</p>
-        <p class="uppercase text-sm font-mono pt-6">uppercase small text test</p>
-      </div>
-
-      <article class="col-start-3 col-span-2 mt-6 text-lg/7">
-        <h2 class="text-2xl font-bold mb-4 ">Article Title</h2>
-
-        <p class="text-gray-700">Etiam ultrices vitae nulla eget sagittis. Praesent elementum ipsum ac tortor varius, et gravida risus maximus. Nulla malesuada, leo sit amet rhoncus interdum, sem elit suscipit est, eget fermentum diam arcu non arcu. Suspendisse congue pulvinar nibh, in pulvinar ipsum vestibulum ut. Etiam sagittis congue metus a bibendum.</p>
-
-        <p>Nullam mauris nunc, fringilla ac purus vel, elementum ullamcorper est. Duis ac vestibulum turpis, rhoncus suscipit neque. Nulla dapibus venenatis tellus ut accumsan. Donec vulputate, leo ac fringilla ornare, turpis lorem condimentum nisi, ut ornare ligula urna sit amet quam.</p>
-
-        <a href="#" class="text-rosso-500 hover:underline">Read more</a>
-      </article>
-
-
-      <div class="flex flex-col gap-3">
-        <div class="bg-azzurro-500 text-white italic p-4 text-xl text-center">
-          <p>this box has content</p>
-        </div>
-
-        <div class="bg-rosso-500 text-white italic p-4 text-xl text-center">
-          <p>this box has content</p>
-        </div>
-  
-        <div class="bg-giallo-500  italic p-4 text-xl text-center">
-          <p>this box has content</p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="container mx-auto mt-12 grid grid-cols-1 md:grid-cols-[2fr_1fr_4fr] gap-6 max-w-5xl">
-
-      <aside>
-         <h1 class="text-4xl/11 font-serif">Home page test Helgoland</h1>
-        <p class="text-2xl/11 font-serif font-bold pb-6 text-rosso-500">this is bold</p>
-        <p class="text-lg italic font-serif">Home page test - Carlo Rovelli</p>
-        <p class="uppercase text-sm font-mono pt-6">uppercase small text test</p>
+          <p class="pt-4">Sociedad Española de Historia de la Construcción<span class="text-giallo-500 font-bold">.</span></p>
+         
+        </NuxtLink>
       </aside>
-      <div>a</div>
-      <article class="text-lg/7">
-        <h2 class="text-2xl font-bold mb-4 ">Article Title</h2>
 
-        <p class="text-gray-700">Etiam ultrices vitae nulla eget sagittis. Praesent elementum ipsum ac tortor varius, et gravida risus maximus. Nulla malesuada, leo sit amet rhoncus interdum, sem elit suscipit est, eget fermentum diam arcu non arcu. Suspendisse congue pulvinar nibh, in pulvinar ipsum vestibulum ut. Etiam sagittis congue metus a bibendum.</p>
-
-        <p>Nullam mauris nunc, fringilla ac purus vel, elementum ullamcorper est. Duis ac vestibulum turpis, rhoncus suscipit neque. Nulla dapibus venenatis tellus ut accumsan. Donec vulputate, leo ac fringilla ornare, turpis lorem condimentum nisi, ut ornare ligula urna sit amet quam.</p>
-
-        <a href="#" class="text-rosso-500 hover:underline">Read more</a>
-      </article>
-    </div>
-
-    <div class="container mx-auto mt-12 grid grid-cols-1 md:grid-cols-[3fr_1fr_3fr] gap-6 max-w-5xl">
-
-      <aside class="text-base/6 italic"> 
-        <p>Nullam mauris nunc, fringilla ac purus vel, elementum ullamcorper est. Duis ac vestibulum turpis, rhoncus suscipit neque. Nulla dapibus venenatis tellus ut accumsan. Donec vulputate, leo ac fringilla ornare, turpis lorem condimentum nisi, ut ornare ligula urna sit amet quam.</p>
-      </aside>
-      <div>a</div>
-      <section class="text-base/6">
-         <p>Nullam mauris nunc, fringilla ac purus vel, elementum ullamcorper est. Duis ac vestibulum turpis, rhoncus suscipit neque. Nulla dapibus venenatis tellus ut accumsan. Donec vulputate, leo ac fringilla ornare, turpis lorem condimentum nisi, ut ornare ligula urna sit amet quam.</p>
+      <section class="p-8 text-sm text-gray-600">
+        <p>La Sociedad se propone facilitar los contactos entre las personas que se interesen por este ámbito del conocimiento en España, tanto desde el punto de vista académico como profesional, o, simplemente como resultado de un interés personal.</p>
       </section>
 
     </div>
 
-    <div class="container mx-auto mt-24 hor_pattern min-h-120 max-w-5xl">
-       <p>Nullam mauris nunc, fringilla ac purus vel, elementum ullamcorper est. Duis ac vestibulum turpis, rhoncus suscipit neque. Nulla dapibus venenatis tellus ut accumsan. Donec vulputate, leo ac fringilla ornare, turpis lorem condimentum nisi, ut ornare ligula urna sit amet quam.</p>
+   
+    <!-- main content -->
+    <div class="p-12 px-18 bg-white shadow-2xl">
+      <GlobalHeaderAlt/>
 
-       <p>Nullam mauris nunc, fringilla ac purus vel, elementum ullamcorper est. Duis ac vestibulum turpis, rhoncus suscipit neque. Nulla dapibus venenatis tellus ut accumsan. Donec vulputate, leo ac fringilla ornare, turpis lorem condimentum nisi, ut ornare ligula urna sit amet quam.</p>
+      <!-- news carousel -->
+      <div class="bg-gray-50 mt-4 p-4">
+        <div class="pseudo_slide w-10/12 mx-auto flex gap-6 ">
 
-       <p>Nullam mauris nunc, fringilla ac purus vel, elementum ullamcorper est. Duis ac vestibulum turpis, rhoncus suscipit neque. Nulla dapibus venenatis tellus ut accumsan. Donec vulputate, leo ac fringilla ornare, turpis lorem condimentum nisi, ut ornare ligula urna sit amet quam. Nullam mauris nunc, fringilla ac purus vel, elementum ullamcorper est. Duis ac vestibulum turpis, rhoncus suscipit neque. Nulla dapibus venenatis tellus ut accumsan. Donec vulputate, leo ac fringilla ornare, turpis lorem condimentum nisi, ut ornare ligula urna sit amet quam. Nullam mauris nunc, fringilla ac purus vel, elementum ullamcorper est. Duis ac vestibulum turpis, rhoncus suscipit neque. Nulla dapibus venenatis tellus ut accumsan. Donec vulputate, leo ac fringilla ornare, turpis lorem condimentum nisi, ut ornare ligula urna sit amet quam.</p>
+          <div class="aspect-square bg-gray-100">
+            <img src="/img//noticias/24649.jpg" alt="noticia" class=" w-full h-auto">
+          </div>
 
+          <div>
+            <p class="text-xs italic pb-2">14 de marzo de 2024</p>
+              <p class="text-xs font-bold">V Congreso Internacional Hispano-Americano y XIII Congreso Nacional de Historia de la Construcción</p>
+          </div>
+
+          <div>
+            <p class="text-xs italic">Este miércoles 20 de marzo se da inicio a nuestro congreso internacional y nacional en la ciudad de Santo Domingo</p>
+          </div>
+        </div>
+      </div>
+
+      <img src="/img/ilustraciones/gotico.jpg" alt="Gótico" class="pt-2">
+
+      <p class="first-letter:float-left first-letter:mr-5 first-letter:text-7xl first-letter:uppercase first-letter:font-bold first-letter:text-rosso-500 mt-6 ml-3 first-letter:-ml-6 ">Abate ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum vehicula nulla, vel rhoncus nisi porttitor et. Integer eget pharetra erat, id aliquet est. Praesent sed odio gravida, dignissim mi sit amet, vehicula neque. Mauris sollicitudin, risus ac imperdiet tempor, ligula enim ultricies odio, et lobortis lectus tellus sed orci.</p>
+        
+      <p class="ml-3 -indent-3 mt-3">Nunc eget augue non odio luctus elementum. In magna neque, semper convallis lectus sed, malesuada venenatis enim. Aenean quis mattis leo. Curabitur scelerisque eros ut sem pellentesque semper. Aenean et scelerisque velit, varius semper massa. Aenean vitae elementum turpis. Morbi vestibulum nisl rhoncus ligula posuere bibendum eu nec ligula. Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit. Vestibulum ut vehicula erat, quis elementum urna.</p>
+
+      <div class="grid grid-cols-2 gap-4 mt-6 text-sm">
+        <div><p>Morbi vestibulum nisl rhoncus ligula posuere bibendum eu nec ligula. Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit.</p></div>
+        <div>
+          <p>Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit. Vestibulum ut vehicula erat, quis elementum urna.</p>
+        </div>
+
+      </div>
+
+      <p class="pt-6 font-mono uppercase text-sm border-b border-dashed font-semibold pb-1 ">Noticias</p>
+
+      <div class="grid grid-cols-3 gap-4 mt-4 text-xs">
+        <div>
+          <p >Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit. Vestibulum ut vehicula erat, quis elementum urna.</p>
+        </div>
+        <div><p>Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit. Vestibulum ut vehicula erat, quis elementum urna.</p></div>
+        <div><p>Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit. Vestibulum ut vehicula erat, quis elementum urna.</p></div>
+      </div>
+
+       <p class="pt-6 font-mono uppercase text-sm border-b border-dashed font-semibold pb-1">la revista y las publicaciones</p>
+       <div class="grid grid-cols-3 gap-4 mt-6 text-sm">
+        <div class="bg-gray-100 aspect-square">
+          
+        </div>
+        <div class="md:col-span-2">
+          <p class="mb-2">Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit. Vestibulum ut vehicula erat, quis elementum urna.</p>
+         <p>Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit. Vestibulum ut vehicula erat, quis elementum urna.</p>
+        </div>
+
+      </div>
+
+      <p class="pt-6 font-mono uppercase text-sm border-b border-dashed font-semibold pb-1">biblioteca digital: tratados</p>
+
+      <div class="grid grid-cols-2 gap-4 mt-6 text-sm">
+        <div><p>Morbi vestibulum nisl rhoncus ligula posuere bibendum eu nec ligula. Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit.</p></div>
+        <div>
+          <p>Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit. Vestibulum ut vehicula erat, quis elementum urna.</p>
+        </div>
+
+      </div>
+
+      <globalFooter/>
     </div>
 
-    <footer class="container mx-auto my-6 border-t  pt-1">
-        <div class="border-t-3 ">
-          <p class=" text-sm text-gray-800 mt-6 italic">© 2024 My Nuxt App. All rights reserved.</p>
-        </div>
-    </footer>
+    <!-- sidebar -->
+    <div></div>
+
+    
+    
   </div>
 </template>
 
@@ -107,11 +103,6 @@
 
 </script>
 
-<style scoped>
- @reference "tailwindcss";
-  @reference "~/assets/css/main.css";
+<style>
 
-  article p {
-    @apply mb-4 -indent-3 ml-3;
-  }
 </style>

@@ -1,12 +1,12 @@
 <template>
-  <header class="container mx-auto mt-6 border-b pb-0.5 max-w-5xl">
-      <nav class="border-b-3 pb-4 flex justify-between items-center">
+  <header class="container mx-auto mt-12 border-b border-gray-300 pb-0.5 max-w-5xl">
+      <nav class="border-b-2 border-gray-400 pb-4 flex justify-between items-center">
         
         <div>
           <p class="italic text-sm text-gray-600">Sociedad Española de Historia de la Construcción</p>
         </div>
         
-        <ul class="flex space-x-4 font-mono uppercase justify-end text-sm font-light">
+        <ul class="flex space-x-4 font-mono uppercase justify-end text-xs font-light">
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/noticias">Noticias</NuxtLink></li>
           <li><NuxtLink to="/publicaciones">Publicaciones</NuxtLink></li>

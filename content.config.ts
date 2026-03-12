@@ -1,23 +1,66 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
+// import { z } from 'zod'
 
 export default defineContentConfig({
   collections: {
     noticias: defineCollection({
-    type: 'page',
-      source: {
-        include: "noticias/**",
-        exclude: ["**/.*"],
+      type: 'page',
+        source: {
+          include: "noticias/**",
+          exclude: ["**/.*"],
+        },
+        schema: z.object({
+          title: z.string(),
+          slug: z.string(),
+          description: z.string().optional(),
+          date: z.date(),
+          category: z.array(z.string()),
+          image: z.object({
+              src: z.string().editor({ input: 'media' }),
+              alt: z.string()
+            }).optional(),
+          featured: z.boolean().default(false),
+          url: z.string().optional(),
+        }),
+    }),
+    temas: defineCollection({
+      type: 'page',
+       source: {
+          include: "temas/**",
+          exclude: ["**/.*"],
       },
       schema: z.object({
-        title: z.string(),
-        sluug: z.string(),
-        description: z.string().optional(),
-        date: z.date(),
-        category: z.array(z.string()),
-        image: z.string().optional(),
-        featured: z.boolean().default(false),
-        url: z.string().optional(),
+          id: z.number().int(),
+          nombre: z.string(),
+          desc: z.string(),
+          rank: z.number().int(),
+          slug: z.string()
       }),
     }),
-  }
-});
+    congresos: defineCollection({
+      type: 'page',
+       source: {
+          include: "congresos/**",
+          exclude: ["**/.*"],
+      },
+      schema: z.object({
+          title: z.string(),
+          slug: z.string(),
+          year: z.number().int(),
+          dateFrom: z.date(),
+          dateTo: z.date().optional(),
+          url: z.string().optional(),
+          lugar: z.string(),
+          sede: z.string().optional(),
+          image: z.object({
+              src: z.string().editor({ input: 'media' }),
+              alt: z.string()
+          }).optional(),
+           actas: z.array(z.object({
+             title: z.string(),
+             identifier: z.string()
+           })).optional(),
+        }),
+    }),
+  } // end collections
+})

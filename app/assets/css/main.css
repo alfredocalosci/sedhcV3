@@ -7,10 +7,17 @@
 
   --color-rosso-500: #a81525;
   --color-azzurro-500: #025b7b;
+  --color-blu-500: #003062;
   --color-giallo-500: #FFDD11;
-  --color-chiaro-50: hsl(200, 35%, 96%); 
-
-
+  --color-scuro-900: #192121;
+  --color-neutro-500: #B4BfC2;
+  --color-acqua-500: #82D7CF;
+  --color-verdechiaro-500: #38A585; /*  */
+  --color-verde-500: #1a6347; /* example value */
+  --color-blu-500: #1A3163; /* #1A3163 */
+  --color-chiaro-50: #ECEFEE;  /* hsl(200, 35%, 96%); */
+  --color-panna-50: #FFF8E1;  
+  --color-menta-50: #E2E8E1;
   
 }
 

@@ -1,0 +1,11 @@
+---
+id: 7
+slug: cfp
+nombre: Calls for papers
+desc: artículos y propuestas de ponencias
+rank: 50
+---
+
+# calls for papers
+
+artículos y propuestas de ponencias
