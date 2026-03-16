@@ -62,5 +62,33 @@ export default defineContentConfig({
            })).optional(),
         }),
     }),
+    entidades: defineCollection({
+      type: 'page',
+       source: {
+          include: "entidades/**",
+          exclude: ["**/.*"],
+      },
+      schema: z.object({
+          title: z.string(),
+          acronym: z.string().optional(),
+          url: z.string().optional(),
+          rank: z.number().int(),
+          image: z.object({
+              src: z.string().editor({ input: 'media' }),
+              alt: z.string()
+          }).optional(),
+        }),
+    }),
+    textos: defineCollection({
+      type: 'page',
+       source: {
+          include: "textos/**",
+          exclude: ["**/.*"],
+      },
+      schema: z.object({
+        webpage: z.string(),
+        section: z.string(),
+      }),
+    }),
   } // end collections
 })

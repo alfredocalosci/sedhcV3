@@ -3,9 +3,9 @@ title: Llamada para el V Congreso Hispanoamericano de Historia de la Construcci�
 description:  La SEdHC convoca el V Congreso Hispanoamericano de Historia de la Construcción, XIII Congreso Nacional en la ciudad de Santo Domingo (República Dominicana)
 slug: v-congreso-hispanoamericano-de-historia-de-la-construccion-y-xiii-congreso-nacional
 date: 2023-04-19
-image: {"src": "/img/noticias/CHAHC_2024-1_page-0001(1).jpg", "alt": "Llamada para el V Congreso Hispanoamericano de Historia de la Construcción y XIII Congreso Nacional (Santo Domingo, Rep. Dominicana, 2024)"}
+image: {"src": "/img/noticias/CHAHC_2024_poster.jpg", "alt": "Llamada para el V Congreso Hispanoamericano de Historia de la Construcción y XIII Congreso Nacional (Santo Domingo, Rep. Dominicana, 2024)"}
 url: https://forms.gle/ud3V6ccabrD46VLs9
-featured: false
+featured: true
 category: ["congresos"]
 ---
 

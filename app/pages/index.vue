@@ -3,18 +3,19 @@
     
     <div class="bg-chiaro-50 flex flex-col ">
        <aside class="py-6 px-8 aspect-square  text-2xl transition-colors duration-300 border-b border-white">
-
-        <NuxtLink to="/" class="h-full w-full block">
+        <div class="h-full w-full block">
             <img src="/img/sedhc_logo_ilustracion.png" alt="sedhc" class="h-30 w-auto mt-2 mix-blend-multiply bg-white">
 
-          <p class="pt-4">Sociedad Española de Historia de la Construcción<span class="text-giallo-500 font-bold">.</span></p>
-         
-        </NuxtLink>
+            <p class="pt-4">Sociedad Española de Historia de la Construcción<span class="text-giallo-500 font-bold">.</span></p>
+        </div>
       </aside>
 
-      <section class="p-8 text-sm text-gray-600">
-        <p>La Sociedad se propone facilitar los contactos entre las personas que se interesen por este ámbito del conocimiento en España, tanto desde el punto de vista académico como profesional, o, simplemente como resultado de un interés personal.</p>
+      <section class="p-8 pt-10 text-sm text-gray-600">
+       <ContentRenderer v-if="sideText" :value="sideText" class="mdtxt mdtxt_side" />
       </section>
+
+      <!-- RRSS -->
+      <rrss/>
 
     </div>
 
@@ -23,7 +24,7 @@
     <div class="p-12 px-18 bg-white shadow-2xl">
       <GlobalHeaderAlt/>
 
-      <!-- news carousel -->
+      <!-- news carousel 
       <div class="bg-gray-50 mt-4 p-4">
         <div class="pseudo_slide w-10/12 mx-auto flex gap-6 ">
 
@@ -41,52 +42,110 @@
           </div>
         </div>
       </div>
+      -->
+      
+      <HomeNewsCarousel/>
 
-      <img src="/img/ilustraciones/gotico.jpg" alt="Gótico" class="pt-2">
+      <ContentRenderer v-if="introText" :value="introText" class="mdtxt mdtxt_intro mt-8" />
 
-      <p class="first-letter:float-left first-letter:mr-5 first-letter:text-7xl first-letter:uppercase first-letter:font-bold first-letter:text-rosso-500 mt-6 ml-3 first-letter:-ml-6 ">Abate ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum vehicula nulla, vel rhoncus nisi porttitor et. Integer eget pharetra erat, id aliquet est. Praesent sed odio gravida, dignissim mi sit amet, vehicula neque. Mauris sollicitudin, risus ac imperdiet tempor, ligula enim ultricies odio, et lobortis lectus tellus sed orci.</p>
-        
-      <p class="ml-3 -indent-3 mt-3">Nunc eget augue non odio luctus elementum. In magna neque, semper convallis lectus sed, malesuada venenatis enim. Aenean quis mattis leo. Curabitur scelerisque eros ut sem pellentesque semper. Aenean et scelerisque velit, varius semper massa. Aenean vitae elementum turpis. Morbi vestibulum nisl rhoncus ligula posuere bibendum eu nec ligula. Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit. Vestibulum ut vehicula erat, quis elementum urna.</p>
+      <img src="/img/ilustraciones/gotico.jpg" alt="Gótico" class="my-12">
 
-      <div class="grid grid-cols-2 gap-4 mt-6 text-sm">
-        <div><p>Morbi vestibulum nisl rhoncus ligula posuere bibendum eu nec ligula. Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit.</p></div>
-        <div>
-          <p>Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit. Vestibulum ut vehicula erat, quis elementum urna.</p>
-        </div>
+
+      <div class="md:columns-2 gap-8 mt-6 text-sm">
+       
+          <p>La sociedad tiene entre sus fines: editar una Revista de Historia de la Construcción anual, celebrar un Congreso bienal, fomentar y difundir cursos y seminarios sobre la materia ademas de establecer contactos con instituciones análogas en diferentes países.</p>
+       
+          <p>En cualquier caso, y una vez puesta en marcha la Sociedad Española de Historia de la Construcción, ésta se manifiesta explícitamente abierta a cualquier iniciativa tendente a potenciar y difundir por los medios legales a su alcance los trabajos relativos a esta actividad</p>
+       
 
       </div>
 
-      <p class="pt-6 font-mono uppercase text-sm border-b border-dashed font-semibold pb-1 ">Noticias</p>
+     
 
-      <div class="grid grid-cols-3 gap-4 mt-4 text-xs">
-        <div>
-          <p >Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit. Vestibulum ut vehicula erat, quis elementum urna.</p>
-        </div>
-        <div><p>Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit. Vestibulum ut vehicula erat, quis elementum urna.</p></div>
-        <div><p>Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit. Vestibulum ut vehicula erat, quis elementum urna.</p></div>
+       <!-- block separator: revista -->
+      <div class="border-b border-dashed flex items-center justify-between mt-12">
+        <p class=" font-mono uppercase text-sm  font-semibold pb-1">la revista</p>
+
+        <a href="https://polipapers.upv.es/index.php/HC/" class=" text-gray-500 hover:text-rosso-500 font-mono text-xs uppercase flex items-center mb-1 transition-colors duration-300" rel="noopener noreferrer" target="_blank">
+        consultar 
+        <UIcon name="lucide:external-link" class="size-4 ml-2 text-rosso-500" />
+        </a>
       </div>
 
-       <p class="pt-6 font-mono uppercase text-sm border-b border-dashed font-semibold pb-1">la revista y las publicaciones</p>
-       <div class="grid grid-cols-3 gap-4 mt-6 text-sm">
-        <div class="bg-gray-100 aspect-square">
+      <div class="grid grid-cols-3 gap-8 mt-6 text-sm mdtxt">
+
+        <div class=" aspect-square">
+          <img src="/img/revista/RevistaHC.jpg" alt="revista" class="w-full h-auto">
+        </div>
+
+        <div class="md:col-span-2 ">
+          <p class="mb-2">La Revista de Historia de la Construcción es editada por la <strong>Universitat Politècnica de València</strong> y fue fundada en el año 2020 por la SEdHC.</p>
           
-        </div>
-        <div class="md:col-span-2">
-          <p class="mb-2">Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit. Vestibulum ut vehicula erat, quis elementum urna.</p>
-         <p>Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit. Vestibulum ut vehicula erat, quis elementum urna.</p>
+          <p>La <a href="https://gdocu.upv.es/alfresco/service/api/node/content/workspace/SpacesStore/5b1e2dfb-f464-484a-a700-bd7f764c2a03/BOLET%c3%8dN%20DE%20SUSCRIPCI%c3%93N_HdC_2024.doc" target="_blank" rel="noopener noreferrer">suscripción</a> a la revista, da derecho a adquirir o mantener la condición de <strong>socio</strong> de la SEdHC y a recibir un ejemplar en papel del volumen correspondiente a ese año natural.</p>
+
+          
+          
+
+
         </div>
 
       </div>
 
-      <p class="pt-6 font-mono uppercase text-sm border-b border-dashed font-semibold pb-1">biblioteca digital: tratados</p>
+       <!-- block separator: congresos -->
+      <div class="border-b border-dashed flex items-center justify-between mt-12">
+        <p class=" font-mono uppercase text-sm  font-semibold pb-1">los congresos de historia de la construcción</p>
 
-      <div class="grid grid-cols-2 gap-4 mt-6 text-sm">
-        <div><p>Morbi vestibulum nisl rhoncus ligula posuere bibendum eu nec ligula. Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit.</p></div>
+        <NuxtLink to="/eventos" class=" text-gray-500 hover:text-rosso-500 font-mono text-xs uppercase flex items-center mb-1 transition-colors duration-300">
+        consultar 
+        <UIcon name="lucide:arrow-right" class="size-4 ml-2 text-rosso-500" />
+        </NuxtLink>
+      </div>
+
+      <div class="grid grid-cols-3 gap-6 mt-6 text-sm ">
+
+        <div class="">
+         <h3 class="font-bold text-center text-6xl py-4">XIV</h3>
+         <p class="text-xs  text-center text-gray-500">Nacional</p>
+         <p class=" mt-4 text-xs py-2 italic text-center bg-blu-500 text-white">Cartagena 2026</p>
+        </div>
+
+        <div class="">
+         <h3 class="font-bold text-center text-6xl py-4">VI</h3>
+         <p class="text-xs  text-center text-gray-500">Hispanoamericano</p>
+          <p class=" mt-4 text-xs py-2 italic text-center bg-azzurro-500 text-white">Cartagena 2026</p>
+        </div>
+        <div class=" ">
+         <h3 class="font-bold text-center text-6xl py-4">VIII</h3>
+          <p class="text-xs  text-center text-gray-500">Internacional</p>
+           <p class=" mt-4 text-xs py-2 italic text-center bg-rosso-500 text-white">Zurich 2026</p>
+        </div>
+      </div>
+
+      <!-- block separator: tratados -->
+      <div class="border-b border-dashed flex items-center justify-between mt-12">
+        <p class=" font-mono uppercase text-sm font-semibold pb-1">biblioteca digital: tratados</p>
+
+        <NuxtLink to="/tratados" class=" text-gray-500 hover:text-rosso-500 font-mono text-xs uppercase flex items-center mb-1 transition-colors duration-300">
+        consultar 
+        <UIcon name="lucide:arrow-right" class="size-4 ml-2 text-rosso-500" />
+        </NuxtLink>
+      </div>
+      
+
+      <div class="grid grid-cols-2 gap-8 my-6 text-sm">
         <div>
-          <p>Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit. Vestibulum ut vehicula erat, quis elementum urna.</p>
+          <p>Los tratados de Arquitectura, Construcción e Ingeniería son una de las fuentes fundamentales para el estudio de la Historia de la Construcción.</p>
+
+          <p>Los más importantes están publicados en ediciones facsímiles; el resto, se encuentra en distintas bibliotecas especializadas.</p>
+        </div>
+
+        <div>
+          <p>En colaboración con el Instituto Juan de Herrera, hemos creado esta <strong>Biblioteca Digital</strong> con el objetivo de poner al alcance de cualquier interesado en la Historia de la Construcción una selección de tratados que, al estar libres de derechos de autor por su antigüedad, pueden difundirse libremente.</p>
         </div>
 
       </div>
+
+      <TratadosHome/>
 
       <globalFooter/>
     </div>
@@ -101,8 +160,58 @@
 
 <script lang="ts" setup>
 
+  const { data: textos } = await useAsyncData('textos_home', () => {
+    return queryCollection('textos')
+      .where('webpage', '=', 'home')
+      .all()
+  });
+
+  const sideText = computed(() => textos.value?.find(t => t.section === 'side'));
+
+  const introText = computed(() => textos.value?.find(t => t.section === 'intro'));
+
+  onMounted(() => {
+    // console.log('textos home', textos.value);
+  })
+
+
 </script>
 
-<style>
+<style scoped>
+   @reference "tailwindcss";
+  @reference "~/assets/css/main.css";
+
+  .mdtxt :deep(p, div) {
+    @apply text-wrap my-0;
+  }
+
+  .mdtxt_side :deep(p) {
+    @apply text-sm/6 text-gray-600 mb-4;
+  }
+
+  .mdtxt_intro :deep(p) {
+    @apply ml-3 -indent-3 mt-6 text-lg/7;
+  }
+
+  .mdtxt_intro :deep(p:first-of-type) {
+    @apply first-letter:float-left first-letter:mr-5 first-letter:text-7xl first-letter:uppercase first-letter:font-bold first-letter:text-rosso-500 mt-6 ml-3 first-letter:-ml-3;
+  }
+
+
+  /*
+  first-letter:float-left first-letter:mr-5 first-letter:text-7xl first-letter:uppercase first-letter:font-bold first-letter:text-rosso-500 mt-6 ml-3 first-letter:-ml-6
+  */ 
+
+  .mdtxt :deep(a) {
+        @apply text-gray-700 decoration-cyan-500 underline underline-offset-6;
+    }
+  
+  .mdtxt .enlaces_externos{
+    @apply border-t border-gray-300 mt-4 pt-4 mb-4;
+  }
+
+  .mdtxt .enlaces_externos :deep(a) {
+    @apply no-underline w-full text-xs font-mono uppercase after:content-['→'] after:text-gray-400 after:float-right after:text-sm after:font-mono;
+  }
 
 </style>

@@ -3,9 +3,9 @@ title: V Congreso Internacional Hispano-Americano y XIII Congreso Nacional de Hi
 description: Este miércoles 20 de marzo se da inicio a nuestro congreso internacional y nacional en la ciudad de Santo Domingo
 slug: v-congreso-internacional-hispano-americano-y-xiii-congreso-nacional-de-historia-de-la-construccion
 date: 2024-03-14
-image: {"src": "/img/noticias/V CONGRESO HISPANOAMERICANO DE HISTORIA DE LA CONSTRUCCION XIII CONGRESO NACIONAL DE HISTORIA DE LA CONSTRUCCIÓN(2).png", "alt": "V Congreso Internacional Hispano-Americano y XIII Congreso Nacional de Historia de la Construcción"}
+image: {"src": "/img/noticias/v_congreso_poster.png", "alt": "V Congreso Internacional Hispano-Americano y XIII Congreso Nacional de Historia de la Construcción"}
 url: https://bit.ly/CHAHC2024
-featured: false
+featured: true
 category: ["congresos"]
 ---
 

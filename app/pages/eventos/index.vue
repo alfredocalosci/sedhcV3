@@ -42,14 +42,11 @@
           <span class="ml-2 text-sm italic text-white/70 group-hover:text-white transition-colors duration-300">{{ acta.title }}</span>
       </a>
 
-
-
-
       </div>
       
     </div>
     
-    <div v-if="selectedCongreso?.image.src" class="mt-12">
+    <div v-if="selectedCongreso?.image?.src" class="mt-12">
       <img 
         :src="selectedCongreso.image.src" 
         :alt="selectedCongreso.image.alt" 
@@ -62,16 +59,17 @@
 
   <div class="grid grid-cols-[300px_720px_1fr]">
     
-    <aside class="w-full h-full bg-blu-500/70 flex flex-col min-h-screen ">
+    <!-- bg-blu-500/70 -->
+    <aside class="w-full h-full bg-neutro-500  flex flex-col min-h-screen ">
 
-      <NuxtLink to="/" class="w-full  bg-blu-500 hover:bg-scuro-900 transition-colors duration-300 text-white flex items-center gap-5 py-8 px-5 border-b border-white">
+      <NuxtLink to="/" class="w-full  bg-blu-500 hover:bg-scuro-900 transition-colors duration-300 text-white flex items-center gap-5 py-8 pl-6 pr-5 border-b border-white">
         <img src="/img/sedhc_logo_ilustracion_inv.png" alt="sedhc" class="h-16 w-auto mt-2 mix-blend-screen bg-black">
 
         <p class="text-sm/5  pt-2">Sociedad Española de Historia de la Construcción</p>
          
       </NuxtLink>
 
-      <article class="px-8 py-8 text-white italic">
+      <article class="px-8 py-8  italic">
         <p>below</p>
       </article>
 
@@ -145,13 +143,6 @@ function formatDayMonthYear(date: Date | string | undefined): string {
   return `${day} ${month.charAt(0).toUpperCase() + month.slice(1)} ${year}`;
 }
 
-function shortenUrl(url: string | undefined, maxChars: number = 30): string {
-  if (!url) return '';
-  const clean = url.replace(/^https?:\/\//, '');
-  return clean.length > maxChars ? clean.slice(0, maxChars) + '…' : clean;
-}
-
-
     // UI elements
   const isOpen = ref(false);
   const selectedItem = ref<string | undefined>(undefined);
@@ -171,34 +162,15 @@ function shortenUrl(url: string | undefined, maxChars: number = 30): string {
     }
   }
 
-  const selectedCongreso = computed(() => {
-    return congresos.value?.find(c => c.slug === selectedItem.value);
-  })
-
-  interface Congreso {
-    title: string;
-    slug: string;
-    year: number;
-    dateFrom: Date;
-    dateTo?: Date;
-    url?: string;
-    lugar: string;
-    sede?: string;
-    image?: {
-      src: string;
-      alt: string;
-    };
-    actas?: {
-      title: string;
-      identifier: string;
-    }[];
-  }
-
-  const { data: congresos } = await useAsyncData<Congreso[]>('congresos_list', () => {
+  const { data: congresos } = await useAsyncData('congresos_list', () => {
     return queryCollection('congresos')
       .order('year', 'DESC')
       .all()
   });
+
+  const selectedCongreso = computed(() => {
+    return congresos.value?.find(c => c.slug === selectedItem.value);
+  })
 
   onMounted(() => {
     // console.log('congresos', congresos.value)

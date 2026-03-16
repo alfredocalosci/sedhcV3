@@ -40,7 +40,7 @@
 
     <aside class="w-full h-full bg-neutro-500 flex flex-col ">
 
-      <NuxtLink to="/" class="w-full  bg-rosso-500 hover:bg-scuro-900 transition-colors duration-300 text-white flex items-center gap-5 py-8 px-5 border-b border-white">
+      <NuxtLink to="/" class="w-full  bg-rosso-500 hover:bg-scuro-900 transition-colors duration-300 text-white flex items-center gap-5 py-8  pl-6 pr-5 border-b border-white">
 
        <img src="/img/sedhc_logo_ilustracion_inv.png" alt="sedhc" class="h-16 w-auto mt-2 mix-blend-screen bg-black">
         <p class="text-sm/5  pt-2">Sociedad Española de Historia de la Construcción</p>
@@ -167,13 +167,17 @@
 
             <div>
               <p class="text-sm italic text-gray-500 ">
-                {{ item.year }} - {{ item.downloads }} - {{ item.author }}
+                {{ item.year }} - {{ item.author }}
               </p>
               <h2 
                 class="text-xl/7 mb-2 mt-1 text-gray-900 font-semibold group-hover:text-rosso-500 transition-colors duration-300"
                 :class="selectedItem === item.identifier ? 'text-rosso-500' : ''"
               >{{ item.shortTitle }}</h2>
               <p class="pl-3 text-base/6 italic text-gray-600">{{ item.description }}</p>
+
+              <p class="font-mono text-xs pl-3 pt-2 text-gray-500">
+                <Icon name="lucide:cloud-download" style="color: #6b7280" size="14" class="inline-block mr-1 "/>
+                {{ item.downloads}}</p>
             </div>
   
         </div>
@@ -196,7 +200,7 @@
 
             <div>
               <p class="text-xs italic text-gray-500 ">
-                {{ item.year }} - {{ item.downloads }} - {{ item.author }}
+                {{ item.year }} - {{ item.author }}
               </p>
               <h2 
                 class="text-sm/5 mb-2 mt-1 text-gray-900 font-semibold group-hover:text-rosso-500 transition-colors duration-300"
@@ -219,7 +223,7 @@
         >
 
             <p class="text-xs italic text-gray-500 ">
-              {{ item.year }} - {{ item.downloads }} - {{ item.author }}
+              {{ item.year }} - {{ item.author }}
             </p>
             <h2 
               class="text-sm/5 pl-2 text-gray-900 font-semibold group-hover:text-rosso-500 transition-colors duration-300"

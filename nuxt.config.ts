@@ -24,5 +24,26 @@ export default defineNuxtConfig({
       },
     ],
   },
+  vite: {
+    optimizeDeps: {
+      include: [
+        '@vue/devtools-core',
+        '@vue/devtools-kit',
+      ]
+    }
+  },
+  app: {
+     baseURL: '/test/',
+  },
+  runtimeConfig: {
+    public: {
+      siteUrl: 'https://sedhc.es/test',
+    },
+  },
+  content: {
+    renderer: {
+      anchorLinks: { h2: false, h3: false, h4: false },
+    },
+  },
   
 })

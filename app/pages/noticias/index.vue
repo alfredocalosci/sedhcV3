@@ -2,18 +2,21 @@
 
   <div class="grid grid-cols-[300px_720px_1fr]">
 
-    <aside class="w-full h-full bg-azzurro-500/70 flex flex-col ">
+    <!-- bg-azzurro-500/70 ? -->
+    <aside class="w-full h-full bg-neutro-500 flex flex-col ">
 
-      <NuxtLink to="/" class="w-full  bg-azzurro-500 hover:bg-scuro-900 transition-colors duration-300 text-white flex items-center gap-5 py-8 px-5 border-b border-white">
+      <NuxtLink to="/" class="w-full  bg-azzurro-500 hover:bg-scuro-900 transition-colors duration-300 text-white flex items-center gap-5 py-8 pl-6 pr-5 border-b border-white">
         <img src="/img/sedhc_logo_ilustracion_inv.png" alt="sedhc" class="h-16 w-auto mt-2 mix-blend-screen bg-black">
 
         <p class="text-sm/5  pt-2">Sociedad Española de Historia de la Construcción</p>
          
       </NuxtLink>
 
-      <article class="px-8 py-8 text-white italic">
+      <article class="px-8 py-12  italic">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </article>
+
+      <rrss/>
 
     </aside>
 
@@ -49,7 +52,7 @@
         </div>
 
         <!-- pager -->
-       <div class="flex items-center justify-between gap-4 mb-16 z-5 md:sticky top-0 bg-white py-3 ">
+      <div class="flex items-center justify-between gap-4 mb-16 z-5 md:sticky top-0 bg-white py-3 ">
 
            <p class="font-mono text-xs text-gray-500">mostrando <span class="text-scuro-900 font-semibold">{{  filteredNoticias.length }}</span> noticias de <span class="text-scuro-900 font-semibold">{{ noticias?.length }}</span>
           </p>
@@ -93,7 +96,7 @@
       <div class="mt-12 ">
 
           <!-- compactas agrupadas por año -->
-          <div v-for="year in Object.keys(noticiasCompactasByYears).sort((a, b) => b - a)" :key="year" class="mb-12">
+          <div v-for="year in Object.keys(noticiasCompactasByYears).sort((a, b) => Number(b) - Number(a))" :key="year" class="mb-12">
 
             <h4 class="text-xs font-mono w-full border-b border-dashed border-gray-300 text-gray-500 pb-2 text-right mb-6 ">{{ year }}</h4>
 
@@ -121,18 +124,7 @@
 
 <script lang="ts" setup>
 
-
-
-  interface Noticia {
-    path: string;
-    title: string;
-    slug: string;
-    description: string;
-    date: string;
-    category: string[];
-  }
-
-  const { data: noticias } = await useAsyncData<Noticia[]>('noticias_list', () => {
+  const { data: noticias } = await useAsyncData('noticias_list', () => {
     return queryCollection('noticias')
       .select('path', 'title', 'slug', 'description', 'date', 'category')
       .order('date', 'DESC')
@@ -159,7 +151,7 @@
     // if (!selectedSubject.value) return noticias.value;
 
     if(selectedSubject.value) {
-      filterOutput = filterOutput.filter((noticia: Noticia) => Array.isArray(noticia.category) && noticia.category.includes(selectedSubject.value!));
+      filterOutput = filterOutput.filter((noticia) => Array.isArray(noticia.category) && noticia.category.includes(selectedSubject.value!));
     }
 
      // apply search filter here
@@ -179,21 +171,16 @@
   // Group compactas by year
   const noticiasCompactasByYears = computed(() => {
     return noticiasCompactas.value.reduce((acc, noticia) => {
-      const year = new Date(noticia.date).getFullYear();
+      const year = String(new Date(noticia.date).getFullYear());
       if (!acc[year]) acc[year] = [];
       acc[year].push(noticia);
       return acc;
-    }, {} as Record<number, Noticia[]>);
+    }, {} as Record<string, typeof noticiasCompactas.value>);
   });
 
-
-
-  
-
-
   onMounted(() => {
-    console.log('Noticias:', noticias.value);
-    console.log('Categorias:', categorias.value);
+    // console.log('Noticias:', noticias.value);
+    // console.log('Categorias:', categorias.value);
   });
 
 </script>

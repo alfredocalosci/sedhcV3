@@ -38,9 +38,10 @@
 
   <div class="grid grid-cols-[300px_720px_1fr]">
 
-    <aside class="w-full h-full bg-menta-50/40 flex flex-col ">
+    <!-- bg-menta-50/40 -->
+    <aside class="w-full h-full bg-neutro-500 flex flex-col ">
 
-      <NuxtLink to="/" class="w-full bg-verde-500 hover:bg-scuro-900 transition-colors duration-300 text-white flex items-center gap-5 py-8 px-5 border-b border-white">
+      <NuxtLink to="/" class="w-full bg-verde-500 hover:bg-scuro-900 transition-colors duration-300 text-white flex items-center gap-5 py-8 pl-6 pr-5  border-b border-white">
          <img src="/img/sedhc_logo_ilustracion_inv.png" alt="sedhc" class="h-16 w-auto mt-2 mix-blend-screen bg-black">
 
         <p class="text-sm/5  pt-2">Sociedad Española de Historia de la Construcción</p>
@@ -49,7 +50,7 @@
       <article class="px-8 py-8  ">
         <p class="italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-        <hr class="styled after:bg-menta-50"/>
+        <hr class="styled after:bg-neutro-500"/>
 
         <div class="mt-12">
 
@@ -60,7 +61,7 @@
           >
             <strong 
               class="font-bold text-xs -ml-1 transition-colors duration-100"
-              :class="selectedSubject === subject[0] ? 'text-rosso-500 font-bold' : '  group-hover:text-gray-500 '"
+              :class="selectedSubject === subject[0] ? 'text-verde-500 font-bold' : '  group-hover:text-gray-500 '"
             >{{ subject[0] }}: </strong>
             <span class="italic text-gray-600 text-xs">{{ subject[1] }}</span>
           </p>   
