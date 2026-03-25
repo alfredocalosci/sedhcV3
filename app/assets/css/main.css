@@ -24,6 +24,10 @@ body {
   @apply  text-gray-900 font-serif bg-chiaro-50;
 }
 
+html {
+  @apply scroll-smooth;
+}
+
 .hor_pattern {
   background-image: url('/horizontal-lines.svg');
   background-repeat: repeat;

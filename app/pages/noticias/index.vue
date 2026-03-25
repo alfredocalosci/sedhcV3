@@ -51,7 +51,7 @@
             </div>
         </div>
 
-        <!-- pager -->
+      <!-- pager -->
       <div class="flex items-center justify-between gap-4 mb-16 z-5 md:sticky top-0 bg-white py-3 ">
 
            <p class="font-mono text-xs text-gray-500">mostrando <span class="text-scuro-900 font-semibold">{{  filteredNoticias.length }}</span> noticias de <span class="text-scuro-900 font-semibold">{{ noticias?.length }}</span>

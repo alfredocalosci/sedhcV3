@@ -6,7 +6,7 @@
         <div class="h-full w-full block">
             <img src="/img/sedhc_logo_ilustracion.png" alt="sedhc" class="h-30 w-auto mt-2 mix-blend-multiply bg-white">
 
-            <p class="pt-4">Sociedad Española de Historia de la Construcción<span class="text-giallo-500 font-bold">.</span></p>
+            <p class="pt-4 tracking-tight">Sociedad Española de Historia de la Construcción<span class="text-giallo-500 font-bold">.</span></p>
         </div>
       </aside>
 
@@ -44,7 +44,9 @@
       </div>
       -->
       
-      <HomeNewsCarousel/>
+      <ClientOnly>
+        <HomeNewsCarousel/>
+      </ClientOnly>
 
       <ContentRenderer v-if="introText" :value="introText" class="mdtxt mdtxt_intro mt-8" />
 

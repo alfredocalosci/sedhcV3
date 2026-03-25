@@ -26,24 +26,68 @@
     <p class="mt-6 pl-4">Vitruvio II, I,<br/>“Del principio de los edificios”<br/>
       (Texto: Ortiz y Sanz 1787)</p>
     
-  </article>
+      </article>
 
     </div>
 
     <div class="p-12 px-18 min-h-screen bg-white shadow-2xl">
       <GlobalHeaderAlt/>
 
-      <div class="pt-36 mb-16">
-        <p class="first-letter:float-left first-letter:mr-5 first-letter:text-7xl first-letter:uppercase first-letter:font-bold first-letter:text-amber-400 mt-6 ml-3 first-letter:-ml-6 ">Aquí contamos la sociedad: ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum vehicula nulla, vel rhoncus nisi porttitor et. Integer eget pharetra erat, id aliquet est. Praesent sed odio gravida, dignissim mi sit amet, vehicula neque. Mauris sollicitudin, risus ac imperdiet tempor, ligula enim ultricies odio, et lobortis lectus tellus sed orci.</p>
 
-        <p class="ml-3 -indent-3 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum vehicula nulla, vel rhoncus nisi porttitor et. Integer eget pharetra erat, id aliquet est. Praesent sed odio gravida, dignissim mi sit amet, vehicula neque. Mauris sollicitudin, risus ac imperdiet tempor, ligula enim ultricies odio, et lobortis lectus tellus sed orci. </p>
-        
-        <p class="ml-3 -indent-3 mt-3">Nunc eget augue non odio luctus elementum. In magna neque, semper convallis lectus sed, malesuada venenatis enim. Aenean quis mattis leo. Curabitur scelerisque eros ut sem pellentesque semper. Aenean et scelerisque velit, varius semper massa. Aenean vitae elementum turpis. Morbi vestibulum nisl rhoncus ligula posuere bibendum eu nec ligula. Etiam auctor tincidunt massa aliquet mattis. Phasellus nec risus quis mauris lobortis sollicitudin a a elit. Vestibulum ut vehicula erat, quis elementum urna.</p>
+      <nav class=" mb-16 z-5 md:sticky top-0 bg-white py-3 ">
+        <ul class="flex items-center justify-end gap-4 font-mono uppercase text-xs text-gray-500">
+          <li :class="{ 'text-black font-bold': activeSection === 'finalidades' }">
+            <a href="#finalidades">finalidades</a>
+          </li>
+          <li :class="{ 'text-black  font-bold': activeSection === 'cargos' }">
+            <a href="#cargos">cargos</a>
+          </li>
+          <li :class="{ 'text-black  font-bold': activeSection === 'miembros' }">
+            <a href="#miembros">miembros</a>
+          </li>
+          <li :class="{ 'text-black  font-bold': activeSection === 'estatutos' }">
+            <a href="#estatutos">estatutos</a>
+          </li>
+          <li :class="{ 'text-black  font-bold': activeSection === 'entidades' }">
+            <a href="#entidades">otras sociedades</a>
+          </li>
+        </ul>
+      </nav>
 
-        
-      </div>
+      <section id="finalidades" class="mt-32 mb-16 step">
+        <ContentRenderer v-if="introText" :value="introText" class="mdtxt mdtxt_intro mt-8" />
 
-      <entidades/>
+         <img src="/img/ilustraciones/eswn.png" alt="eswn" class="my-6">
+      </section>
+
+      <section id="cargos" class="step mb-16">
+        <div class="border-b border-dashed flex items-center justify-between mt-12">
+          <p class=" font-mono uppercase text-sm  font-semibold pb-1">cargos</p>
+        </div>
+
+        <ContentRenderer v-if="cargosText" :value="cargosText" class="mdtxt mdtxt_sociedad mt-4" />
+
+       
+       
+      </section>
+
+      <section id="miembros" class="step mb-16">
+        <div class="border-b border-dashed flex items-center justify-between mt-12">
+          <p class=" font-mono uppercase text-sm  font-semibold pb-1">miembros</p>
+        </div>
+        <ContentRenderer v-if="miembrosText" :value="miembrosText" class="mdtxt mdtxt_sociedad mt-4" />
+      </section>
+
+      <section id="estatutos" class="step mb-16">
+        <div class="border-b border-dashed flex items-center justify-between mt-12">
+          <p class=" font-mono uppercase text-sm  font-semibold pb-1">estatutos</p>
+        </div>
+        <ContentRenderer v-if="estatutosText" :value="estatutosText" class="mdtxt mdtxt_sociedad mt-4" />
+      </section>
+
+      <section id="entidades" class="step">
+        <entidades/>
+      </section>
 
       <GlobalFooter/>
 
@@ -57,14 +101,83 @@
 </template>
 
 <script lang="ts" setup>
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 
+const { data: textos } = await useAsyncData('textos_sociedad', () => {
+  return queryCollection('textos')
+    .where('webpage', '=', 'sociedad')
+    .all()
+});
+
+const introText = computed(() => textos.value?.find(t => t.section === 'intro'));
+const cargosText = computed(() => textos.value?.find(t => t.section === 'cargos'));
+const miembrosText = computed(() => textos.value?.find(t => t.section === 'miembros'));
+const estatutosText = computed(() => textos.value?.find(t => t.section === 'estatutos'));
+
+const activeSection = ref('finalidades');
+
+const sectionIds = ['finalidades', 'cargos', 'miembros', 'estatutos', 'entidades'];
+let observer: IntersectionObserver | null = null;
+
+onMounted(() => {
+  const sections = sectionIds
+    .map(id => document.getElementById(id))
+    .filter(Boolean) as HTMLElement[];
+  observer = new window.IntersectionObserver(
+    (entries) => {
+      // Find the section most in view
+      const visible = entries.filter(e => e.isIntersecting);
+      if (visible.length > 0) {
+        // Sort by topmost (closest to top)
+        visible.sort((a, b) => (a.boundingClientRect.top - b.boundingClientRect.top));
+        const topSection = visible[0];
+        if (topSection && topSection.target && (topSection.target as HTMLElement).id) {
+          activeSection.value = (topSection.target as HTMLElement).id;
+        }
+      } else {
+        // fallback: if none visible, keep previous
+      }
+    },
+    {
+      root: null,
+      rootMargin: '0px 0px -60% 0px', // triggers when section top is 40% from top
+      threshold: 0.1,
+    }
+  );
+  sections.forEach(section => observer!.observe(section));
+});
+
+onBeforeUnmount(() => {
+  if (observer) observer.disconnect();
+});
 </script>
 
 <style scoped>
-    @reference "tailwindcss";
+  @reference "tailwindcss";
   @reference "~/assets/css/main.css";
+
+  html {
+    @apply scroll-smooth!;
+  }
+
+  .step {
+    @apply scroll-mt-24;
+  }
 
   .quote p{
     @apply mb-2 text-gray-600
   }
+
+  .mdtxt_sociedad :deep(p) {
+    @apply leading-6 -indent-3 ml-3;
+  }
+
+  .mdtxt_intro :deep(p) {
+    @apply ml-3 -indent-3 mt-6 text-lg/7;
+  }
+
+  .mdtxt_intro :deep(p:first-of-type) {
+    @apply first-letter:float-left first-letter:mr-5 first-letter:text-7xl first-letter:uppercase first-letter:font-bold first-letter:text-yellow-500 mt-6 ml-3 first-letter:-ml-3;
+  }
+
 </style>

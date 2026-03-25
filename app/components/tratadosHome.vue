@@ -9,12 +9,14 @@
        
       >
        
-          <div class="aspect-2/3 flex flex-col justify-center mb-2">
-            <img
-              :src="`https://archive.org/services/img/${item.identifier}`"
-              :alt="item.shortTitle"
-              class="p-3 w-full h-auto "
-            />
+          <div class="aspect-2/3 flex flex-col justify-center mb-4">
+            <div class="border-0 border-gray-200 shadow-md aspect-2/3 mt-6">
+              <img
+                :src="`https://archive.org/services/img/${item.identifier}`"
+                :alt="item.shortTitle"
+                class="p-5 w-full h-auto "
+              />
+            </div>
           </div>
           <p class="text-xs italic text-gray-500">{{ item.year }} - {{ item.author }}</p>
           <h2 class="text-sm/5 mb-2 mt-1 text-gray-900 font-semibold group-hover:text-rosso-500 transition-colors duration-300">

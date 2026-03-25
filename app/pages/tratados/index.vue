@@ -21,6 +21,7 @@
           <span class="ml-2 text-sm italic text-white/70 group-hover:text-white transition-colors duration-300">consultar en archive.org</span>
         </a>
   
+        <!--
         <a 
            v-if="selectedPdfUrl"
           :href="selectedPdfUrl ? selectedPdfUrl : '#'"
@@ -31,6 +32,7 @@
           <UIcon name="lucide:hard-drive-download" style="color: white" size="24"/>
           <span class="ml-2 text-sm italic text-white/70 group-hover:text-white transition-colors duration-300">descargar pdf</span>
         </a>
+        -->
 
     </div>
 
@@ -158,11 +160,19 @@
         <div
           v-for="item in pagedItems"
           :key="item.identifier"
-          class="mb-6 pb-4 grid grid-cols-1 md:grid-cols-[1fr_4fr] gap-12 items-start cursor-pointer group"
+          class="mb-6 pb-3 grid grid-cols-1 md:grid-cols-[1fr_4fr] gap-12 items-start cursor-pointer group"
           @click="selectItem(item.identifier, item.shortTitle)"
         >
             <div>
-              <img :src="`https://archive.org/services/img/${item.identifier}`" alt="item.shortTitle" class="pt-6 group-hover:scale-105 transition-transform duration-300">
+              <div class="border-0 border-gray-200 shadow-md aspect-2/3  mt-6">
+                <img 
+                :src="`https://archive.org/services/img/${item.identifier}`"
+                alt="item.shortTitle"
+                class=" p-4 group-hover:scale-105 transition-transform duration-300 ">
+              </div>
+              
+
+
             </div>
 
             <div>
@@ -273,6 +283,7 @@
   const { data: archiveMetadata } = useAsyncData<ArchiveFile | null>(
     'archive-metadata',
     () => selectedItem.value
+      // @ts-expect-error excessive stack depth
       ? $fetch(`https://archive.org/metadata/${selectedItem.value}`)
       : Promise.resolve(null),
     { watch: [selectedItem] }

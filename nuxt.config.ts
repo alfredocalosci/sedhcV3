@@ -1,47 +1,41 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: [
-    '@nuxt/ui',
-    '@nuxt/content',
-    '@nuxt/image',
-  ],
-  css: ['~/assets/css/main.css'],
+   modules: [
+     '@nuxt/ui',
+     '@nuxt/content',
+     '@nuxt/fonts',
+   ],
+  css: ["~/assets/css/main.css"],
   fonts: {
-    families: [
-      {
+     families: [
+       {
         name: "Libre Baskerville",
         provider: "google",
         weights: [400, 500, 600, 700],
         styles: ["normal", "italic"],
       },
       {
-        name: "Inconsolata",
+       name: "Inconsolata",
         provider: "google",
         weights: [300, 400, 500, 600, 700, 800, 900],
         styles: ["normal"],
       },
     ],
   },
-  vite: {
-    optimizeDeps: {
-      include: [
-        '@vue/devtools-core',
-        '@vue/devtools-kit',
-      ]
-    }
-  },
+
   app: {
-     baseURL: '/test/',
+     baseURL: '/',
   },
   runtimeConfig: {
     public: {
-      siteUrl: 'https://sedhc.es/test',
+      siteUrl: 'https://sedhc.es',
     },
   },
-  content: {
-    renderer: {
+   content: {
+     renderer: {
       anchorLinks: { h2: false, h3: false, h4: false },
     },
   },
