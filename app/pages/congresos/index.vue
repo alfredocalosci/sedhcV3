@@ -46,7 +46,10 @@
       
     </div>
     
-    <div v-if="selectedCongreso?.image?.src" class="mt-12">
+    <div 
+      v-if="selectedCongreso?.image?.src"
+      class="mt-12 hidden lg:block"
+    >
       <img 
         :src="selectedCongreso.image.src" 
         :alt="selectedCongreso.image.alt" 
@@ -57,10 +60,10 @@
   </CustomUISidePanel>
 
 
-  <div class="grid grid-cols-[300px_720px_1fr]">
+  <div class="sedhc_grid">
     
     <!-- bg-blu-500/70 -->
-    <aside class="w-full h-full bg-neutro-500  flex flex-col min-h-screen ">
+    <aside class="w-full h-full bg-revista-500  flex flex-col  pb-8">
 
       <NuxtLink to="/" class="w-full  bg-blu-500 hover:bg-scuro-900 transition-colors duration-300 text-white flex items-center gap-5 py-8 pl-6 pr-5 border-b border-white">
         <img src="/img/sedhc_logo_ilustracion_inv.png" alt="sedhc" class="h-16 w-auto mt-2 mix-blend-screen bg-black">
@@ -69,22 +72,20 @@
          
       </NuxtLink>
 
-      <article class="px-8 py-8  italic">
-        <p>below</p>
+      <article class="px-8 mt-2 lg:mt-12 italic text-gray-100">
+         <ContentRenderer v-if="sideText" :value="sideText" class="mdtxt mdtxt_side mt-8" />
       </article>
 
     </aside>
 
-    <div class="p-12 px-18 bg-white shadow-2xl min-h-screen ">
+    <div class="main_content bg-white">
       <GlobalHeaderAlt/>
 
-      <div class="pt-36 mb-12">
-      <p class="first-letter:float-left first-letter:mr-5 first-letter:text-7xl first-letter:uppercase first-letter:font-bold first-letter:text-sky-500 mt-6 ml-3 first-letter:-ml-6 ">Aquí contamos los Congresos: ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum vehicula nulla, vel rhoncus nisi porttitor et. Integer eget pharetra erat, id aliquet est. Praesent sed odio gravida, dignissim mi sit amet, vehicula neque. Mauris sollicitudin, risus ac imperdiet tempor, ligula enim ultricies odio, et lobortis lectus tellus sed orci.</p>
+      <section class="mt-32">
+        <ContentRenderer v-if="introText" :value="introText" class="mdtxt mdtxt_intro mt-8" />
+      </section>
 
-      <p class="ml-3 -indent-3 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum vehicula nulla, vel rhoncus nisi porttitor et. Integer eget pharetra erat, id aliquet est. Praesent sed odio gravida, dignissim mi sit amet, vehicula neque.</p>
-        
-        <p class="ml-3 -indent-3 mt-3">Nunc eget augue non odio luctus elementum. In magna neque, semper convallis lectus sed, malesuada venenatis enim. Aenean quis mattis leo. Curabitur scelerisque eros ut sem pellentesque semper. Aenean et scelerisque velit, varius semper massa. Aenean vitae elementum turpis.</p>
-
+      <section>
         <!-- congresos -->
         <p class="pt-6 font-mono uppercase text-sm border-b border-dashed font-semibold pb-1 mt-18 mb-8">Congresos de Historia de la construcción:</p>
 
@@ -109,8 +110,7 @@
           </div>
 
         </div>
-
-      </div>
+      </section>
 
       <globalFooter/>
 
@@ -168,6 +168,20 @@ function formatDayMonthYear(date: Date | string | undefined): string {
       .all()
   });
 
+  const { data: introText } = await useAsyncData('congresos_intro', () => {
+    return queryCollection('textos')
+      .where('webpage', '=', 'congresos')
+      .where('section', '=', 'intro')
+      .first()
+  });
+
+  const { data: sideText } = await useAsyncData('congresos_side', () => {
+    return queryCollection('textos')
+      .where('webpage', '=', 'congresos')
+      .where('section', '=', 'lateral')
+      .first()
+  });
+
   const selectedCongreso = computed(() => {
     return congresos.value?.find(c => c.slug === selectedItem.value);
   })
@@ -178,6 +192,20 @@ function formatDayMonthYear(date: Date | string | undefined): string {
 
 </script>
 
-<style>
+<style scoped>
+  @reference "tailwindcss";
+  @reference "~/assets/css/main.css";
+
+  .mdtxt_intro :deep(p) {
+    @apply ml-3 -indent-3 mt-6 text-base/6 lg:text-lg/7 text-wrap;
+  }
+
+  .mdtxt_intro :deep(p:first-of-type) {
+    @apply first-letter:float-left first-letter:mr-5 first-letter:text-7xl first-letter:uppercase first-letter:font-bold first-letter:text-cyan-500 mt-6 ml-3 first-letter:-ml-3;
+  }
+
+  .mdtxt_side :deep(p) {
+    @apply text-sm/5 mb-4;
+  }
 
 </style>

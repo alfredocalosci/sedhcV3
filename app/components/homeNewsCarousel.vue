@@ -50,31 +50,47 @@ watch(
 </script>
 
 <template>
-  <div class="embla mb-4 mt-6">
+  <div class="embla mb-4 mt-6 ">
     <div ref="emblaRef" class="embla__viewport" >
 
       <div class="embla__container">
         <div v-for="(noticia, index) in noticias" :key="index" class="embla__slide">
 
-          <div class="w-full h-full grid md:grid-cols-[1fr_5fr] gap-8">
+          <div class="w-full h-full grid grid-cols-[1fr] md:grid-cols-[1fr_5fr] md:gap-8">
 
             <!-- Placeholder for image -->
-            <div class="mt-0 ">  
-              <img :src="`${config.public.siteUrl}${noticia.image?.src}`" alt="Imagen de noticia" class="w-full h-auto ">
+            <div class="mt-0 hidden md:grid">  
+              <img 
+                :src="`${noticia.image?.src}`"
+                alt="Imagen de noticia"
+                class="w-1/2 md:w-full h-auto mb-6 md:mb-0"
+              >
             </div>
 
             <!-- title and text --> 
-            <div class="h-full flex flex-col justify-between">
+            <div class=" h-full flex flex-col justify-between ">
+
+              <!-- text content -->
               <div>
                 <p class="text-xs text-gray-500 mb-1 italic">{{ formatSpanishDate(noticia.date) }}</p>
-                <h3 class="text-base/5 font-bold mb-2">{{ noticia.title }}</h3>
-                <p class="text-xs text-gray-600 ml-3">{{ noticia.description }}</p>
-              </div>
 
-              <NuxtLink :to="`/noticias/${noticia.slug}`" class="mt-4 inline-flex justify-end items-center text-rosso-500 hover:underline font-mono text-xs uppercase">
+                <!-- title -->
+                <h3 class="text-sm md:text-base/5 font-bold mb-2 block">{{ noticia.title }}</h3>
+                
+                <p class="text-xs text-gray-600 md:ml-3">{{ noticia.description }}</p>
+              </div>
+              
+              
+
+              <!-- leer mas -->
+              <NuxtLink
+                :to="`/noticias/${noticia.slug}`"
+                class="mt-4 inline-flex justify-end items-center text-rosso-500 hover:underline font-mono text-xs uppercase"
+              >
                 Leer más
                 <UIcon name="lucide:arrow-right" class="size-4 ml-1" />
               </NuxtLink>
+              
             </div>
 
           </div>
@@ -83,7 +99,7 @@ watch(
       </div>
     </div>
 
-    <!-- Optional: Add navigation controls here -->
+    <!-- Optional: Add navigation controls here    -->
     <div class="flex justify-between mt-4 border-t border-dashed pt-2 ">
       <div class="embla__buttons mt-0.5">
         <button class="embla__prev mr-2 cursor-pointer" @click="goToPrev">
@@ -94,7 +110,7 @@ watch(
         </button>
       </div>
 
-      <!-- dots -->
+     
       <div class="embla__dots">
         <button
           class="embla__dot cursor-pointer"
@@ -103,10 +119,13 @@ watch(
           v-for="(_, index) in scrollSnaps"
           @click="goTo(index)"
         >
-         <!--<UIcon :name="index === selectedIndex ? 'lucide:disc' : 'lucide:circle'" class="size-5" />--> 
+        
         </button>
       </div>
-    </div>
+    </div> 
+ 
+    <!-- end of navigation controls -->
+
   </div>
 </template>
 

@@ -2,11 +2,12 @@
   <header class="border-b border-gray-300 pb-0.5 max-w-5xl">
       <nav class="border-b-2 border-gray-400 pb-4 ">
         
-        <ul class="flex space-x-4 font-mono uppercase justify-end text-xs font-light">
+        <ul class="flex flex-col md:flex-row space-x-3 space-y-2 md:space-y-0 font-mono uppercase justify-end text-xs font-light">
          
-          <li><NuxtLink to="/noticias">Noticias</NuxtLink></li><li><NuxtLink to="/eventos">Eventos</NuxtLink></li>
-          <li><NuxtLink to="/publicaciones">Publicaciones</NuxtLink></li>
-          
+          <li><NuxtLink to="/noticias">Noticias</NuxtLink></li>
+          <li><NuxtLink to="/revista">Revista</NuxtLink></li>
+          <li><NuxtLink to="/congresos">Congresos</NuxtLink></li>
+          <li><NuxtLink to="/libros">Libros</NuxtLink></li>
           <li><NuxtLink to="/tratados">Tratados</NuxtLink></li>
           <li><NuxtLink to="/sociedad">La Sociedad</NuxtLink></li>
         </ul>

@@ -1,42 +1,45 @@
 <template>
 
-  <div class="grid grid-cols-[300px_720px_1fr]">
+  <div class="sedhc_grid">
 
     <!-- bg-azzurro-500/70 ? -->
-    <aside class="w-full h-full bg-neutro-500 flex flex-col ">
+    <aside class="w-full bg-neutro-500 flex flex-col ">
 
-      <NuxtLink to="/" class="w-full  bg-azzurro-500 hover:bg-scuro-900 transition-colors duration-300 text-white flex items-center gap-5 py-8 pl-6 pr-5 border-b border-white">
+      <NuxtLink to="/" class="w-full  bg-orange-600 hover:bg-scuro-900 transition-colors duration-300 text-white flex items-center gap-5 py-8 pl-6 pr-5 border-b border-white">
         <img src="/img/sedhc_logo_ilustracion_inv.png" alt="sedhc" class="h-16 w-auto mt-2 mix-blend-screen bg-black">
 
         <p class="text-sm/5  pt-2">Sociedad Española de Historia de la Construcción</p>
          
       </NuxtLink>
 
-      <article class="px-8 py-12  italic">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </article>
+      <section class="p-8 text-sm text-gray-800 italic hidden lg:block">
+       <ContentRenderer v-if="sideText" :value="sideText" class="mdtxt mdtxt_side" />
+      </section>
 
-      <rrss/>
+      <div class="hidden lg:block">
+        <rrss/>
+      </div>
+      
 
     </aside>
 
-    <div class="p-12 px-18 bg-white shadow-2xl min-h-screen">
+    <div class="main_content bg-white">
       <GlobalHeaderAlt/>
 
       <!-- categorias -->
-      <div class="grid grid-cols-3 gap-x-7 gap-y-4 text-xs mt-6 border-b border-gray-400 border-dashed pb-6 ml-1">
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-x-7 gap-y-4 text-xs mt-6 border-b border-gray-400 border-dashed pb-6 ml-1">
 
         <div 
           v-for="(cat,index) in categorias"
           :key="cat.id" @click="selectSubject(cat.slug)" 
           class="cursor-pointer"
         >
-            <p>
+            <p class="group">
               <strong 
-                class="font-bold text-xs -ml-1 transition-colors duration-300"
+                class="font-bold text-xs -ml-1 transition-colors duration-300 group-hover:text-orange-600" "
                 :class="{
                   'text-gray-400': selectedSubject !== cat.slug && selectedSubject !== null,
-                  'text-rosso-500 ': selectedSubject === cat.slug,
+                  'text-orange-600 ': selectedSubject === cat.slug,
                   'text-gray-900': selectedSubject === null
                   }"
               >{{ cat.nombre }}: </strong><br/>
@@ -47,8 +50,9 @@
                   'text-gray-600 ': selectedSubject === cat.slug,
                   'text-gray-600': selectedSubject === null
                   }"
-              >{{ cat.desc }}</span></p>
-            </div>
+              >{{ cat.desc }}</span>
+            </p>
+          </div>
         </div>
 
       <!-- pager -->
@@ -178,6 +182,16 @@
     }, {} as Record<string, typeof noticiasCompactas.value>);
   });
 
+  // side text
+   const { data: sideText } = await useAsyncData('noticias_lateral', () => {
+    return queryCollection('textos')
+      .where('webpage', '=', 'noticias')
+      .where('section', '=', 'lateral')
+      .first()
+  });
+
+
+
   onMounted(() => {
     // console.log('Noticias:', noticias.value);
     // console.log('Categorias:', categorias.value);
@@ -185,6 +199,13 @@
 
 </script>
 
-<style>
+<style scoped>
+  @reference "tailwindcss";
+  @reference "~/assets/css/main.css";
+
+  /* side */
+  .mdtxt_side :deep(p) {
+    @apply text-sm/5 mb-0;
+  }
 
 </style>

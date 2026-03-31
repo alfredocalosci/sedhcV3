@@ -1,6 +1,6 @@
 <template>
   <div
-    class="grid grid-cols-[300px_720px_1fr] top-0 z-10 fixed w-full h-screen bg-linear-to-r  from-black/40 to-transparent from-10% to-60% transition-all duration-500 ease-in-out pointer-events-none"
+    class="grid grid-cols-1 lg:grid-cols-[300px_720px_1fr] top-0 z-10 fixed w-full min-h-screen bg-linear-to-r  from-black/40 to-transparent from-10% to-60% transition-all duration-500 ease-in-out pointer-events-none"
     :class="isOpen ? 'left-0' : '-left-[200%]'"
   >
 

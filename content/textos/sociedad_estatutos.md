@@ -3,6 +3,7 @@ webpage: sociedad
 section: estatutos
 ---
 
-La Sociedad Española de Historia de la Construcción –SEdHC– nace, a raíz de la celebración del I Congreso de Historia de la Construcción en Madrid, en Septiembre de 1996, como iniciativa de un grupo de profesionales (arquitectos, ingenieros, historiadores, arqueólogos, etc.).
+###### Artículo 1: *Denominación y naturaleza*
+Con la denominación SOCIEDAD ESPAÑOLA DE LA HISTORIA DE LA CONSTRUCCIÓN, se constituye una ASOCIACIÓN que acoge a lo dispuesto en la Ley 191/64 de 24 de diciembre y normas complementarias del Decreto 1440/65, de 20 de mayo, careciendo de ánimo de lucro.  
 
-Nuestro objetivo es contribuir a la potenciación y difusión de los trabajos relacionados con la **historia de la construcción** y crear un organismo que facilite los contactos entre las personas que se interesen por este ámbito del conocimiento en España, tanto desde el punto de vista académico como profesional, o, simplemente como resultado de un interés personal.
+*Consulte el texto completo de los [estatutos](#) para más información.*

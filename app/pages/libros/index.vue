@@ -5,7 +5,11 @@
     @toggle="togglePannel"
   >
     <div class="flex items-center justify-between pb-2 mb-8 ">       
-      <img src="https://archive.org/download/ia-logo-white-transparent/ia-logo-white-transparent.png" alt="internet archive" class="max-w-3/4 h-auto my-2 ">
+      <img
+        src="https://archive.org/download/ia-logo-white-transparent/ia-logo-white-transparent.png"
+        alt="internet archive"
+        class="max-w-1/2 lg:max-w-3/4 h-auto my-2 "
+      >
     </div>
 
     <p class="font-semibold text-lg/6">{{ selectedTitle }}</p>
@@ -36,7 +40,7 @@
 
   </CustomUISidePanel>
 
-  <div class="grid grid-cols-[300px_720px_1fr]">
+  <div class="sedhc_grid">
 
     <!-- bg-menta-50/40 -->
     <aside class="w-full h-full bg-neutro-500 flex flex-col ">
@@ -48,12 +52,16 @@
       </NuxtLink>
 
       <article class="px-8 py-8  ">
-        <p class="italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="mb-10">
+          <ContentRenderer v-if="sideText" :value="sideText" class="mdtxt mdtxt_side " />
+        </div>
+       
 
         <hr class="styled after:bg-neutro-500"/>
 
         <div class="mt-12">
 
+        <!-- subjects -->
         <div v-for="subject in topSubjects" :key="subject[0]" >
           <p
             class="flex justify-between pb-1 group text-gray-800 cursor-pointer"
@@ -72,11 +80,11 @@
 
     </aside>
 
-    <div class="p-12 px-18 bg-white shadow-2xl min-h-screen">
+    <div class="main_content bg-white">
       <GlobalHeaderAlt/>
 
       <!-- UI elements -->
-       <div class="mb-2 grid md:grid-cols-3 gap-8 border-b border-dashed border-gray-400 py-6">
+      <div class="mb-2 grid md:grid-cols-3 gap-2 md:gap-8 border-b border-dashed border-gray-400 py-6">
 
           <selectSort
             :model-value="sortBy"
@@ -99,7 +107,7 @@
                 v-model="searchString"
                 ref="searchInput"
                 placeholder="Buscar …"
-                class="font-mono text-xs border-b border-gray-400 focus:border-rosso-500 focus:ring-0 focus:outline-none transition-colors duration-200 w-full mb-4 md:mb-0 pl-6 pb-1.5"
+                class="font-mono text-xs border-b border-gray-400 focus:border-rosso-500 focus:ring-0 focus:outline-none transition-colors duration-200 w-full mb-0 md:mb-0 pl-6 pb-1.5"
               />
 
               <Icon
@@ -111,11 +119,12 @@
 
           </div>
 
-        </div>
+      </div>
 
       <!-- pagination-->
-      <div class="flex items-center justify-between gap-4 mb-16 z-5 md:sticky top-0 bg-white pb-3 ">
-        <p class="font-mono text-xs text-gray-500">mostrando publicaciones de <span class="text-scuro-900 font-semibold">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-y-2 md:gap-4 mb-16 z-5 md:sticky top-0 bg-white pb-3 ">
+
+        <p class="font-mono text-xs text-gray-500 pt-2 md:pt-0">mostrando publicaciones de <span class="text-scuro-900 font-semibold">
           {{ (currentPage - 1) * maxOnPage + 1 }}
          </span> a <span class="text-scuro-900 font-semibold">
           {{ Math.min(currentPage * maxOnPage, filteredItems.length) }}
@@ -279,6 +288,14 @@
     { watch: [selectedItem] }
   );
 
+  // side text
+   const { data: sideText } = await useAsyncData('libros_lateral', () => {
+    return queryCollection('textos')
+      .where('webpage', '=', 'libros')
+      .where('section', '=', 'lateral')
+      .first()
+  });
+
   const togglePannel = () => {
     isOpen.value = !isOpen.value
     if (!isOpen.value) {
@@ -431,7 +448,7 @@
   });
 
   onMounted(() => {
-     console.log('Archive items:', archiveResults.value?.response?.docs);
+    // console.log('Archive items:', archiveResults.value?.response?.docs);
   });
 
 </script>
@@ -453,29 +470,24 @@
     color: #333;
     /*text-align: center;*/
     @apply text-center my-6 p-0;
-}
+  }
 
-hr.styled:after {
-    content: "§";
-    display: inline-block;
-    /*position: relative;*/
-    top: -0.7em;
-    font-size: 1.5em;
-    padding: 0 0.25em;
+  hr.styled:after {
+      content: "§";
+      display: inline-block;
+      /*position: relative;*/
+      top: -0.7em;
+      font-size: 1.5em;
+      padding: 0 0.25em;
 
-    @apply relative
-    /*background: white;*/
-}
+      @apply relative
+      /*background: white;*/
+  }
 
-/*
+  .mdtxt_side :deep(p) {
+    @apply text-sm/5  italic;
+  }
 
-after:content-['§'] after:inline-block after:relative after:-top-3 after:text-2xl after:px-1 after:bg-white after:text-neutral-800
 
-
-.hr-tailwind:after {
-  content: '§';
-  @apply inline-block relative -top-3 text-2xl px-1 bg-white after:content-['§'];
-}
-  */
 
 </style>

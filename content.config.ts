@@ -90,5 +90,21 @@ export default defineContentConfig({
         section: z.string(),
       }),
     }),
+    revista: defineCollection({
+      type: 'page',
+       source: {
+          include: "revista/**",
+          exclude: ["**/.*"],
+      },
+      schema: z.object({
+        volumen: z.number().int(),
+        year: z.number().int(),
+        url: z.string().optional(),
+        image: z.object({
+          src: z.string().editor({ input: 'media' }),
+          alt: z.string()
+        }).optional(),
+      }),
+    }),
   } // end collections
 })

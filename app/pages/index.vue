@@ -1,8 +1,8 @@
 <template>
-  <div class="grid grid-cols-[300px_720px_1fr] ">
+  <div class="sedhc_grid">
     
-    <div class="bg-chiaro-50 flex flex-col ">
-       <aside class="py-6 px-8 aspect-square  text-2xl transition-colors duration-300 border-b border-white">
+    <div class="bg-chiaro-50 flex flex-col pb-6">
+       <aside class="py-6 px-8 lg:aspect-square  text-2xl transition-colors duration-300 border-b border-white">
         <div class="h-full w-full block">
             <img src="/img/sedhc_logo_ilustracion.png" alt="sedhc" class="h-30 w-auto mt-2 mix-blend-multiply bg-white">
 
@@ -21,29 +21,9 @@
 
    
     <!-- main content -->
-    <div class="p-12 px-18 bg-white shadow-2xl">
+    <div class="main_content">
       <GlobalHeaderAlt/>
 
-      <!-- news carousel 
-      <div class="bg-gray-50 mt-4 p-4">
-        <div class="pseudo_slide w-10/12 mx-auto flex gap-6 ">
-
-          <div class="aspect-square bg-gray-100">
-            <img src="/img//noticias/24649.jpg" alt="noticia" class=" w-full h-auto">
-          </div>
-
-          <div>
-            <p class="text-xs italic pb-2">14 de marzo de 2024</p>
-              <p class="text-xs font-bold">V Congreso Internacional Hispano-Americano y XIII Congreso Nacional de Historia de la Construcción</p>
-          </div>
-
-          <div>
-            <p class="text-xs italic">Este miércoles 20 de marzo se da inicio a nuestro congreso internacional y nacional en la ciudad de Santo Domingo</p>
-          </div>
-        </div>
-      </div>
-      -->
-      
       <ClientOnly>
         <HomeNewsCarousel/>
       </ClientOnly>
@@ -53,17 +33,12 @@
       <img src="/img/ilustraciones/gotico.jpg" alt="Gótico" class="my-12">
 
 
-      <div class="md:columns-2 gap-8 mt-6 text-sm">
-       
-          <p>La sociedad tiene entre sus fines: editar una Revista de Historia de la Construcción anual, celebrar un Congreso bienal, fomentar y difundir cursos y seminarios sobre la materia ademas de establecer contactos con instituciones análogas en diferentes países.</p>
-       
-          <p>En cualquier caso, y una vez puesta en marcha la Sociedad Española de Historia de la Construcción, ésta se manifiesta explícitamente abierta a cualquier iniciativa tendente a potenciar y difundir por los medios legales a su alcance los trabajos relativos a esta actividad</p>
-       
-
+      <!-- sociedad intro -->
+      <div class="md:columns-2 gap-x-8 mt-6">
+          <ContentRenderer v-if="sociedadText" :value="sociedadText" class="mdtxt mdtxt_two_c" />
       </div>
 
      
-
        <!-- block separator: revista -->
       <div class="border-b border-dashed flex items-center justify-between mt-12">
         <p class=" font-mono uppercase text-sm  font-semibold pb-1">la revista</p>
@@ -74,21 +49,14 @@
         </a>
       </div>
 
-      <div class="grid grid-cols-3 gap-8 mt-6 text-sm mdtxt">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6 text-sm">
 
         <div class=" aspect-square">
           <img src="/img/revista/RevistaHC.jpg" alt="revista" class="w-full h-auto">
         </div>
 
         <div class="md:col-span-2 ">
-          <p class="mb-2">La Revista de Historia de la Construcción es editada por la <strong>Universitat Politècnica de València</strong> y fue fundada en el año 2020 por la SEdHC.</p>
-          
-          <p>La <a href="https://gdocu.upv.es/alfresco/service/api/node/content/workspace/SpacesStore/5b1e2dfb-f464-484a-a700-bd7f764c2a03/BOLET%c3%8dN%20DE%20SUSCRIPCI%c3%93N_HdC_2024.doc" target="_blank" rel="noopener noreferrer">suscripción</a> a la revista, da derecho a adquirir o mantener la condición de <strong>socio</strong> de la SEdHC y a recibir un ejemplar en papel del volumen correspondiente a ese año natural.</p>
-
-          
-          
-
-
+          <ContentRenderer v-if="revistaText" :value="revistaText" class="mdtxt mdtxt_two_c" />
         </div>
 
       </div>
@@ -97,13 +65,13 @@
       <div class="border-b border-dashed flex items-center justify-between mt-12">
         <p class=" font-mono uppercase text-sm  font-semibold pb-1">los congresos de historia de la construcción</p>
 
-        <NuxtLink to="/eventos" class=" text-gray-500 hover:text-rosso-500 font-mono text-xs uppercase flex items-center mb-1 transition-colors duration-300">
+        <NuxtLink to="/congresos" class=" text-gray-500 hover:text-rosso-500 font-mono text-xs uppercase flex items-center mb-1 transition-colors duration-300">
         consultar 
         <UIcon name="lucide:arrow-right" class="size-4 ml-2 text-rosso-500" />
         </NuxtLink>
       </div>
 
-      <div class="grid grid-cols-3 gap-6 mt-6 text-sm ">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 text-sm ">
 
         <div class="">
          <h3 class="font-bold text-center text-6xl py-4">XIV</h3>
@@ -134,17 +102,9 @@
       </div>
       
 
-      <div class="grid grid-cols-2 gap-8 my-6 text-sm">
-        <div>
-          <p>Los tratados de Arquitectura, Construcción e Ingeniería son una de las fuentes fundamentales para el estudio de la Historia de la Construcción.</p>
-
-          <p>Los más importantes están publicados en ediciones facsímiles; el resto, se encuentra en distintas bibliotecas especializadas.</p>
-        </div>
-
-        <div>
-          <p>En colaboración con el Instituto Juan de Herrera, hemos creado esta <strong>Biblioteca Digital</strong> con el objetivo de poner al alcance de cualquier interesado en la Historia de la Construcción una selección de tratados que, al estar libres de derechos de autor por su antigüedad, pueden difundirse libremente.</p>
-        </div>
-
+      <!-- tratados intro -->
+      <div class="md:columns-2 gap-8 mt-6">
+        <ContentRenderer v-if="tratadosText" :value="tratadosText" class="mdtxt mdtxt_two_c" />
       </div>
 
       <TratadosHome/>
@@ -155,7 +115,6 @@
     <!-- sidebar -->
     <div></div>
 
-    
     
   </div>
 </template>
@@ -169,9 +128,11 @@
   });
 
   const sideText = computed(() => textos.value?.find(t => t.section === 'side'));
-
   const introText = computed(() => textos.value?.find(t => t.section === 'intro'));
-
+  const sociedadText = computed(() => textos.value?.find(t => t.section === 'sociedad'));
+  const tratadosText = computed(() => textos.value?.find(t => t.section === 'tratados'));
+  const revistaText = computed(() => textos.value?.find(t => t.section === 'revista'));
+  
   onMounted(() => {
     // console.log('textos home', textos.value);
   })
@@ -180,34 +141,44 @@
 </script>
 
 <style scoped>
-   @reference "tailwindcss";
+  @reference "tailwindcss";
   @reference "~/assets/css/main.css";
 
   .mdtxt :deep(p, div) {
     @apply text-wrap my-0;
   }
 
+  .mdtxt :deep(a) {
+    @apply text-gray-700 decoration-cyan-500 underline underline-offset-6;
+  }
+
+  /* side */
   .mdtxt_side :deep(p) {
     @apply text-sm/6 text-gray-600 mb-4;
   }
 
+  /* intro */
   .mdtxt_intro :deep(p) {
-    @apply ml-3 -indent-3 mt-6 text-lg/7;
+    @apply ml-3 -indent-3 mt-6 text-base/6 md:text-lg/7;
   }
 
   .mdtxt_intro :deep(p:first-of-type) {
     @apply first-letter:float-left first-letter:mr-5 first-letter:text-7xl first-letter:uppercase first-letter:font-bold first-letter:text-rosso-500 mt-6 ml-3 first-letter:-ml-3;
   }
 
+  .mdtxt_two_c :deep(p) {
+    @apply text-sm/6 mb-6;
+  }
 
+  .mdtxt_two_c :deep(hr) {
+    @apply border-0 break-after-column my-0;
+  }
+
+
+
+
+ 
   /*
-  first-letter:float-left first-letter:mr-5 first-letter:text-7xl first-letter:uppercase first-letter:font-bold first-letter:text-rosso-500 mt-6 ml-3 first-letter:-ml-6
-  */ 
-
-  .mdtxt :deep(a) {
-        @apply text-gray-700 decoration-cyan-500 underline underline-offset-6;
-    }
-  
   .mdtxt .enlaces_externos{
     @apply border-t border-gray-300 mt-4 pt-4 mb-4;
   }
@@ -215,5 +186,6 @@
   .mdtxt .enlaces_externos :deep(a) {
     @apply no-underline w-full text-xs font-mono uppercase after:content-['→'] after:text-gray-400 after:float-right after:text-sm after:font-mono;
   }
+    */
 
 </style>
