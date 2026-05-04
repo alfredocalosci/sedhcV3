@@ -44,5 +44,11 @@ export default defineNuxtConfig({
       branch: 'master',
     },
   },
-  
+
+  nitro: {
+    prerender: {
+      routes: ['/'],
+      crawlLinks: true,
+    },
+  },
 })
