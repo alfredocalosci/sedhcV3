@@ -75,3 +75,7 @@ File-based routing under `app/pages/`:
 ### No state management library
 
 All state is local `ref()`/`computed()` per component. `useAsyncData` handles server-fetched data. No Pinia or global store.
+
+
+### dev server
+https://sedhc.netlify.app/

@@ -10,6 +10,11 @@ image:
   alt: "Cottbus 2009"
 dateFrom: 2009-05-20
 dateTo: 2009-05-24
+nacional_num: 0
+internacional_num: 3
+hispano_num: 0
+lat: 51.7563
+lng: 14.3329
 ---
 Following the success of the congresses in Madrid (2003) and Cambridge (2006), the Brandenburg University of Technology Cottbus invites scholars, engineers and the interested public from all over the world to the Third International Congress on Construction History in May 2009.
 

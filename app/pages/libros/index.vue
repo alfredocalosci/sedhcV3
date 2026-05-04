@@ -324,8 +324,18 @@
       docs?: ArchiveDoc[];
     };
   }
+  interface BookItem {
+    identifier: string;
+    title: string;
+    shortTitle: string;
+    author: string;
+    year: number | string;
+    description: string;
+    downloads?: number;
+    subject?: string[];
+  }
 
-  const archiveItems = computed(() => {
+  const archiveItems = computed((): BookItem[] => {
     if (archiveResults.value && archiveResults.value.response && archiveResults.value.response.docs) {
       return archiveResults.value.response.docs.map((doc: ArchiveDoc) => {
         // Extract shortTitle: everything after the first dot (if present)
@@ -360,7 +370,7 @@
   const currentPage = ref(1);
 
   // filter archiveItems by subject and search query
-  const filteredItems = computed(() => {
+  const filteredItems = computed((): BookItem[] => {
 
     let filterOutput = archiveItems.value;
     // apply subject filter here
@@ -404,7 +414,7 @@
     return filterOutput;
   });
 
-  const pagedItems = computed(() => {
+  const pagedItems = computed((): BookItem[] => {
     const startIdx = (currentPage.value - 1) * maxOnPage;
     return filteredItems.value.slice(startIdx, startIdx + maxOnPage);
   });
@@ -413,7 +423,7 @@
   const totalPages = computed(() => Math.max(1, Math.ceil(filteredItems.value.length / maxOnPage)));
 
   // count items per subject
-  const subjectCounts = computed(() => {
+  const subjectCounts = computed((): Record<string, number> => {
     const counts: Record<string, number> = {}
     archiveItems.value.forEach((item) => {
       if (item.subject) {
@@ -428,7 +438,7 @@
   })
 
   // set filter and sort options
-  const topSubjects = computed(() => {
+  const topSubjects = computed((): [string, number][] => {
     const sortedSubjects = Object.entries(subjectCounts.value).sort((a, b) => b[1] - a[1])
     return sortedSubjects.filter(([sub, count]) => count >= archiveItems.value.length / 10)
   });

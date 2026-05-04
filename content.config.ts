@@ -56,10 +56,15 @@ export default defineContentConfig({
               src: z.string().editor({ input: 'media' }),
               alt: z.string()
           }).optional(),
-           actas: z.array(z.object({
+          actas: z.array(z.object({
              title: z.string(),
              identifier: z.string()
-           })).optional(),
+          })).optional(),
+          nacional_num: z.number().int().optional(),
+          internacional_num: z.number().int().optional(),
+          hispano_num: z.number().int().optional(),
+          lat: z.number().optional(),
+          lng: z.number().optional(),
         }),
     }),
     entidades: defineCollection({

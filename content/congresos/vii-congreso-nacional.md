@@ -10,5 +10,10 @@ image:
   alt: null
 dateFrom: 2011-10-26
 dateTo: 2011-10-29
+nacional_num: 7
+internacional_num: 0
+hispano_num: 0
+lat: 42.8782
+lng: -8.5448
 ---
 El VII Congreso Nacional de Historia de la Construcción persigue los mismos objetivos que los anteriores congresos: promover y difundir los estudios en este campo y contribuir a que la Historia de la Construcción se convierta, en un futuro próximo, en una disciplina académica reconocida, de rango universitario.

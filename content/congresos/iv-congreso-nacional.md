@@ -10,5 +10,10 @@ image:
   alt: null
 dateFrom: null
 dateTo: null
+nacional_num: 4
+internacional_num: 0
+hispano_num: 0
+lat: 36.5271
+lng: -6.2886
 ---
 

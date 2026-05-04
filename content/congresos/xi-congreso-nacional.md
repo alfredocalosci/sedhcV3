@@ -10,6 +10,11 @@ image:
   alt: "Soria 2019"
 dateFrom: 2019-10-09
 dateTo: 2019-10-12
+nacional_num: 11
+internacional_num: 0
+hispano_num: 0
+lat: 41.7636
+lng: -2.4638
 actas:
     - title: "Volumen 1"
       identifier: "huerta-et-al.-2019.-actas-del-xi-congreso-nacional-de-historia-de-la-construccion-vol.-i"

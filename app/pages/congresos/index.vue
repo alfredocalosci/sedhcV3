@@ -12,13 +12,13 @@
       {{ formatDayMonth(selectedCongreso.dateFrom) }}<span v-if="selectedCongreso?.dateTo"> - {{ formatDayMonthYear(selectedCongreso.dateTo) }}</span>
     </p>
 
-    <div class="mt-6 pointer-events-auto border-t border-gray-400 pt-6">
+    <div class="mt-6 pointer-events-auto border-t border-gray-600 pt-4">
       <!-- web -->
       <a 
           v-if="selectedCongreso?.url"
           :href="selectedCongreso?.url"
           target="_blank"
-          class="flex items-center gap-x-2 mb-2 group cursor-pointer pointer-events-auto"
+          class="flex items-center gap-x-2 mb-4 group cursor-pointer pointer-events-auto"
           rel="noopener noreferrer"
         >
           <UIcon name="lucide:app-window-mac" style="color: white" size="24"/>
@@ -27,7 +27,10 @@
 
 
      <!-- actas on archive org -->
-      <div v-if="selectedCongreso?.actas" class="pt-6">
+      <div
+        v-if="selectedCongreso?.actas"
+        class="pt-4 border-t border-gray-600"
+      >
         <p class="font-mono text-xs mb-4 text-gray-400">actas en archive.org:</p>
 
         <a 
@@ -46,8 +49,9 @@
       
     </div>
     
+    <!-- poster -->
     <div 
-      v-if="selectedCongreso?.image?.src"
+      v-if="selectedCongreso?.image?.src && !selectedCongreso?.actas"
       class="mt-12 hidden lg:block"
     >
       <img 
@@ -56,6 +60,29 @@
         class="w-full h-auto border border-gray-300 grayscale"
       />
     </div>
+
+    <!-- actas thumbnails from archive.org -->
+    <div v-if="selectedCongreso?.actas" class="mt-6 hidden lg:block">
+      
+      <div class="grid grid-cols-3 gap-4">
+        <a 
+            v-for="acta in selectedCongreso.actas"
+            :key="acta.identifier"
+            :href="'https://archive.org/details/' + acta.identifier"
+            target="_blank"
+            class="flex items-center gap-x-2 mb-2 group cursor-pointer pointer-events-auto"
+            rel="noopener noreferrer"
+        >
+          <img 
+            :src="'https://archive.org/services/img/' + acta.identifier" 
+            :alt="acta.title" 
+            class="w-full h-auto border border-gray-300 grayscale group-hover:grayscale-0 transition-all duration-300"
+          />
+      </a>
+      </div>
+    </div>
+
+
 
   </CustomUISidePanel>
 
@@ -85,31 +112,22 @@
         <ContentRenderer v-if="introText" :value="introText" class="mdtxt mdtxt_intro mt-8" />
       </section>
 
-      <section>
-        <!-- congresos -->
-        <p class="pt-6 font-mono uppercase text-sm border-b border-dashed font-semibold pb-1 mt-18 mb-8">Congresos de Historia de la construcción:</p>
+      <section class="mt-24">
+         <p class="pt-6 font-mono uppercase text-sm border-b border-dashed font-semibold pb-1 mt-18 mb-8">Congresos de Historia de la construcción:</p>
 
-        <!-- congresos compact list -->
-        <div class="grid md:grid-cols-2 gap-x-8 gap-y-4  text-sm">
+        <congresosBrowser
+          :congresos="congresos ?? []"
+          :selectedItem="selectedItem"
+          :selectedTitle="selectedTitle"
+          @select="selectItem"
+        />
+      </section>
 
-          <div
-            v-for="congreso in congresos"
-            :key="congreso.slug"
-            class="pb-2 cursor-pointer group"
-            @click="selectItem(congreso.slug, congreso.title)"
-          >
-            <p 
-              class="font-bold pb-1  group-hover:text-rosso-500 transitions-colors duration-300"
-              :class="{
-                'text-gray-400': selectedItem !== congreso.slug && selectedItem !== undefined,
-                'text-gray-900 ': selectedItem === congreso.slug,
-                'text-gray-900': selectedItem === undefined
-              }"
-            >{{ congreso.title }}</p>
-            <p class="text-xs italic text-gray-600 ">{{ congreso.lugar }} - {{ congreso.year }}</p>
-          </div>
-
-        </div>
+      <section v-if="lugaresData.length" class="mb-12 mt-24">
+        <WorldMap
+          :lugares="lugaresData"
+          :selectedLugar="selectedCongreso?.lugar"
+        />
       </section>
 
       <globalFooter/>
@@ -145,13 +163,14 @@ function formatDayMonthYear(date: Date | string | undefined): string {
 
     // UI elements
   const isOpen = ref(false);
+
   const selectedItem = ref<string | undefined>(undefined);
   const selectedTitle = ref<string | undefined>(undefined);
 
-  const selectItem = (identifier:string, title:string) => {
+  const selectItem = (identifier: string | undefined, title: string | undefined) => {
     selectedItem.value = identifier;
     selectedTitle.value = title;
-    isOpen.value = true;
+    isOpen.value = !!identifier;
   }
 
   const togglePannel = () => {
@@ -162,10 +181,31 @@ function formatDayMonthYear(date: Date | string | undefined): string {
     }
   }
 
+  
   const { data: congresos } = await useAsyncData('congresos_list', () => {
     return queryCollection('congresos')
       .order('year', 'DESC')
       .all()
+  });
+
+  // a computed function that returns uniques lugar 
+  const uniqueLugares = computed(() => {
+    if (!congresos.value) return [];
+    const lugares = congresos.value.map(c => c.lugar).filter(Boolean);
+    return Array.from(new Set(lugares));
+  });
+
+  // from uniqueLugares, get just lat, lng and slug
+  const lugaresData = computed(() => {
+    return uniqueLugares.value.map(lugar => {
+      const congreso = congresos.value?.find(c => c.lugar === lugar);
+      return {
+        lugar,
+        lat: congreso?.lat,
+        lng: congreso?.lng,
+        year: congreso?.year,
+      }
+    }).filter(l => l.lat && l.lng);
   });
 
   const { data: introText } = await useAsyncData('congresos_intro', () => {

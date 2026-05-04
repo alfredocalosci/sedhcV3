@@ -4,7 +4,7 @@
     :class="isOpen ? 'left-0' : '-left-[200%]'"
   >
 
-    <aside class="w-full h-full bg-scuro-900 text-white p-6 ">
+    <aside class="w-full h-screen bg-scuro-900 text-white p-6 ">
 
       <div 
         class="flex items-center justify-between pb-6 mb-6 border-b border-white/50 cursor-pointer group pointer-events-auto" 

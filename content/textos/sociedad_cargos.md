@@ -4,7 +4,7 @@ section: cargos
 ---
 
 ##### Presidente  
-- Santiago Huerta  
+- Santiago Huerta Fernández  
 
 ##### Vicepresidente  
 - Antonio de las Casas Gómez  
@@ -19,10 +19,11 @@ section: cargos
 
 ##### Vocales  
 - José Calvo López  
-- David Gallego Valle  
+- Virginia Flores Sasso  
+- Paula Fuentes González
 - Ignacio Javier Gil Crespo  
-- Amparo Graciani García  
-- Rafael Marín Sánchez  
+- Pedro Plasencia Lozano  
+- Esther Redondo Martínez  
 
 ##### Primer Presidente 1997-2003  
 - Ricardo Aroca Hernández-Ros  

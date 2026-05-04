@@ -10,4 +10,9 @@ image:
   alt: "Cartagena 2026"
 dateFrom: 2026-04-08
 dateTo: 2026-04-11
+nacional_num: 14
+internacional_num: 0
+hispano_num: 6
+lat: 37.6053
+lng: -0.9863
 ---

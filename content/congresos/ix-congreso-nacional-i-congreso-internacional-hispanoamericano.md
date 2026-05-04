@@ -10,5 +10,10 @@ image:
   alt: "Segovia 2015"
 dateFrom: 2015-10-13
 dateTo: 2015-10-17
+nacional_num: 9
+internacional_num: 0
+hispano_num: 1
+lat: 40.9429
+lng: -4.1088
 ---
 Los objetivos generales de este Congreso continúan siendo los de anteriores Congresos: promover y difundir los estudios sobre la Historia de la Construcción y contribuir a que este campo de investigación tenga cabida dentro de las disciplinas académicas con pleno reconocimiento universitario. El objetivo particular es incorporar a investigadores americanos hispanohablantes (México, Centro- y Sud-América). El Congreso pretende ser lugar de reunión e intercambio de investigaciones y experiencias, de cara a incorporar este nuevo cuerpo de estudiosos a la disciplina.

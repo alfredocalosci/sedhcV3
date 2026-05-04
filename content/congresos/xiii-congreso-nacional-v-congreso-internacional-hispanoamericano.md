@@ -10,6 +10,11 @@ image:
     alt: "Santo Domingo 2024"
 dateFrom: 2024-03-20
 dateTo: 2024-03-23
+nacional_num: 13
+internacional_num: 0
+hispano_num: 5
+lat: 18.4861
+lng: -69.9312
 actas:
   - title: "Volúmen único"
     identifier: "prieto-flores-huerta-2024.-actas-del-decimo-tercer-congreso-nacional-y-quinto-co"

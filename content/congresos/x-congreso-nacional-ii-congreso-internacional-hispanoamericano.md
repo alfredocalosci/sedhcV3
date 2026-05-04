@@ -10,6 +10,11 @@ image:
   alt: "Donosti 2017"
 dateFrom: 2017-10-03
 dateTo: 2017-10-07
+nacional_num: 10
+internacional_num: 0
+hispano_num: 2
+lat: 43.3183
+lng: -1.9812
 actas:
     - title: "Volumen 1"
       identifier: "huerta-et-al.-2017.-actas-x-congreso-nacional-y-ii-internacional-hispano-america"

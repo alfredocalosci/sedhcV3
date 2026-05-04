@@ -71,25 +71,16 @@
         </NuxtLink>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 text-sm ">
+      <CongresosHome :congresos="congresos ?? []"/>
 
-        <div class="">
-         <h3 class="font-bold text-center text-6xl py-4">XIV</h3>
-         <p class="text-xs  text-center text-gray-500">Nacional</p>
-         <p class=" mt-4 text-xs py-2 italic text-center bg-blu-500 text-white">Cartagena 2026</p>
-        </div>
+     <section >
+        <ContentRenderer v-if="congresosSideText" :value="congresosSideText" class="mdtxt mdtxt_one_c mt-8" />
+      </section>
 
-        <div class="">
-         <h3 class="font-bold text-center text-6xl py-4">VI</h3>
-         <p class="text-xs  text-center text-gray-500">Hispanoamericano</p>
-          <p class=" mt-4 text-xs py-2 italic text-center bg-azzurro-500 text-white">Cartagena 2026</p>
-        </div>
-        <div class=" ">
-         <h3 class="font-bold text-center text-6xl py-4">VIII</h3>
-          <p class="text-xs  text-center text-gray-500">Internacional</p>
-           <p class=" mt-4 text-xs py-2 italic text-center bg-rosso-500 text-white">Zurich 2026</p>
-        </div>
-      </div>
+      <section class="mt-12 mb-0 ">
+        <LugaresCartogram :lugares="lugaresData"/>
+      </section>
+
 
       <!-- block separator: tratados -->
       <div class="border-b border-dashed flex items-center justify-between mt-12">
@@ -101,7 +92,6 @@
         </NuxtLink>
       </div>
       
-
       <!-- tratados intro -->
       <div class="md:columns-2 gap-8 mt-6">
         <ContentRenderer v-if="tratadosText" :value="tratadosText" class="mdtxt mdtxt_two_c" />
@@ -132,6 +122,40 @@
   const sociedadText = computed(() => textos.value?.find(t => t.section === 'sociedad'));
   const tratadosText = computed(() => textos.value?.find(t => t.section === 'tratados'));
   const revistaText = computed(() => textos.value?.find(t => t.section === 'revista'));
+
+
+  const { data: congresosSideText } = await useAsyncData('congresos_side', () => {
+    return queryCollection('textos')
+      .where('webpage', '=', 'congresos')
+      .where('section', '=', 'lateral')
+      .first()
+  });
+
+  const { data: congresos } = await useAsyncData('congresos_list', () => {
+    return queryCollection('congresos')
+      .order('year', 'DESC')
+      .all()
+  });
+
+  // a computed function that returns uniques lugar 
+  const uniqueLugares = computed(() => {
+    if (!congresos.value) return [];
+    const lugares = congresos.value.map(c => c.lugar).filter(Boolean);
+    return Array.from(new Set(lugares));
+  });
+
+  // from uniqueLugares, get just lat, lng and slug
+  const lugaresData = computed(() => {
+    return uniqueLugares.value.map(lugar => {
+      const congreso = congresos.value?.find(c => c.lugar === lugar);
+      return {
+        lugar,
+        lat: congreso?.lat,
+        lng: congreso?.lng,
+        year: congreso?.year,
+      }
+    }).filter(l => l.lat && l.lng);
+  });
   
   onMounted(() => {
     // console.log('textos home', textos.value);
@@ -166,7 +190,7 @@
     @apply first-letter:float-left first-letter:mr-5 first-letter:text-7xl first-letter:uppercase first-letter:font-bold first-letter:text-rosso-500 mt-6 ml-3 first-letter:-ml-3;
   }
 
-  .mdtxt_two_c :deep(p) {
+  .mdtxt_two_c :deep(p), .mdtxt_one_c :deep(p) {
     @apply text-sm/6 mb-6;
   }
 

@@ -10,6 +10,11 @@ image:
   alt: "Mieres 2022"
 dateFrom: 2022-10-04
 dateTo: 2022-10-08
+nacional_num: 12
+internacional_num: 0
+hispano_num: 4
+lat: 43.25
+lng: -5.7667
 actas:
   - title: "Volumen 1"
     identifier: "plasencia-lozano-et-al.-2022.-actas-xii-congreso-nacional-y-iii-internacional-hi"

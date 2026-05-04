@@ -10,4 +10,9 @@ image:
   alt: null
 dateFrom: 2019-01-21
 dateTo: 2019-01-25
+nacional_num: 0
+internacional_num: 0
+hispano_num: 3
+lat: 19.4326
+lng: -99.1332
 ---
