@@ -14,12 +14,12 @@
     "@nuxt/fonts": "^0.13.0",
     "@nuxt/image": "^1.0.0",
     "@nuxt/ui": "^4.1.0",
-    "@nuxthq/studio": "^2.2.1",
     "better-sqlite3": "^12.8.0",
     "d3-geo": "^3.1.1",
     "d3-geo-projection": "^4.0.0",
     "embla-carousel-vue": "^8.6.0",
     "nuxt": "^4.4.2",
+    "nuxt-studio": "^1.7.0",
     "tailwindcss": "^4.2.2",
     "vue": "^3.5.22",
     "vue-router": "^4.6.3"

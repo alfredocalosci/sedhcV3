@@ -3,7 +3,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-   modules: ['@nuxt/ui', '@nuxt/content', "@nuxthq/studio"],
+   modules: ['@nuxt/ui', '@nuxt/content', 'nuxt-studio'],
   css: ["~/assets/css/main.css"],
   fonts: {
      families: [
@@ -30,9 +30,18 @@ export default defineNuxtConfig({
       siteUrl: 'https://sedhc.es',
     },
   },
-   content: {
-     renderer: {
+  content: {
+    renderer: {
       anchorLinks: { h2: false, h3: false, h4: false },
+    },
+  },
+
+  studio: {
+    repository: {
+      provider: 'github',
+      owner: 'alfredocalosci',
+      repo: 'sedhcV3',
+      branch: 'master',
     },
   },
   
