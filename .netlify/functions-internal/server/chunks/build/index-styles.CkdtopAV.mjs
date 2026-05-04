@@ -1,0 +1,8 @@
+const index_vue_vue_type_style_index_0_scoped_94085365_lang = '@layer properties{@supports ((-webkit-hyphens:none) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))){[data-v-94085365],[data-v-94085365]::backdrop,[data-v-94085365]:after,[data-v-94085365]:before{--tw-font-weight:initial}}}.mdtxt_intro[data-v-94085365] p{font-size:var(--text-base,1rem);line-height:calc(var(--spacing,.25rem)*6);margin-left:calc(var(--spacing,.25rem)*3);margin-top:calc(var(--spacing,.25rem)*6);text-indent:calc(var(--spacing,.25rem)*-3);text-wrap:wrap}@media(min-width:64rem){.mdtxt_intro[data-v-94085365] p{font-size:var(--text-lg,1.125rem);line-height:calc(var(--spacing,.25rem)*7)}}.mdtxt_intro[data-v-94085365] p:first-of-type{margin-left:calc(var(--spacing,.25rem)*3);margin-top:calc(var(--spacing,.25rem)*6)}.mdtxt_intro[data-v-94085365] p:first-of-type:first-letter{float:left;font-size:var(--text-7xl,4.5rem);line-height:var(--tw-leading,var(--text-7xl--line-height,1));margin-left:calc(var(--spacing,.25rem)*-3);margin-right:calc(var(--spacing,.25rem)*5);--tw-font-weight:var(--font-weight-bold,700);color:var(--color-cyan-500,oklch(71.5% .143 215.221));font-weight:var(--font-weight-bold,700);text-transform:uppercase}.mdtxt_side[data-v-94085365] p{font-size:var(--text-sm,.875rem);line-height:calc(var(--spacing,.25rem)*5);margin-bottom:calc(var(--spacing,.25rem)*4)}@property --tw-font-weight{syntax:"*";inherits:false}';
+
+const indexStyles_CkdtopAV = [
+  index_vue_vue_type_style_index_0_scoped_94085365_lang
+];
+
+export { indexStyles_CkdtopAV as default };
+//# sourceMappingURL=index-styles.CkdtopAV.mjs.map
