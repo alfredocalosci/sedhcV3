@@ -46,6 +46,7 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    preset: 'netlify',
     prerender: {
       routes: ['/'],
       crawlLinks: true,
