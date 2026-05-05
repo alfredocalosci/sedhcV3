@@ -15,7 +15,7 @@ No lint or test commands are configured.
 
 ## Architecture Overview
 
-This is a **Nuxt 4** static/SSR site for the Spanish Society for Construction History (SEDHC), built with `@nuxt/content` as a headless CMS.
+This is a **Nuxt 4** SSR site for the Spanish Society for Construction History (SEDHC), built with `@nuxt/content` as a headless CMS. Content pages are pre-rendered at build time (via `nitro.prerender`) for static-equivalent performance; SSR is kept active to serve the Nuxt Studio editor at `/_studio`.
 
 ### Content Layer
 
@@ -76,6 +76,30 @@ File-based routing under `app/pages/`:
 
 All state is local `ref()`/`computed()` per component. `useAsyncData` handles server-fetched data. No Pinia or global store.
 
+
+### Nuxt Studio (CMS)
+
+The site uses [nuxt-studio](https://nuxt.studio) (`nuxt-studio@1.7.0`) as a self-hosted visual CMS for editing `@nuxt/content` collections.
+
+- **Editor URL:** `https://sedhc.netlify.app/_studio` (login with GitHub OAuth)
+- **Module:** `nuxt-studio` in [nuxt.config.ts](nuxt.config.ts) — note: `@nuxthq/studio` is the old v2-only module and must not be used
+- **Git provider:** GitHub (`alfredocalosci/sedhcV3`, branch `master`) — configured under `studio.repository` in [nuxt.config.ts](nuxt.config.ts); auto-detected from Netlify env vars at build time
+- **Auth:** GitHub OAuth app; credentials stored as `STUDIO_GITHUB_CLIENT_ID` / `STUDIO_GITHUB_CLIENT_SECRET` env vars on Netlify
+- **OAuth callback URL:** `https://sedhc.netlify.app/__nuxt_studio/auth/github`
+- **Media:** committed to `public/` in the repo by default (no external media provider)
+
+#### Deployment (Netlify SSR)
+
+The site deploys as SSR via Netlify Functions using the Nitro `netlify` preset:
+
+| Setting | Value |
+|---------|-------|
+| Build command | `npm run build` |
+| Publish directory | `dist` |
+| Functions | `.netlify/functions-internal/` (auto-detected) |
+| Nitro preset | `netlify` (set in [nuxt.config.ts](nuxt.config.ts)) |
+
+The `dist/` publish path is required because the Nitro netlify preset writes static assets to `dist/`, not `.output/public/`. Do not change the publish directory to `.output/public`.
 
 ### dev server
 https://sedhc.netlify.app/

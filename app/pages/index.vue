@@ -43,10 +43,10 @@
       <div class="border-b border-dashed flex items-center justify-between mt-12">
         <p class=" font-mono uppercase text-sm  font-semibold pb-1">la revista</p>
 
-        <a href="https://polipapers.upv.es/index.php/HC/" class=" text-gray-500 hover:text-rosso-500 font-mono text-xs uppercase flex items-center mb-1 transition-colors duration-300" rel="noopener noreferrer" target="_blank">
+        <NuxtLink to="/revista" class=" text-gray-500 hover:text-rosso-500 font-mono text-xs uppercase flex items-center mb-1 transition-colors duration-300" >
         consultar 
-        <UIcon name="lucide:external-link" class="size-4 ml-2 text-rosso-500" />
-        </a>
+        <UIcon name="lucide:arrow-right" class="size-4 ml-2 text-rosso-500" />
+        </NuxtLink>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6 text-sm">

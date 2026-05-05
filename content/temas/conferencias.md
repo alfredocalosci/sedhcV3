@@ -1,8 +1,0 @@
----
-id: 2
-nombre: Conferencias
-slug: conferencias
-desc: conferencias relacionadas a historia de la construcción
-rank: 20
-
----

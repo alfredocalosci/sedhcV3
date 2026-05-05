@@ -24,7 +24,7 @@ export default defineContentConfig({
         }),
     }),
     temas: defineCollection({
-      type: 'page',
+      type: 'data',
        source: {
           include: "temas/**",
           exclude: ["**/.*"],
@@ -38,7 +38,7 @@ export default defineContentConfig({
       }),
     }),
     congresos: defineCollection({
-      type: 'page',
+      type: 'data',
        source: {
           include: "congresos/**",
           exclude: ["**/.*"],
@@ -47,7 +47,7 @@ export default defineContentConfig({
           title: z.string(),
           slug: z.string(),
           year: z.number().int(),
-          dateFrom: z.date(),
+          dateFrom: z.date().optional(),
           dateTo: z.date().optional(),
           url: z.string().optional(),
           lugar: z.string(),
@@ -65,6 +65,7 @@ export default defineContentConfig({
           hispano_num: z.number().int().optional(),
           lat: z.number().optional(),
           lng: z.number().optional(),
+          descripcion: z.string().optional(),
         }),
     }),
     entidades: defineCollection({
@@ -96,7 +97,7 @@ export default defineContentConfig({
       }),
     }),
     revista: defineCollection({
-      type: 'page',
+      type: 'data',
        source: {
           include: "revista/**",
           exclude: ["**/.*"],

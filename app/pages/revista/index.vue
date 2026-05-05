@@ -19,7 +19,7 @@
 
           <div class="mt-6 pointer-events-auto border-t border-gray-400 pt-6">
             <a 
-              href="#"
+              href="https://polipapers.upv.es/index.php/HC/"
               target="_blank"
               class="flex items-center gap-x-2 mb-2 group cursor-pointer pointer-events-auto"
               rel="noopener noreferrer"
