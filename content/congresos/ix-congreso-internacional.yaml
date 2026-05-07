@@ -1,13 +1,13 @@
 title: IX Congreso Internacional
-slug: ix-congreso-internacional
-year: 2027
-lugar: Turin
-sede: Politecnico di Torino
-url: https://constructionhistorygroup.polito.it/icch/
 dateFrom: 2027-06-28
 dateTo: 2027-07-02
-nacional_num: 0
-internacional_num: 9
 hispano_num: 0
+internacional_num: 9
 lat: 45.0703
 lng: 7.6869
+lugar: Turin
+nacional_num: 0
+sede: Politecnico di Torino
+slug: ix-congreso-internacional
+url: https://constructionhistorygroup.polito.it/icch/
+year: 2027

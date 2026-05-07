@@ -1,13 +1,13 @@
 title: VI Congreso Nacional
-slug: vi-congreso-nacional
-year: 2009
-lugar: Valencia
-url: http://hct2009.webs.upv.es/
 dateFrom: 2010-10-21
 dateTo: 2010-10-24
-nacional_num: 6
-internacional_num: 0
+descripcion: Se convoca el Sexto Congreso Nacional de Historia de la Construcción, que se desarrollará pocos meses después del Tercer Congreso Internacional, con sede en Cottbus (Alemania), circunstancia que acentúa el prestigio y reconocimiento internacional de la Sociedad Española de Historia de la Construcción (SEHC).
 hispano_num: 0
+internacional_num: 0
 lat: 39.4699
 lng: -0.3763
-descripcion: Se convoca el Sexto Congreso Nacional de Historia de la Construcción, que se desarrollará pocos meses después del Tercer Congreso Internacional, con sede en Cottbus (Alemania), circunstancia que acentúa el prestigio y reconocimiento internacional de la Sociedad Española de Historia de la Construcción (SEHC).
+lugar: Valencia
+nacional_num: 6
+slug: vi-congreso-nacional
+url: http://hct2009.webs.upv.es/
+year: 2009
