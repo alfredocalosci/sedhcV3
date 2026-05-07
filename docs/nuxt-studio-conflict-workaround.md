@@ -1,5 +1,14 @@
 # NuxtStudio False Conflict Detection — Workaround
 
+## Known manifestations
+
+Two confirmed variants of this bug affect this project:
+
+1. **Key ordering** — Studio shows conflicts when YAML property order differs from NuxtContent's normalized order, even though data is identical. Fixable by reordering YAML files (see below).
+2. **Integer quoting** — Studio displays integer values (e.g. `1`) as quoted strings (`"1"`) in its diff view. This is caused by `z.number().int()` fields being stored as SQLite `INTEGER` columns, which Studio's API serializes differently from `REAL` (float) columns. Changing to `z.number()` to force `REAL` storage breaks NuxtContent's schema mapper (`no such column: NaN` error). **Not fixable** at the schema level. Treat these as false conflicts and accept the "website version" in Studio to dismiss them.
+
+---
+
 ## The bug
 
 NuxtStudio compares content in two ways:

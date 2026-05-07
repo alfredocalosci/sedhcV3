@@ -1,12 +1,15 @@
 ---
 title: 2eme CONGRÈS FRANCOPHONE D'HISTOIRE DE LA CONSTRUCTION - LYON - FRANCE
-description: Congrès interdisciplinaire d'histoire de la construction - 29, 30 et 31 janvier 2014
-slug: 2eme-congres-francophone-d-histoire-de-la-construction-lyon-france
+category:
+  - congresos
 date: 2013-05-21
-image: {"src": "/img/noticias/Deuxi__me Congr__s Francophone.jpg", "alt": "2eme CONGRÈS FRANCOPHONE D'HISTOIRE DE LA CONSTRUCTION - LYON - FRANCE"}
-url: http://2cfhc.sciencesconf.org/
+description: Congrès interdisciplinaire d'histoire de la construction - 29, 30 et 31 janvier 2014
 featured: false
-category: ["congresos"]
+image:
+  src: /img/noticias/Deuxi__me Congr__s Francophone.jpg
+  alt: 2eme CONGRÈS FRANCOPHONE D'HISTOIRE DE LA CONSTRUCTION - LYON - FRANCE
+slug: 2eme-congres-francophone-d-histoire-de-la-construction-lyon-france
+url: http://2cfhc.sciencesconf.org/
 ---
 
 Congrès interdisciplinaire d'histoire de la construction - 29, 30 et 31 janvier 2014

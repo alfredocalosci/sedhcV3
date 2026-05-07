@@ -1,12 +1,15 @@
 ---
 title: 9th International Masonry Conference
-description: The Conference will be organized with plenary sessions with invited speakers and parallel sessions of selected papers ar...
-slug: 9th-international-masonry-conference
+category:
+  - congresos
 date: 2013-03-12
-image: {"src": "/img/noticias/2F-9IMC-1.jpg", "alt": "9th International Masonry Conference"}
-url: http://www.9imc.civil.uminho.pt/
+description: The Conference will be organized with plenary sessions with invited speakers and parallel sessions of selected papers ar...
 featured: false
-category: ["congresos"]
+image:
+  src: /img/noticias/2F-9IMC-1.jpg
+  alt: 9th International Masonry Conference
+slug: 9th-international-masonry-conference
+url: http://www.9imc.civil.uminho.pt/
 ---
 
 The Conference will be organized with plenary sessions with invited speakers and parallel sessions of selected papers arranged according to the relevant topics.

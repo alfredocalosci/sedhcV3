@@ -1,20 +1,22 @@
 ---
-title: CfP - 5º Congreso francófono de Historia de la Construcción 
-description: Toulouse, del 18 al 20 de junio de 2025 
-slug: cfp-5-congreso-francofono-de-historia-de-la-construccion
+title: CfP - 5º Congreso francófono de Historia de la Construcción
+category:
+  - congresos
 date: 2024-03-09
-image: {"src": "/img/noticias/GIJwQX2X0AAm4dT.jpg", "alt": "CfP - 5º Congreso francófono de Historia de la Construcción (Toulouse, junio 2025)"}
-url: https://5cfhc.sciencesconf.org/
+description: Toulouse, del 18 al 20 de junio de 2025
 featured: false
-category: ["congresos"]
+image:
+  src: /img/noticias/GIJwQX2X0AAm4dT.jpg
+  alt: CfP - 5º Congreso francófono de Historia de la Construcción (Toulouse, junio 2025)
+slug: cfp-5-congreso-francofono-de-historia-de-la-construccion
+url: https://5cfhc.sciencesconf.org/
 ---
 
-Del 18 al 20 de junio de 2025 se celebrará el “Cinquième Congrès francophone d’Histoire de la Construction” en Toulouse, Francia. El evento es organizado por la Université Toulouse Jean-Jaurès y por la École nationale supérieure d’architecture de Toulouse, bajo el patrocinio de la Association francophone de l’histoire de la construction. 
+Del 18 al 20 de junio de 2025 se celebrará el “Cinquième Congrès francophone d’Histoire de la Construction” en Toulouse, Francia. El evento es organizado por la Université Toulouse Jean-Jaurès y por la École nationale supérieure d’architecture de Toulouse, bajo el patrocinio de la Association francophone de l’histoire de la construction.
 
-Las proposiciones de ponencias serán esperadas hasta el 31 de mayo de 2024. Estas deben contener un el nombre y la pertenencia institucional, un resumen de 300 palabras como máximo, un título y 6 palabras claves elegidas entre las que han sido determinadas por el congreso (ver abajo). La lengua del congreso es el francés. El depósito de la proposiciones deberá hacerse a través de la plataforma sciencesconf.org (ver el link abajo). 
+Las proposiciones de ponencias serán esperadas hasta el 31 de mayo de 2024. Estas deben contener un el nombre y la pertenencia institucional, un resumen de 300 palabras como máximo, un título y 6 palabras claves elegidas entre las que han sido determinadas por el congreso (ver abajo). La lengua del congreso es el francés. El depósito de la proposiciones deberá hacerse a través de la plataforma sciencesconf.org (ver el link abajo).
 
-
-El congreso contará con 16 áreas temáticas: 
+El congreso contará con 16 áreas temáticas:
 
 1. Metodologías (herramientas, historiografía)
 2. Procesos de concepción/procesos de construcción
@@ -33,8 +35,7 @@ El congreso contará con 16 áreas temáticas:
 15. Representaciones, simbólicas e imaginarias (utopías)
 16. Crisis, oposiciones, rivalidades
 
-
-Palabras clave para utilizar en la propuesta (en francés). 
+Palabras clave para utilizar en la propuesta (en francés).
 
 - Acoustique, aéroport, altération, ambiance, aménagement des berges, aménagement fluvial, aménagement maritime, aménagement portuaire, appareillage, apprentissage, approvisionnement, archéologie, archéologue, architecte, artisan, artisanat, artiste, assemblage, authenticité, autoroute
 - Berges, balnéaire
@@ -56,6 +57,5 @@ Palabras clave para utilizar en la propuesta (en francés).
 - Technicien, technique, technologie, temporalité, transfert artistique, transport, travail
 - Vieillissement, voirie
 - Zones de marche, zones maritimes.
-
 
 Son bienvenidas las proposiciones de diferentes espacios geográficos y temporales.

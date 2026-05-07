@@ -1,32 +1,36 @@
 ---
-webpage: sociedad
+title: SociedadCargos
 section: cargos
+webpage: sociedad
 ---
 
-##### Presidente  
-- Santiago Huerta Fernández  
+##### Presidente
 
-##### Vicepresidente  
-- Antonio de las Casas Gómez  
+- Santiago Huerta Fernández
 
-##### Secretaria  
-- Ana Rodríguez García  
+##### Vicepresidente
 
-##### Tesorero  
-- Fernando Vela Cossío  
+- Rafael Marín Sánchez
 
-*****
+##### Secretaria
 
-##### Vocales  
-- José Calvo López  
-- Virginia Flores Sasso  
+- Ana Rodríguez García
+
+---
+
+##### Vocales
+
+- José Calvo López
+- Virginia Flores Sasso
 - Paula Fuentes González
-- Ignacio Javier Gil Crespo  
-- Pedro Plasencia Lozano  
-- Esther Redondo Martínez  
+- Ignacio Javier Gil Crespo
+- Pedro Plasencia Lozano
+- Esther Redondo Martínez
 
-##### Primer Presidente 1997-2003  
-- Ricardo Aroca Hernández-Ros  
+##### Primer Presidente 1997-2003
 
-##### Socios de Honor  
+- Ricardo Aroca Hernández-Ros
+
+##### Socios de Honor
+
 - José Antonio Ruiz Hernando
