@@ -19,7 +19,6 @@
 
     </div>
 
-   
     <!-- main content -->
     <div class="main_content">
       <GlobalHeaderAlt/>
@@ -32,14 +31,12 @@
 
       <img src="/img/ilustraciones/gotico.jpg" alt="Gótico" class="my-12">
 
-
       <!-- sociedad intro -->
       <div class="md:columns-2 gap-x-8 mt-6">
           <ContentRenderer v-if="sociedadText" :value="sociedadText" class="mdtxt mdtxt_two_c" />
       </div>
-
-     
-       <!-- block separator: revista -->
+  
+      <!-- block separator: revista -->
       <div class="border-b border-dashed flex items-center justify-between mt-12">
         <p class=" font-mono uppercase text-sm  font-semibold pb-1">la revista</p>
 
@@ -61,7 +58,7 @@
 
       </div>
 
-       <!-- block separator: congresos -->
+      <!-- block separator: congresos -->
       <div class="border-b border-dashed flex items-center justify-between mt-12">
         <p class=" font-mono uppercase text-sm  font-semibold pb-1">los congresos de historia de la construcción</p>
 
@@ -73,14 +70,13 @@
 
       <CongresosHome :congresos="congresos ?? []"/>
 
-     <section >
+      <section >
         <ContentRenderer v-if="congresosSideText" :value="congresosSideText" class="mdtxt mdtxt_one_c mt-8" />
       </section>
 
       <section class="mt-12 mb-0 ">
-        <LugaresCartogram :lugares="lugaresData"/>
+        <LugaresTimeline :lugares="timeLineData"/>
       </section>
-
 
       <!-- block separator: tratados -->
       <div class="border-b border-dashed flex items-center justify-between mt-12">
@@ -123,7 +119,6 @@
   const tratadosText = computed(() => textos.value?.find(t => t.section === 'tratados'));
   const revistaText = computed(() => textos.value?.find(t => t.section === 'revista'));
 
-
   const { data: congresosSideText } = await useAsyncData('congresos_side', () => {
     return queryCollection('textos')
       .where('webpage', '=', 'congresos')
@@ -138,6 +133,7 @@
   });
 
   // a computed function that returns uniques lugar 
+  /*
   const uniqueLugares = computed(() => {
     if (!congresos.value) return [];
     const lugares = congresos.value.map(c => c.lugar).filter(Boolean);
@@ -155,6 +151,22 @@
         year: congreso?.year,
       }
     }).filter(l => l.lat && l.lng);
+  });
+  */
+
+  const timeLineData = computed(() => {
+    if (!congresos.value) return [];
+    return congresos.value
+      .filter(c => c.lugar && c.year && c.dateFrom)
+      .map(c => ({
+        lugar: c.lugar as string,
+        year: c.year as number,
+        dateFrom: new Date(c.dateFrom as string),
+        nacional_num : c.nacional_num,
+        hispano_num: c.hispano_num,
+        internacional_num: c.internacional_num,
+      }))
+      .sort((a, b) => a.year - b.year);
   });
   
   onMounted(() => {

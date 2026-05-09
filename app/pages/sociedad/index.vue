@@ -18,11 +18,11 @@
         <p>Los hombres … teniendo por naturaleza, a diferencia de los otros animales, el no caminar inclinados a la tierra, sino rectos y elevados para ver la magnificencia del cielo y astros; como también, hallándose aptos con sus manos y articulaciones para tratar fácilmente cuanto querían, empezaron unos a disponer sus techados de ramas.
           </p>
 
-      <p>Otros a cavar cuevas a la raíz de los montes. Algunos imitando los nidos de las golondrinas y su estructura, con barro y lodo hicieron donde guarecerse.</p>
+        <p>Otros a cavar cuevas a la raíz de los montes. Algunos imitando los nidos de las golondrinas y su estructura, con barro y lodo hicieron donde guarecerse.</p>
 
-      <p>Otros finalmente, que observaban estos abrigos, adelantando un poco mas sus invenciones, iban de día en día erigiendo menos mal arregladas chozas: así, que siendo aquellos hombres de imitadora y dócil naturaleza, gloriándose cada día de sus invenciones, se enseñaban unos a otros las nuevas formas de las casas que levantaban; y ejercitándose los ingenios en estas emulaciones, las iban de grado en grado mejorando de gusto.</p>
+        <p>Otros finalmente, que observaban estos abrigos, adelantando un poco mas sus invenciones, iban de día en día erigiendo menos mal arregladas chozas: así, que siendo aquellos hombres de imitadora y dócil naturaleza, gloriándose cada día de sus invenciones, se enseñaban unos a otros las nuevas formas de las casas que levantaban; y ejercitándose los ingenios en estas emulaciones, las iban de grado en grado mejorando de gusto.</p>
 
-    <p class="mt-6 pl-4">Vitruvio II, I,<br/>“Del principio de los edificios”<br/>
+        <p class="mt-6 pl-4">Vitruvio II, I,<br/>“Del principio de los edificios”<br/>
       (Texto: Ortiz y Sanz 1787)</p>
     
       </article>
@@ -32,7 +32,6 @@
     <div class="main_content">
       <GlobalHeaderAlt/>
       
-
       <nav class="hidden md:block mb-16 z-5 md:sticky top-0 bg-white pb-3 pt-2 ">
         <ul class="flex items-center justify-end gap-3 font-mono uppercase text-xs text-gray-500">
           <li :class="{ 'text-black font-bold': activeSection === 'finalidades' }">

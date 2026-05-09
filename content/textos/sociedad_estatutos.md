@@ -4,8 +4,6 @@ section: estatutos
 webpage: sociedad
 ---
 
-###### Artículo 1: *Denominación y naturaleza*
+La Sociedad Española de la Historia de la Construcción (SEDHC) se rige por las normas dispuestas por la Ley 191/64 de 24 de diciembre y normas complementarias del Decreto 1440/65, de 20 de mayo.
 
-Con la denominación SOCIEDAD ESPAÑOLA DE LA HISTORIA DE LA CONSTRUCCIÓN, se constituye una ASOCIACIÓN que acoge a lo dispuesto en la Ley 191/64 de 24 de diciembre y normas complementarias del Decreto 1440/65, de 20 de mayo, careciendo de ánimo de lucro.
-
-*Consulte el texto completo de los&#x20;**[estatutos](#)**&#x20;para más información.*
+*Consulte el texto completo de los [estatutos](https://sedhc.netlify.app/pdf/sedhc_estatutos.pdf) para más información.*

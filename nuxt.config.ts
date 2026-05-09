@@ -27,7 +27,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      siteUrl: 'https://sedhc.es',
+      siteUrl: 'https://sedhc.netlify.app/',
     },
   },
   content: {

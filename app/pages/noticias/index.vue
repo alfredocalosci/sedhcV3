@@ -20,7 +20,6 @@
         <rrss/>
       </div>
       
-
     </aside>
 
     <div class="main_content bg-white">
@@ -82,7 +81,6 @@
         </div>
        </div>
 
-      
       <!-- noticias -->
       <div class="mt-8 max-w-5/6">
         <!-- destacadas-->
@@ -99,20 +97,20 @@
 
       <div class="mt-12 ">
 
-          <!-- compactas agrupadas por año -->
-          <div v-for="year in Object.keys(noticiasCompactasByYears).sort((a, b) => Number(b) - Number(a))" :key="year" class="mb-12">
+        <!-- compactas agrupadas por año -->
+        <div v-for="year in Object.keys(noticiasCompactasByYears).sort((a, b) => Number(b) - Number(a))" :key="year" class="mb-12">
 
-            <h4 class="text-xs font-mono w-full border-b border-dashed border-gray-300 text-gray-500 pb-2 text-right mb-6 ">{{ year }}</h4>
+          <h4 class="text-xs font-mono w-full border-b border-dashed border-gray-300 text-gray-500 pb-2 text-right mb-6 ">{{ year }}</h4>
 
-            <div v-for="noticia in noticiasCompactasByYears[year]" :key="noticia.slug" class="mb-3 pb-3">
-              <NuxtLink :to="`/noticias/${noticia.slug}`" class="group">
-                <p class="text-xs italic text-gray-500">
-                  {{ formatSpanishDate(noticia.date) }}
-                </p>
-                <h3 class="text-sm/5 pl-3 my-1 text-gray-900 font-semibold group-hover:text-rosso-500 transition-colors duration-300">{{ noticia.title }}</h3>
-              </NuxtLink>
-            </div>
+          <div v-for="noticia in noticiasCompactasByYears[year]" :key="noticia.slug" class="mb-3 pb-3">
+            <NuxtLink :to="`/noticias/${noticia.slug}`" class="group">
+              <p class="text-xs italic text-gray-500">
+                {{ formatSpanishDate(noticia.date) }}
+              </p>
+              <h3 class="text-sm/5 pl-3 my-1 text-gray-900 font-semibold group-hover:text-rosso-500 transition-colors duration-300">{{ noticia.title }}</h3>
+            </NuxtLink>
           </div>
+        </div>
       </div>
       
       <globalFooter/>

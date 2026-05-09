@@ -1,6 +1,8 @@
 ---
-webpage: home
+title: HomeRevista
+description: La Revista de Historia de la Construcción es editada por la Universitat Politècnica de València y fue fundada en el año 2020.
 section: revista
+webpage: home
 ---
 
 La Revista de Historia de la Construcción es editada por la *Universitat Politècnica de València* y fue fundada en el año **2020**.

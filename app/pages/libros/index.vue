@@ -69,9 +69,12 @@
           >
             <strong 
               class="font-bold text-xs -ml-1 transition-colors duration-100"
-              :class="selectedSubject === subject[0] ? 'text-verde-500 font-bold' : '  group-hover:text-gray-500 '"
+              :class="selectedSubject === subject[0] || !selectedSubject ? 'text-mist-800 font-semibold' : '  group-hover:text-gray-500 text-mist-500'"
             >{{ subject[0] }}: </strong>
-            <span class="italic text-gray-600 text-xs">{{ subject[1] }}</span>
+           <span
+              class="italic text-gray-600 text-xs"
+              :class="selectedSubject === subject[0] || !selectedSubject ? 'text-mist-800' : 'text-mist-500'"
+            >{{ subject[1] }}</span>
           </p>   
         </div>
       </div>
@@ -354,7 +357,9 @@
           identifier: doc.identifier,
           title: doc.title,
           shortTitle,
-          author: doc.creator,
+          author: Array.isArray(doc.creator)
+            ? (doc.creator.length <= 4 ? doc.creator.join(', ') : 'VV.AA.')
+            : doc.creator,
           year: doc.year || (new Date(doc.date).getFullYear() || 's.f.'),
           description,
           downloads: doc.downloads,
