@@ -86,7 +86,6 @@
   import { scaleTime } from 'd3-scale'
   import { min, max } from 'd3-array'
   import { timeYear } from 'd3-time'
-import { y } from 'vue-router/dist/router-CWoNjPRp.mjs'
 
   const scaleX = computed(() => {
     const dates = props.lugares.map(l => l.dateFrom).filter(Boolean) as Date[];
