@@ -27,7 +27,8 @@
     "nuxt": "^4.4.2",
     "nuxt-studio": "^1.7.0",
     "tailwindcss": "^4.2.2",
-    "vue": "^3.5.22"
+    "vue": "^3.5.22",
+    "vue-router": "^5.0.0"
   },
   "devDependencies": {
     "@iconify-json/lucide": "^1.2.97",
