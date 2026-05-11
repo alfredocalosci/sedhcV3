@@ -3,16 +3,16 @@ dateFrom: 2015-10-13
 dateTo: 2015-10-17
 descripcion: |
   Los objetivos generales de este Congreso continúan siendo los de anteriores Congresos: promover y difundir los estudios sobre la Historia de la Construcción y contribuir a que este campo de investigación tenga cabida dentro de las disciplinas académicas con pleno reconocimiento universitario. El objetivo particular es incorporar a investigadores americanos hispanohablantes (México, Centro- y Sud-América). El Congreso pretende ser lugar de reunión e intercambio de investigaciones y experiencias, de cara a incorporar este nuevo cuerpo de estudiosos a la disciplina.
-hispano_num: 1
+hispano_num: "1"
 image:
   alt: Segovia 2015
   src: /img/congresos/Cartel_CHAHC_2015.jpg
-internacional_num: 0
+internacional_num: "0"
 lat: 40.9429
 lng: -4.1088
 lugar: Segovia
-nacional_num: 9
+nacional_num: "9"
 sede: Casa de la Moneda de Segovia
 slug: ix-congreso-nacional-i-congreso-internacional-hispanoamericano
 url: http://www.chahc2015.net
-year: 2015
+year: "2015"

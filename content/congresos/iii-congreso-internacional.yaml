@@ -9,15 +9,15 @@ descripcion: |
   Transcending the constraints of traditional cultural and disciplinary boundaries, the Cottbus Congress will be open to contributors associated with all disciplines focussed on and around the worldwide movement of construction history.
 
   The Congress will offer an open forum for presenting the broad field of construction history.
-hispano_num: 0
+hispano_num: "0"
 image:
   alt: Cottbus 2009
   src: /img/congresos/cottbus.jpg
-internacional_num: 3
+internacional_num: "3"
 lat: 51.7563
 lng: 14.3329
 lugar: Cottbus
-nacional_num: 0
+nacional_num: "0"
 slug: iii-congreso-internacional
 url: http://www.ch2009.de
-year: 2009
+year: "2009"

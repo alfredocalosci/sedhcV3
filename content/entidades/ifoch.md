@@ -2,6 +2,7 @@
 title: The International Federation of Construction History
 rank: 1900
 acronym: ifoch
+description: The International Federation of Construction History was created in 2018 to bring together Societies from around the world devoted specifically to the study of Construction History.
 url: https://www.ifoch.org/
 image:
   src: /img/entidades/ifoch.png

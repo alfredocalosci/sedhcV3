@@ -12,16 +12,16 @@ descripcion: |
   Tras el éxito del I Congreso Internacional Hispanoamericano de Historia de la Construcción en Segovia, se convoca un segundo congreso en Donostia-San Sebastián, que se celebrará en la sede de la E.T.S. de Arquitectura (UPV/EHU).
 
   Se trata de proseguir el fructífero intercambio que se produjo y contribuir a la formación y difusión de la disciplina en los países americanos de habla hispana.
-hispano_num: 2
+hispano_num: "2"
 image:
   alt: Donosti 2017
   src: /img/congresos/tarifa.jpg
-internacional_num: 0
+internacional_num: "0"
 lat: 43.3183
 lng: -1.9812
 lugar: Donostia - San Sebastián
-nacional_num: 10
+nacional_num: "10"
 sede: Universidad del País Vasco
 slug: x-congreso-nacional-ii-congreso-internacional-hispanoamericano
 url: http://www.historiaconstruccion.org/2017/donostia.php
-year: 2017
+year: "2017"

@@ -1,11 +1,11 @@
 title: III Congreso Nacional
 dateFrom: 2000-10-26
 dateTo: 2000-10-28
-hispano_num: 0
-internacional_num: 0
+hispano_num: "0"
+internacional_num: "0"
 lat: 37.3891
 lng: -5.9845
 lugar: Sevilla
-nacional_num: 3
+nacional_num: "3"
 slug: iii-congreso-nacional
-year: 2000
+year: "2000"

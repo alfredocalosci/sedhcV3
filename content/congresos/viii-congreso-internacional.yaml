@@ -1,16 +1,16 @@
 title: VIII Congreso Internacional
 dateFrom: 2024-06-24
 dateTo: 2024-06-28
-hispano_num: 0
+hispano_num: "0"
 image:
   alt: Zurich 2024
   src: /img/congresos/zurich.jpg
-internacional_num: 8
+internacional_num: "8"
 lat: 47.3769
 lng: 8.5417
 lugar: Zurich
-nacional_num: 0
+nacional_num: "0"
 sede: ETH Zurich
 slug: viii-congreso-internacional
 url: https://8icch.ethz.ch/
-year: 2024
+year: "2024"
