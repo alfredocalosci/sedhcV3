@@ -30,7 +30,6 @@ export default defineContentConfig({
           exclude: ["**/.*"],
       },
       schema: z.object({
-          id: z.number().int(),
           nombre: z.string(),
           desc: z.string(),
           rank: z.number().int(),

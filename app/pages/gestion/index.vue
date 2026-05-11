@@ -22,7 +22,7 @@
             name="mdi:application-edit-outline"
             class="text-lg  group-hover:text-orange-500 transition-colors duration-300"
           />
-          <p class="text-lg font-semibold ">acceso al gestor de contenidos</p>
+          <p class="text-lg font-semibold ">acceso al gestor de contenidos <span class="text-orange-500 text-sm pl-2">→</span></p>
         </NuxtLink>
         
          <div class="mt-6 mb-12 text-lg">
@@ -35,7 +35,7 @@
             name="mdi:github"
             class="text-lg group-hover:text-orange-500 transition-colors duration-300"
           />
-          <p class="text-lg font-semibold ">GitHub</p>
+          <p class="text-lg font-semibold ">GitHub <span class="text-orange-500 text-sm pl-2">→</span></p>
         </NuxtLink>
 
         <p>El acceso al gestor está reservado a usuarios de <strong>GitHub</strong> expresamente autorizados.</p>

@@ -11,7 +11,7 @@
     <div class="main_content bg-white">
 
       <!-- breadcrumbs -->
-      <div class="flex items-center mb-14 z-5 md:sticky top-0 bg-white py-3">
+      <div class="flex items-center mb-14 z-5 md:sticky top-0 bg-white pb-3 pt-2">
         <p class="font-mono uppercase text-[10px] text-azzurro-500">
           <NuxtLink to="/" class="text-gray-700 hover:text-azzurro-500 transition-colors duration-300">inicio</NuxtLink> /
           <NuxtLink to="/textos" class="text-gray-700 hover:text-azzurro-500 transition-colors duration-300">textos</NuxtLink> /
@@ -20,8 +20,18 @@
 
       <!-- meta -->
       <div v-if="texto" class="flex gap-3 mb-6">
-        <span class="font-mono uppercase text-xs text-white bg-mist-600 px-2 py-1">{{ texto.webpage }}</span>
-        <span class="font-mono uppercase text-xs text-mist-600 border border-mist-600 px-2 py-1">{{ texto.section }}</span>
+        <table class="text-sm text-gray-700 w-full border-t border-gray-200 mb-8">
+         <tbody>
+            <tr class="border-b border-gray-200">
+              <td class="font-mono uppercase text-xs text-gray-500 py-2">página:</td>
+              <td>{{ texto.webpage }}</td>
+            </tr>
+            <tr class="border-b border-gray-200">
+              <td class="font-mono uppercase text-xs text-gray-500 py-2">sección:</td>
+              <td>{{ texto.section }}</td>
+            </tr>
+         </tbody>
+        </table>
       </div>
 
       <!-- content -->
@@ -52,6 +62,7 @@
 </template>
 
 <script lang="ts" setup>
+
   const route = useRoute()
 
   const { data: texto } = await useAsyncData(route.path, () =>

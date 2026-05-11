@@ -29,8 +29,8 @@
       <div class="grid grid-cols-2 md:grid-cols-3 gap-x-7 gap-y-4 text-xs mt-6 border-b border-gray-400 border-dashed pb-6 ml-1">
 
         <div 
-          v-for="(cat,index) in categorias"
-          :key="cat.id" @click="selectSubject(cat.slug)" 
+          v-for="cat in categorias"
+          :key="cat.slug" @click="selectSubject(cat.slug)" 
           class="cursor-pointer"
         >
             <p class="group">

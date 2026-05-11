@@ -1,5 +1,5 @@
-volumen: 5
-year: 2025
+volumen: "5"
+year: "2025"
 url: https://polipapers.upv.es/index.php/HC/issue/view/1255
 image:
   src: /img/revista/cover_issue_1255_es_ES.jpg

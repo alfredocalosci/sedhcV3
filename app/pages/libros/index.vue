@@ -292,7 +292,7 @@
   );
 
   // side text
-   const { data: sideText } = await useAsyncData('libros_lateral', () => {
+  const { data: sideText } = await useAsyncData('libros_lateral', () => {
     return queryCollection('textos')
       .where('webpage', '=', 'libros')
       .where('section', '=', 'lateral')
@@ -458,7 +458,7 @@
   const searchString = ref('');
   const showAs = ref<'list' | 'grid' | 'compact'>('list');
 
-  watch(filteredItems, () => {
+  watch([sortBy, sortOrder, searchString, selectedSubject], () => {
     currentPage.value = 1;
   });
 

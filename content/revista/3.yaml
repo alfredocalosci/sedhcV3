@@ -1,5 +1,5 @@
-volumen: 3
-year: 2023
+volumen: "3"
+year: "2023"
 url: https://polipapers.upv.es/index.php/HC/issue/view/1274
 image:
   src: /img/revista/cover_issue_1274_es_ES.png
