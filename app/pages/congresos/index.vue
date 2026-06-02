@@ -142,6 +142,8 @@
 
 <script lang="ts" setup>
 
+
+
 function formatDayMonth(date: Date | string | undefined): string {
   if (!date) return '';
   const d = typeof date === 'string' ? new Date(date) : date;
@@ -181,7 +183,6 @@ function formatDayMonthYear(date: Date | string | undefined): string {
     }
   }
 
-  
   const { data: congresos } = await useAsyncData('congresos_list', () => {
     return queryCollection('congresos')
       .order('year', 'DESC')
