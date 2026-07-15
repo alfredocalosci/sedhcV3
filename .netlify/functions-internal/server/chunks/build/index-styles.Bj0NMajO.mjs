@@ -1,0 +1,8 @@
+const index_vue_vue_type_style_index_0_scoped_228615a1_lang = '@layer properties{@supports ((-webkit-hyphens:none) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))){[data-v-228615a1],[data-v-228615a1]::backdrop,[data-v-228615a1]:after,[data-v-228615a1]:before{--tw-font-weight:initial}}}.mdtxt_intro[data-v-228615a1] p{margin-top:calc(var(--spacing,.25rem)*6);margin-left:calc(var(--spacing,.25rem)*3);text-indent:calc(var(--spacing,.25rem)*-3);font-size:var(--text-base,1rem);line-height:calc(var(--spacing,.25rem)*6);text-wrap:wrap}@media(min-width:64rem){.mdtxt_intro[data-v-228615a1] p{font-size:var(--text-lg,1.125rem);line-height:calc(var(--spacing,.25rem)*7)}}.mdtxt_intro[data-v-228615a1] p:first-of-type{margin-top:calc(var(--spacing,.25rem)*6);margin-left:calc(var(--spacing,.25rem)*3)}.mdtxt_intro[data-v-228615a1] p:first-of-type:first-letter{float:left;margin-right:calc(var(--spacing,.25rem)*5);margin-left:calc(var(--spacing,.25rem)*-3);font-size:var(--text-7xl,4.5rem);line-height:var(--tw-leading,var(--text-7xl--line-height,1));--tw-font-weight:var(--font-weight-bold,700);font-weight:var(--font-weight-bold,700);color:var(--color-cyan-500,oklch(71.5% .143 215.221));text-transform:uppercase}.mdtxt_side[data-v-228615a1] p{margin-bottom:calc(var(--spacing,.25rem)*4);font-size:var(--text-sm,.875rem);line-height:calc(var(--spacing,.25rem)*5)}@property --tw-font-weight{syntax:"*";inherits:false}';
+
+const indexStyles_Bj0NMajO = [
+  index_vue_vue_type_style_index_0_scoped_228615a1_lang
+];
+
+export { indexStyles_Bj0NMajO as default };
+//# sourceMappingURL=index-styles.Bj0NMajO.mjs.map
