@@ -286,7 +286,7 @@
   const { data: archiveMetadata } = useAsyncData<ArchiveFile | null>(
     'archive-metadata',
     () => selectedItem.value
-      ? $fetch(`https://archive.org/metadata/${selectedItem.value}`)
+      ? $fetch<ArchiveFile, string>(`https://archive.org/metadata/${selectedItem.value}`)
       : Promise.resolve(null),
     { watch: [selectedItem] }
   );
@@ -309,7 +309,7 @@
 
    // all archive results
   const { data: archiveResults, error: archiveError } = await useAsyncData<ArchiveResults>('publications', () =>
-    $fetch('https://archive.org/advancedsearch.php?q=Textos+sobre+Teoría+e+Historia+de+las+Construcciones&fl[]=uploader&rows=200&output=json')
+    $fetch<ArchiveResults, string>('https://archive.org/advancedsearch.php?q=Textos+sobre+Teoría+e+Historia+de+las+Construcciones&fl[]=uploader&rows=200&output=json')
   )
 
   interface ArchiveDoc {
@@ -465,6 +465,14 @@
   onMounted(() => {
     // console.log('Archive items:', archiveResults.value?.response?.docs);
   });
+
+  // ── SEO / meta ─────────────────────────────────────────────────
+  useSeoMeta({
+    title: 'Libros · SEDHC',
+    description: 'Biblioteca digital de Textos sobre Teoría e Historia de las Construcciones, publicados en archive.org por la Sociedad Española de Historia de la Construcción.',
+    ogTitle: 'Libros · SEDHC',
+    ogDescription: 'Biblioteca digital de Textos sobre Teoría e Historia de las Construcciones, publicados en archive.org por la Sociedad Española de Historia de la Construcción.',
+  })
 
 </script>
 

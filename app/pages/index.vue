@@ -132,28 +132,6 @@
       .all()
   });
 
-  // a computed function that returns uniques lugar 
-  /*
-  const uniqueLugares = computed(() => {
-    if (!congresos.value) return [];
-    const lugares = congresos.value.map(c => c.lugar).filter(Boolean);
-    return Array.from(new Set(lugares));
-  });
-
-  // from uniqueLugares, get just lat, lng and slug
-  const lugaresData = computed(() => {
-    return uniqueLugares.value.map(lugar => {
-      const congreso = congresos.value?.find(c => c.lugar === lugar);
-      return {
-        lugar,
-        lat: congreso?.lat,
-        lng: congreso?.lng,
-        year: congreso?.year,
-      }
-    }).filter(l => l.lat && l.lng);
-  });
-  */
-
   const timeLineData = computed(() => {
     if (!congresos.value) return [];
     return congresos.value

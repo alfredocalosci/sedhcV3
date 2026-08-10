@@ -74,6 +74,13 @@
     return queryCollection('noticias').where('slug', '=', route.params.id).first()
   })
 
+  // ── SEO / meta ─────────────────────────────────────────────────
+  useSeoMeta({
+    title: () => noticia.value ? `${noticia.value.title} · SEDHC` : 'Noticias · SEDHC',
+    description: () => noticia.value?.description || 'Noticia publicada por la Sociedad Española de Historia de la Construcción.',
+    ogTitle: () => noticia.value ? `${noticia.value.title} · SEDHC` : 'Noticias · SEDHC',
+    ogDescription: () => noticia.value?.description || 'Noticia publicada por la Sociedad Española de Historia de la Construcción.',
+  })
 
 </script>
 

@@ -46,6 +46,12 @@
     }
     return groups
   })
+
+  // ── SEO / meta ─────────────────────────────────────────────────
+  useHead({
+    title: 'Textos · SEDHC',
+    meta: [{ name: 'robots', content: 'noindex, nofollow' }],
+  })
 </script>
 
 <style>

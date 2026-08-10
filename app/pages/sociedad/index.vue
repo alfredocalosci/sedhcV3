@@ -148,6 +148,14 @@ onMounted(() => {
 onBeforeUnmount(() => {
   if (observer) observer.disconnect();
 });
+
+// ── SEO / meta ─────────────────────────────────────────────────
+useSeoMeta({
+  title: 'La Sociedad · SEDHC',
+  description: 'Finalidades, junta directiva, miembros y estatutos de la Sociedad Española de Historia de la Construcción (SEDHC).',
+  ogTitle: 'La Sociedad · SEDHC',
+  ogDescription: 'Finalidades, junta directiva, miembros y estatutos de la Sociedad Española de Historia de la Construcción (SEDHC).',
+})
 </script>
 
 <style scoped>

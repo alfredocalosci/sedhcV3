@@ -290,8 +290,7 @@
   const { data: archiveMetadata } = useAsyncData<ArchiveFile | null>(
     'archive-metadata',
     () => selectedItem.value
-      // @ts-expect-error excessive stack depth
-      ? $fetch(`https://archive.org/metadata/${selectedItem.value}`)
+      ? $fetch<ArchiveFile, string>(`https://archive.org/metadata/${selectedItem.value}`)
       : Promise.resolve(null),
     { watch: [selectedItem] }
   );
@@ -331,7 +330,7 @@
 
   // all archive results
   const { data: archiveResults, error: archiveError } = await useAsyncData<ArchiveResults>('archive', () =>
-    $fetch('https://archive.org/advancedsearch.php?q=uploader:*sedhc*&fl[]=uploader&rows=200&output=json')
+    $fetch<ArchiveResults, string>('https://archive.org/advancedsearch.php?q=uploader:*sedhc*&fl[]=uploader&rows=200&output=json')
   )
 
   // a computed function for processed archiveResults
@@ -464,6 +463,14 @@
   onMounted(() => {
     // console.log('Archive items:', archiveItems.value)
     // console.log('Top subjects:', topSubjects.value)
+  })
+
+  // ── SEO / meta ─────────────────────────────────────────────────
+  useSeoMeta({
+    title: 'Tratados · SEDHC',
+    description: 'Colección digitalizada de tratados de arquitectura y construcción históricos, disponible en archive.org a través de la Sociedad Española de Historia de la Construcción.',
+    ogTitle: 'Tratados · SEDHC',
+    ogDescription: 'Colección digitalizada de tratados de arquitectura y construcción históricos, disponible en archive.org a través de la Sociedad Española de Historia de la Construcción.',
   })
 
 </script>

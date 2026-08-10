@@ -40,6 +40,14 @@
       .order('rank', 'ASC')
       .all()
   });
+
+  // ── SEO / meta ─────────────────────────────────────────────────
+  useSeoMeta({
+    title: 'Entidades · SEDHC',
+    description: 'Sociedades y entidades colaboradoras de la Sociedad Española de Historia de la Construcción.',
+    ogTitle: 'Entidades · SEDHC',
+    ogDescription: 'Sociedades y entidades colaboradoras de la Sociedad Española de Historia de la Construcción.',
+  })
 </script>
 
 <style>

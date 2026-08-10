@@ -52,6 +52,12 @@
 
 <script lang="ts" setup>
   const siteUrl = useRuntimeConfig().public.siteUrl
+
+  // ── SEO / meta ─────────────────────────────────────────────────
+  useHead({
+    title: 'Gestión de contenidos · SEDHC',
+    meta: [{ name: 'robots', content: 'noindex, nofollow' }],
+  })
 </script>
 
 <style>

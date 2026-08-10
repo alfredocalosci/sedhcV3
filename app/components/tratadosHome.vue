@@ -39,7 +39,7 @@
   }
 
   const { data: archiveResults } = await useAsyncData<ArchiveResults>('archive-random', () =>
-    $fetch('https://archive.org/advancedsearch.php?q=uploader:*sedhc*&fl[]=identifier&fl[]=title&fl[]=creator&fl[]=date&fl[]=description&fl[]=downloads&rows=24&page=1&output=json')
+    $fetch<ArchiveResults, string>('https://archive.org/advancedsearch.php?q=uploader:*sedhc*&fl[]=identifier&fl[]=title&fl[]=creator&fl[]=date&fl[]=description&fl[]=downloads&rows=24&page=1&output=json')
   );
 
   const allItems = computed(() => {

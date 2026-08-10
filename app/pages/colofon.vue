@@ -67,7 +67,12 @@
 </template>
 
 <script lang="ts" setup>
-
+  useSeoMeta({
+    title: 'Colofón · SEDHC',
+    description: 'Créditos, tecnologías y colaboradores del sitio web de la Sociedad Española de Historia de la Construcción.',
+    ogTitle: 'Colofón · SEDHC',
+    ogDescription: 'Créditos, tecnologías y colaboradores del sitio web de la Sociedad Española de Historia de la Construcción.',
+  })
 </script>
 
 <style scoped>

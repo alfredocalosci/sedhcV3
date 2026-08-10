@@ -231,6 +231,14 @@ function formatDayMonthYear(date: Date | string | undefined): string {
     // console.log('congresos', congresos.value)
   })
 
+  // ── SEO / meta ─────────────────────────────────────────────────
+  useSeoMeta({
+    title: 'Congresos · SEDHC',
+    description: 'Congresos Nacionales e Internacionales de Historia de la Construcción: ediciones, sedes, fechas y actas publicadas por la SEDHC.',
+    ogTitle: 'Congresos · SEDHC',
+    ogDescription: 'Congresos Nacionales e Internacionales de Historia de la Construcción: ediciones, sedes, fechas y actas publicadas por la SEDHC.',
+  })
+
 </script>
 
 <style scoped>

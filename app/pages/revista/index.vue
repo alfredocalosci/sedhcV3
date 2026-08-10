@@ -102,12 +102,20 @@
 
 
   onMounted(() => {
-    
+
   });
 
   onBeforeUnmount(() => {
-    
+
   });
+
+  // ── SEO / meta ─────────────────────────────────────────────────
+  useSeoMeta({
+    title: 'Revista · SEDHC',
+    description: 'Revista científica de la Sociedad Española de Historia de la Construcción: volúmenes publicados y equipo de redacción.',
+    ogTitle: 'Revista · SEDHC',
+    ogDescription: 'Revista científica de la Sociedad Española de Historia de la Construcción: volúmenes publicados y equipo de redacción.',
+  })
 </script>
 
 <style scoped>

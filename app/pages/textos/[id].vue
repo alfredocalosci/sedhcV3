@@ -81,6 +81,12 @@
     }
     return groups
   })
+
+  // ── SEO / meta ─────────────────────────────────────────────────
+  useHead({
+    title: () => texto.value ? `${texto.value.webpage} / ${texto.value.section} · SEDHC` : 'Textos · SEDHC',
+    meta: [{ name: 'robots', content: 'noindex, nofollow' }],
+  })
 </script>
 
 <style scoped>

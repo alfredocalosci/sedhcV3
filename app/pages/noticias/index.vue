@@ -195,6 +195,14 @@
     // console.log('Categorias:', categorias.value);
   });
 
+  // ── SEO / meta ─────────────────────────────────────────────────
+  useSeoMeta({
+    title: 'Noticias · SEDHC',
+    description: 'Últimas noticias y actualidad de la Sociedad Española de Historia de la Construcción.',
+    ogTitle: 'Noticias · SEDHC',
+    ogDescription: 'Últimas noticias y actualidad de la Sociedad Española de Historia de la Construcción.',
+  })
+
 </script>
 
 <style scoped>

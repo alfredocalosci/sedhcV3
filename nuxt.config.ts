@@ -23,19 +23,27 @@ export default defineNuxtConfig({
   },
 
   app: {
-     baseURL: '/',
-     head: {
-      title: 'SEDHC',
+    baseURL: '/',
+    head: {
+      title: 'SEDHC - Sociedad Española de Historia de la Construcción',
       htmlAttrs: { lang: 'es' },
-       link: [
+      link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
       ],
       meta: [
-        { name: 'description', content: 'SEDHC - Sociedad Española de Historia de la Construcción' },    
+        { name: 'description', content: 'La SEDHC se propone facilitar los contactos entre las personas que se interesen por este ámbito del conocimiento en España, tanto desde el punto de vista académico como profesional, o, simplemente como resultado de un interés personal' },
         { name: 'keywords', content: 'SEDHC, historia, construcción, España, congresos, revista' },
+        // Open Graph / Twitter fallbacks — overridden per-page via useSeoMeta()
+        { property: 'og:title', content: 'SEDHC - Sociedad Española de Historia de la Construcción' },
+        { property: 'og:description', content: 'La SEDHC se propone facilitar los contactos entre las personas que se interesen por este ámbito del conocimiento en España, tanto desde el punto de vista académico como profesional, o, simplemente como resultado de un interés personal' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:image', content: 'https://sedhc.es/sedhc_og_image.jpg' },
+        { property: 'og:locale', content: 'es_ES' },
+        { property: 'og:site_name', content: 'SEDHC - Sociedad Española de Historia de la Construcción' },
+        { name: 'twitter:card', content: 'summary_large_image' },
       ],
     },
   },

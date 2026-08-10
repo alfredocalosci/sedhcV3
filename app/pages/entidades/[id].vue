@@ -78,6 +78,18 @@
   const { data: entidades } = await useAsyncData('entidades_list', () =>
     queryCollection('entidades').order('rank', 'ASC').all()
   )
+
+  // ── SEO / meta ─────────────────────────────────────────────────
+  useSeoMeta({
+    title: () => entidad.value ? `${entidad.value.title} · SEDHC` : 'Entidades · SEDHC',
+    description: () => entidad.value
+      ? `Información sobre ${entidad.value.title}, entidad colaboradora de la Sociedad Española de Historia de la Construcción.`
+      : 'Sociedades y entidades colaboradoras de la Sociedad Española de Historia de la Construcción.',
+    ogTitle: () => entidad.value ? `${entidad.value.title} · SEDHC` : 'Entidades · SEDHC',
+    ogDescription: () => entidad.value
+      ? `Información sobre ${entidad.value.title}, entidad colaboradora de la Sociedad Española de Historia de la Construcción.`
+      : 'Sociedades y entidades colaboradoras de la Sociedad Española de Historia de la Construcción.',
+  })
 </script>
 
 <style scoped>
