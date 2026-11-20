@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Logo.jpg
   alt: Jornadas Albañilería frente a Cantería
-slug: jornadas-albanileria-frente-a-canteria
 ---
 
 Valencia, 23-24 de marzo de 2012

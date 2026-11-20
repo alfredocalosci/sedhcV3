@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Sin ti__tulo-1.jpg
   alt: Nexus 2016 - Relationships Between Architecture and Mathematics
-slug: nexus-2016-relationships-between-architecture-and-mathematics
 url: http://www.nexusjournal.com
 ---
 

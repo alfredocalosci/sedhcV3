@@ -9,7 +9,6 @@ featured: false
 image:
   src: /img/noticias/7. VII Congreso Nacional HC_Vol I_reducido.jpg
   alt: Actas del Séptimo Congreso Nacional de Historia de la Construcción - Santiago de Compostela, 26-29 octubre de 2011
-slug: actas-del-septimo-congreso-nacional-de-historia-de-la-construccion
 ---
 
 2 Volúmenes, 1507 páginas (16,5 x 23,7 cm)

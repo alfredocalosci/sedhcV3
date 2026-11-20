@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/SYNTAGMA.jpg
   alt: 6th International Congress -Science and Technology for the Safeguard of Cultural Heritage in the Mediterranean Basin- Athens, Greece 22nd-25th October 2013
-slug: 6th-international-congress-science-and-technology-for-the-safeguard-of-cultural-heritage
 url: http://www.athenscongress.com
 ---
 

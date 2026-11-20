@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/The art of vaulting.jpg
   alt: "Libro: The Art of Vaulting"
-slug: libro-the-art-of-vaulting
 url: https://www.b-tu.de/en/news/article/13189-international-symposium-the-art-of-vaulting-design-a
 ---
 

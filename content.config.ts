@@ -24,7 +24,6 @@ export default defineContentConfig({
         },
         schema: z.object({
           title: z.string(),
-          slug: z.string(),
           description: z.string().optional(),
           date: z.date(),
           category: z.array(z.enum(TEMAS)),

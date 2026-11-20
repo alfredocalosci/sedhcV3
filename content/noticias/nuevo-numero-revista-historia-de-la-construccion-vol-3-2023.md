@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Captura de pantalla 2023-12-29 a las 23.56.33.png
   alt: Nuevo Numero Revista Historia de la Construcción (vol.3 - 2023)
-slug: nuevo-numero-revista-historia-de-la-construccion-vol-3-2023
 url: https://polipapers.upv.es/index.php/HC/issue/view/1274
 ---
 

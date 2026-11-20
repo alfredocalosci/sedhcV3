@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/colecao_suportes_patrimonio.jpg
   alt: Soportes del Patrimonio - Colección 2 - Piedra (2023)
-slug: soportes-del-patrimonio-coleccion-2-piedra-2023
 url: https://suportes.weebly.com/chamada-para-textos.html
 ---
 

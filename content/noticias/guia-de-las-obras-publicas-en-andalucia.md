@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/20120517_9788438004555.jpg
   alt: GUIA DE LAS OBRAS PÚBLICAS EN ANDALUCIA
-slug: guia-de-las-obras-publicas-en-andalucia
 ---
 
 A la introducción y una síntesis histórica y listado de obras le sigue la descripción, provincia por provincia, de las obras públicas destacables de cada una de ellas, sean costeras, hidráulicas, de carretera o de ferrocarril, más un apartado final de "varios" para las que no encajen en ninguna categoría anterior. Se incluyen (y diferencian con una marca) obras desaparecidas y también obras no ejecutadas. La obra concluye con un capítulo dedicado a ingenieros andaluces, aparte la bibliografía e índice alfabético.

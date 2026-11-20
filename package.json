@@ -25,7 +25,7 @@
     "d3-time": "^3.1.0",
     "embla-carousel-vue": "^8.6.0",
     "nuxt": "^4.4.8",
-    "nuxt-studio": "^1.7.0",
+    "nuxt-studio": "^1.8.2",
     "tailwindcss": "^4.2.2",
     "vue": "^3.5.22",
     "vue-router": "^5.0.0"

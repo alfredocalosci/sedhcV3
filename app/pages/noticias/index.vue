@@ -84,8 +84,8 @@
       <!-- noticias -->
       <div class="mt-8 max-w-5/6">
         <!-- destacadas-->
-        <div v-for="noticia in noticiasDestacadas" :key="noticia.slug" class="mb-4  pb-4">
-          <NuxtLink :to="`/noticias/${noticia.slug}`" class="group">
+        <div v-for="noticia in noticiasDestacadas" :key="noticia.path" class="mb-4  pb-4">
+          <NuxtLink :to="noticia.path" class="group">
               <p class="text-sm italic text-gray-500">
                 {{ formatSpanishDate(noticia.date) }}
               </p>
@@ -102,8 +102,8 @@
 
           <h4 class="text-xs font-mono w-full border-b border-dashed border-gray-300 text-gray-500 pb-2 text-right mb-6 ">{{ year }}</h4>
 
-          <div v-for="noticia in noticiasCompactasByYears[year]" :key="noticia.slug" class="mb-3 pb-3">
-            <NuxtLink :to="`/noticias/${noticia.slug}`" class="group">
+          <div v-for="noticia in noticiasCompactasByYears[year]" :key="noticia.path" class="mb-3 pb-3">
+            <NuxtLink :to="noticia.path" class="group">
               <p class="text-xs italic text-gray-500">
                 {{ formatSpanishDate(noticia.date) }}
               </p>
@@ -128,7 +128,7 @@
 
   const { data: noticias } = await useAsyncData('noticias_list', () => {
     return queryCollection('noticias')
-      .select('path', 'title', 'slug', 'description', 'date', 'category')
+      .select('path', 'title', 'description', 'date', 'category')
       .order('date', 'DESC')
       .all()
   });

@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/1.jpeg
   alt: Construction History Society - First National Conference 11-12th April 2014 - Cambridge
-slug: construction-history-society-first-national-conference
 url: http://www.arct.cam.ac.uk/events/construction-history-society-first-national-conference-11-12th-april-2014
 ---
 

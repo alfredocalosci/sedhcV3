@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Cartel en 1 WEB. Conferencia 4_21 mar 2012.jpg
   alt: Conferencia - Ejemplos de toma de decisiones en el proyecto de estructuras
-slug: conferencia-ejemplos-de-toma-decisiones-en-el-proyecto-de-estructuras
 url: http://www.masterestructuras.org
 ---
 

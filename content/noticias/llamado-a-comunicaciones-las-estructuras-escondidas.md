@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/367386091_10227717186210514_5993391111885825342_n.jpg
   alt: Llamado a comunicaciones - Las estructuras escondidas
-slug: llamado-a-comunicaciones-las-estructuras-escondidas
 url: http://constructionhistorygroup.polito.it/
 ---
 

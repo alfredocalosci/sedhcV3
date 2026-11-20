@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/CHSA.jpg
   alt: Construction History Society of America Conference at MIT
-slug: construction-history-society-of-america-conference-at-mit
 url: http://www.constructionhistorysociety.org/images/CHSA%20meeting%20at%20MIT%20Nov2012.pdf
 ---
 

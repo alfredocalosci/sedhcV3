@@ -8,7 +8,6 @@ featured: true
 image:
   src: /img/noticias/v_congreso_poster.png
   alt: V Congreso Internacional Hispano-Americano y XIII Congreso Nacional de Historia de la Construcción
-slug: v-congreso-internacional-hispano-americano-y-xiii-congreso-nacional-de-historia-de-la-construccion
 url: https://bit.ly/CHAHC2024
 ---
 

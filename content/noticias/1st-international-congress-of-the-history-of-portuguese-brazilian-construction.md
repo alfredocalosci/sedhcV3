@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Cartel web_HCLB.jpg
   alt: 1st International Congress of the History of Portuguese-Brazilian construction
-slug: 1st-international-congress-of-the-history-of-portuguese-brazilian-construction
 url: http://historiadaconstrucao.ufes.br/
 ---
 

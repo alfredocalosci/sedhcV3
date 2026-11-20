@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/III Congreso Canteri__a A3(2).png
   alt: "III Congreso Nacional y I Congreso Internacional Arte de la Cantería & Taller práctico de Cantería "
-slug: iii-congreso-nacional-y-i-congreso-internacional-arte-de-la-canteria
 url: https://www.patrimoniomonumentalenpiedra.com/iii-congreso-nacional-taller-de-canter%C3%ADa
 ---
 

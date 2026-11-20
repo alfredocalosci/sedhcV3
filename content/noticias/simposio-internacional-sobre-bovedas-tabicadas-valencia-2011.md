@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/bovedas.png
   alt: Simposio Internacional sobre Bóvedas Tabicadas - Valencia 2011
-slug: simposio-internacional-sobre-bovedas-tabicadas-valencia-2011
 url: http://bovedastabicadas.upv.es/
 ---
 

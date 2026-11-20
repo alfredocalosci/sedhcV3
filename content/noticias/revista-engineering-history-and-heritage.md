@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/ScreenHunter 1562.png
   alt: Revista Engineering History and Heritage
-slug: revista-engineering-history-and-heritage
 url: https://www.icevirtuallibrary.com/toc/jenhh/current
 ---
 

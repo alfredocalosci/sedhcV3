@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Captura de pantalla 2017-05-18 a la(s) 21.31.24.png
   alt: JORNADAS TÉCNICAS SOBRE HISTORIA DE LA CONSTRUCCIÓN MEDIEVAL
-slug: jornadas-tecnicas-sobre-historia-de-la-construccion-medieval
 url: https://www.fundacioncastillodelaestrella.org
 ---
 

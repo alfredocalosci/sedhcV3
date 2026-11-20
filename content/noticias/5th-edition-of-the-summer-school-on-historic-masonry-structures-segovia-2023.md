@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/poster 2023 edition_page-0001.jpg
   alt: 5th Edition of the Summer School on Historic Masonry Structures (Segovia, 2023)
-slug: 5th-edition-of-the-summer-school-on-historic-masonry-structures-segovia-2023
 url: https://www.himass.org/
 ---
 

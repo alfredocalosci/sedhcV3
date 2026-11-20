@@ -9,7 +9,6 @@ featured: false
 image:
   src: /img/noticias/portada.jpg
   alt: DEUXIEME CONGRES FRANCOPHONE D'HISTOIRE DE LA CONSTRUCTION À Lyon les 29, 30 et 31 janvier 2014.
-slug: deuxieme-congres-francophone-dhistoire-de-la-construction
 url: http://2cfhc.sciencesconf.org/
 ---
 

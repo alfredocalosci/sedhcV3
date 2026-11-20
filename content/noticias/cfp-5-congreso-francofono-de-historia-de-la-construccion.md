@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/GIJwQX2X0AAm4dT.jpg
   alt: CfP - 5º Congreso francófono de Historia de la Construcción (Toulouse, junio 2025)
-slug: cfp-5-congreso-francofono-de-historia-de-la-construccion
 url: https://5cfhc.sciencesconf.org/
 ---
 

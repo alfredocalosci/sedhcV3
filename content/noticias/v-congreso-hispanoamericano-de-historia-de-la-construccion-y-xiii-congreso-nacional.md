@@ -8,7 +8,6 @@ featured: true
 image:
   src: /img/noticias/CHAHC_2024_poster.jpg
   alt: Llamada para el V Congreso Hispanoamericano de Historia de la Construcción y XIII Congreso Nacional (Santo Domingo, Rep. Dominicana, 2024)
-slug: v-congreso-hispanoamericano-de-historia-de-la-construccion-y-xiii-congreso-nacional
 url: https://forms.gle/ud3V6ccabrD46VLs9
 ---
 

@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Triptico.jpg
   alt: LA CATEDRAL DE SALAMANCA EN SU V CENTENARIO 1513 -2013 - Homenaje a Antonio Ruiz Hernando
-slug: la-catedral-de-salamanca-en-su-v-centenario-1513-2013
 url: http://www.fundacioncst.net
 ---
 

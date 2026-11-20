@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Portada web MAD.jpg
   alt: VIII Congreso Nacional de Historia de la Construcción. Madrid, 9 al 12 de octubre de 2013
-slug: viii-congreso-nacional-de-historia-de-la-construccion-madrid
 url: http://cnhc2013.net/
 ---
 

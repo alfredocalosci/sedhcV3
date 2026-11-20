@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/IMG_7886 copia.jpg
   alt: Actas del Noveno Congreso Nacional y Primero Internacional Hispanoamericano de  Historia de la Construcción, Segovia 13-17 de octubre de 2015
-slug: actas-del-noveno-congreso-nacional-y-primero-internacional-hispanoamericano-de-historia-de-la-construccion
 url: https://librosjuandeherrera.wordpress.com/
 ---
 

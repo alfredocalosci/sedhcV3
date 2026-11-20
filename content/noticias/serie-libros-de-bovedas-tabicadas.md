@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Libros tabicadas_web.jpg
   alt: Serie libros de bóvedas tabicadas
-slug: serie-libros-de-bovedas-tabicadas
 url: http://www.udg.edu/eps/Noticies/Arxiudenoticies/tabid/2436/p/23834/language/ca-ES/Default.aspx
 ---
 

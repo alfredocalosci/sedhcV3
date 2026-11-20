@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/610ITzqyrqL._AC_UF1000,1000_QL80_.jpg
   alt: "Llamado para el envío de contribuciones: Revista Aedificare (Sociedad francesa de Historia de la Construcción)"
-slug: envio-de-contribuciones-revista-aedificare
 url: https://sharedocs.huma-num.fr/wl/?id=GFQzSXUfGI4vA3EDMvTG7FsYWFZ5XvCG
 ---
 

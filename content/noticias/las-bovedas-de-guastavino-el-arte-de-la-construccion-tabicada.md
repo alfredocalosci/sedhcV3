@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/guastavino.png
   alt: Las Bóvedas de Guastavino - El Arte de la construcción tabicada
-slug: las-bovedas-de-guastavino-el-arte-de-la-construccion-tabicada
 ---
 
 El Máster de Estructuras se complace en invitarle a la presentación del libro y conferencia:

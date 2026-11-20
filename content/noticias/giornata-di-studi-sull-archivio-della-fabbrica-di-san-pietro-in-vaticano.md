@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/sanPietro.png
   alt: Giornata di Studi sull'Archivio della Fabbrica di San Pietro in Vaticano
-slug: giornata-di-studi-sull-archivio-della-fabbrica-di-san-pietro-in-vaticano
 ---
 
 Inoltro con piacere il programma della Giornata di Studi sull'Archivio della Fabbrica di San Pietro in Vaticano che si terrá a Roma il prossimo 8 aprile.

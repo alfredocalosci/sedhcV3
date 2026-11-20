@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Captura de pantalla 2015-02-06 a la(s) 01.29.28.png
   alt: Catálogo con las publicaciones del Instituto Juan de Herrera
-slug: catalogo-con-las-publicaciones-del-instituto-juan-de-herrera
 url: http://librosjuandeherrera.wordpress.com/
 ---
 

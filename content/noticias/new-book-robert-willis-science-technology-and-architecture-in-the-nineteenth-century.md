@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Portada web_1.jpg
   alt: New book - Robert Willis - Science, Technology and Architecture in the Nineteenth Century
-slug: new-book-robert-willis-science-technology-and-architecture-in-the-nineteenth-century
 url: https://librosjuandeherrera.wordpress.com
 ---
 

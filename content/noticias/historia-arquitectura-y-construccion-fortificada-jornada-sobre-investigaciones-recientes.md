@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Cartel web_1.jpg
   alt: Historia, Arquitectura y Construcción Fortificada
-slug: historia-arquitectura-y-construccion-fortificada-jornada-sobre-investigaciones-recientes
 url: http://construccion-fortificada.blogspot.com.es/
 ---
 

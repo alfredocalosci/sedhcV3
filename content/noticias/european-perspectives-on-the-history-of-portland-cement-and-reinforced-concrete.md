@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/71mMEhWXzUL._AC_UF1000,1000_QL80_.jpg
   alt: "Nueva publicación: European Perspectives on the History of Portland Cement and Reinforced Concrete, 19th and 20th Centuries (Editado por João Mascarenhas-Mateus. Brill, 2023)"
-slug: european-perspectives-on-the-history-of-portland-cement-and-reinforced-concrete
 url: https://www.taylorfrancis.com/books/oa-edit/10.1201/9781003368656/changing-cultures-jo%C3%A3o-mascarenhas-mateus
 ---
 

@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/4ICCH.jpg
   alt: 4th International Congress on Construction History
-slug: 4th-international-congress-on-construction-history
 url: http://www.icch-paris2012.fr/
 ---
 

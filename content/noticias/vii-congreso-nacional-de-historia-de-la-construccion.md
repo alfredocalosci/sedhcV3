@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/7CNHC_2011.png
   alt: VII Congreso Nacional de Historia de la Construcción
-slug: vii-congreso-nacional-de-historia-de-la-construccion
 url: http://www.cnhc2011.net/
 ---
 

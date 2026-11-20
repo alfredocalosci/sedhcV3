@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Cartel Final Evento.png
   alt: Construir en Piedra hoy. Legado histórico, para un futuro sostenible
-slug: construir-en-piedra-hoy-legado-histórico-para-un-futuro-sostenible
 url: https://rosalstones.com/
 ---
 

@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/tapia_2011.png
   alt: Restapia 2012
-slug: restapia-2012
 url: http://www.restapia2012.es/
 ---
 

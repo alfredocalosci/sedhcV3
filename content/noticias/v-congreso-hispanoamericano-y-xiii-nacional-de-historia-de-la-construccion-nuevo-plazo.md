@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/v_congreso_poster.png
   alt: V Congreso Hispanoamericano y XIII nacional de Historia de la Construcción (NUEVO PLAZO)
-slug: v-congreso-hispanoamericano-y-xiii-nacional-de-historia-de-la-construccion-nuevo-plazo
 url: http://historiaconstruccion.org/2024/
 ---
 

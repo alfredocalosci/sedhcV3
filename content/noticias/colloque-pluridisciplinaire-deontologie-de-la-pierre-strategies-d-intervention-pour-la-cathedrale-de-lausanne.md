@@ -9,7 +9,6 @@ featured: false
 image:
   src: /img/noticias/2web.jpg
   alt: "Colloque pluridisciplinaire: Déontologie de la pierre, stratégies d'intervention pour la cathédrale de Lausanne."
-slug: colloque-pluridisciplinaire-deontologie-de-la-pierre-strategies-d-intervention-pour-la-cathedrale-de-lausanne
 url: http://www.patrimoine.vd.ch/no_cache/monuments-et-sites/eglises/cathedrale-de-lausanne/manifestations/actualites/actualite-suite/article/cathedrale-colloque-pluridisciplinaire-14-15-juin-2012/
 ---
 

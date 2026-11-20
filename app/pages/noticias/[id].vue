@@ -71,7 +71,7 @@
   const route = useRoute()
 
   const { data: noticia } = await useAsyncData(route.path, () => {
-    return queryCollection('noticias').where('slug', '=', route.params.id).first()
+    return queryCollection('noticias').path(route.path).first()
   })
 
   // ── SEO / meta ─────────────────────────────────────────────────

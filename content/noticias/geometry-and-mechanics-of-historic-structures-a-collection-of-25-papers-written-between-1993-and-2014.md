@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Portada web2_1.jpg
   alt: Geometry and Mechanics of Historic Structures, a collection of 25 papers written between 1993 and 2014
-slug: geometry-and-mechanics-of-historic-structures-a-collection-of-25-papers-written-between-1993-and-2014
 url: https://librosjuandeherrera.wordpress.com/category/sin-categoria/
 ---
 

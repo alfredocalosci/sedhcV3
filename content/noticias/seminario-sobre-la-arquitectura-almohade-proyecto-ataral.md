@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Invitacio__n Seminario Atlas Arquitectura Almohade.jpg
   alt: Seminario sobre la Arquitectura Almohade (Proyecto ATARAL)
-slug: seminario-sobre-la-arquitectura-almohade-proyecto-ataral
 url: https://www.realacademiabellasartessanfernando.com/actividades/conferencias/seminario-sobre-arquitectura-almohade/
 ---
 

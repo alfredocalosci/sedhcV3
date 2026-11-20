@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/IMG_4982.jpg
   alt: Novedades de Santiago Huerta, presidente de la SEDHC
-slug: novedades-de-santiago-huerta-presidente-de-la-sedhc
 url: https://www.patrimoniomonumentalenpiedra.com/iii-congreso-nacional-taller-de-canter%C3%ADa
 ---
 

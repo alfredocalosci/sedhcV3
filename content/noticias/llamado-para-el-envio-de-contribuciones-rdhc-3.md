@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/V CONGRESO HISPANOAMERICANO DE HISTORIA DE LA CONSTRUCCION XIII CONGRESO NACIONAL DE HISTORIA DE LA CONSTRUCCION.png
   alt: Llamado para el envío de contribuciones (RdHC 3)
-slug: llamado-para-el-envio-de-contribuciones-rdhc-3
 url: http://polipapers.upv.es/index.php/HC/about/submissions
 ---
 

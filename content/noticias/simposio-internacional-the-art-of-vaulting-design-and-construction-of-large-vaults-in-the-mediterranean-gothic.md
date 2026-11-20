@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/IntSymposium_vaults_BTU2017_poster_Red.jpg
   alt: Simposio Internacional
-slug: simposio-internacional-the-art-of-vaulting-design-and-construction-of-large-vaults-in-the-mediterranean-gothic
 url: https://www.b-tu.de/dfg-graduiertenkolleg-1913/veranstaltungen/symposien-und-workshops/
 ---
 

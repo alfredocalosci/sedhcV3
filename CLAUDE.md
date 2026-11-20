@@ -79,7 +79,7 @@ All state is local `ref()`/`computed()` per component. `useAsyncData` handles se
 
 ### Nuxt Studio (CMS)
 
-The site uses [nuxt-studio](https://nuxt.studio) (`nuxt-studio@1.7.0`) as a self-hosted visual CMS for editing `@nuxt/content` collections.
+The site uses [nuxt-studio](https://nuxt.studio) (`nuxt-studio@1.8.2`) as a self-hosted visual CMS for editing `@nuxt/content` collections.
 
 - **Editor URL:** `https://sedhc.netlify.app/_studio` (login with GitHub OAuth)
 - **Module:** `nuxt-studio` in [nuxt.config.ts](nuxt.config.ts) — note: `@nuxthq/studio` is the old v2-only module and must not be used

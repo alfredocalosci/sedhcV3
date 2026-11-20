@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Conf. ICE-SHF.jpg
   alt: The Safety of Masonry Buttresses by Santiago Huerta
-slug: the-safety-of-masonry-buttresses-by-santiago-huerta
 url: http://ice.adobeconnect.com/p49vji5494i/
 ---
 

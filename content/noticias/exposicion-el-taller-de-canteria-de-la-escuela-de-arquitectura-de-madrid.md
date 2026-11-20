@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Invitacion_Expo.jpg
   alt: Exposición
-slug: exposicion-el-taller-de-canteria-de-la-escuela-de-arquitectura-de-madrid
 url: http://estereotomiadelapiedra.blogspot.com.es/
 ---
 

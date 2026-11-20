@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/IMG_20230610_203924(2).jpg
   alt: Curso de carpintería de lazo esférica
-slug: curso-de-carpinteria-de-lazo-esferica
 url: https://www.facebook.com/angelmaria.martinlopez
 ---
 

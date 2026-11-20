@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Captura de pantalla 2023-08-24 a las 18.18.19.png
   alt: "Nueva publicación: “Edoardo Benvenuto Prize. Collection of Papers” (G)."
-slug: nueva-publicacion-edoardo-benvenuto-prize-collection-of-papers
 url: https://www.fondazionefranzoni.it/wp-content/uploads/2023/06/StudiaLigustica_16-luglio2023_Edoardo-Benvenuto-Prize.pdf
 ---
 

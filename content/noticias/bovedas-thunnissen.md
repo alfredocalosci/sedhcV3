@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/InvitacionThunnissenWeb.jpg
   alt: BÓVEDAS - Thunnissen
-slug: bovedas-thunnissen
 url: http://etsamadrid.aq.upm.es/sites/default/files/thunnissen_bn.png
 ---
 

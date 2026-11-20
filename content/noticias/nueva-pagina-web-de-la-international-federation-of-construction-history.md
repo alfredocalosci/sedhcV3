@@ -8,7 +8,6 @@ featured: true
 image:
   src: /img/noticias/Captura de pantalla 2024-01-30 a las 9.59.35.png
   alt: "Nueva página web de la International Federation of Construction History "
-slug: nueva-pagina-web-de-la-international-federation-of-construction-history
 url: https://www.ifoch.org/
 ---
 

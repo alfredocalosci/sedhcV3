@@ -37,7 +37,7 @@ watch(
 
  const { data: noticias } = await useAsyncData('noticias_home', () => {
     return queryCollection('noticias')
-      .select('path', 'title', 'slug', 'description', 'date', 'image')
+      .select('path', 'title', 'description', 'date', 'image')
       .where('featured', '=', true)
       .order('date', 'DESC')
       .limit(3)
@@ -84,7 +84,7 @@ watch(
 
               <!-- leer mas -->
               <NuxtLink
-                :to="`/noticias/${noticia.slug}`"
+                :to="noticia.path"
                 class="mt-4 inline-flex justify-end items-center text-rosso-500 hover:underline font-mono text-xs uppercase"
               >
                 Leer más

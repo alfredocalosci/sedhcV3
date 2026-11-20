@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Obra Congrua_web.jpg
   alt: "Libro: Obra Congrua. Estudios sobre la construcción gótica peninsular y europea"
-slug: libro-obra-congrua-estudios-sobre-la-construccion-gotica-peninsular-y-europea
 url: https://librosjuandeherrera.wordpress.com/
 ---
 

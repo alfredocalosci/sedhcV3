@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/hitos.jpg
   alt: Hitos estructurales de la Arquitectura y la Ingeniería
-slug: hitos-estructurales-de-la-arquitectura-y-la-ingenieria
 url: http://issuu.com/geiabse/docs/jornadashitosestructurales
 ---
 

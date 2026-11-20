@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Cartel copia_1.jpg
   alt: 5th INTERNATIONAL CONGRESS ON CONSTRUCTION HISTORY
-slug: 5th-international-congress-on-construction-history
 url: http://5icch.org/
 ---
 

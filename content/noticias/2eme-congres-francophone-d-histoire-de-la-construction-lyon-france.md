@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Deuxi__me Congr__s Francophone.jpg
   alt: 2eme CONGRÈS FRANCOPHONE D'HISTOIRE DE LA CONSTRUCTION - LYON - FRANCE
-slug: 2eme-congres-francophone-d-histoire-de-la-construction-lyon-france
 url: http://2cfhc.sciencesconf.org/
 ---
 

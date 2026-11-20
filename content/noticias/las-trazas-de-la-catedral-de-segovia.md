@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Invitacion.jpg
   alt: LAS TRAZAS DE LA CATEDRAL DE SEGOVIA
-slug: las-trazas-de-la-catedral-de-segovia
 ---
 
 Lección magistral de José Antonio Ruiz Hernando, Catedrático de Historia del Arte y la Arquitectura de la Universidad Politécnica de Madrid.

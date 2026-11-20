@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/24649.jpg
   alt: Llamado para propuestas de ensayos:Race and the Built Environment in the Iberian World, 1400-1800
-slug: race-and-the-built-environment-in-the-iberian-world-1400-1800
 url: https://www.sah.org/about-sah/news/news-detail/2023/04/03/call-for-proposals-jsah-roundtable---race-and-the-built-environment-in-the-iberian-world-1400-1800
 ---
 

@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/1217-651-PB-1_page-0001(1).jpg
   alt: Nuevo Numero Revista  Historia de la Construcción
-slug: nuevo-numero-revista-historia-de-la-construccion-vol-2-2022
 url: https://polipapers.upv.es/index.php/HC/issue/view/1217
 ---
 

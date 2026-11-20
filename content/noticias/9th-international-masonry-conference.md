@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/2F-9IMC-1.jpg
   alt: 9th International Masonry Conference
-slug: 9th-international-masonry-conference
 url: http://www.9imc.civil.uminho.pt/
 ---
 

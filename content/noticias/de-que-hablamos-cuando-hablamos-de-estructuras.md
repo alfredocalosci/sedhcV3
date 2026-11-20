@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Portada libro web.jpg
   alt: De qué hablamos cuando hablamos de estructuras
-slug: de-que-hablamos-cuando-hablamos-de-estructuras
 url: https://librosjuandeherrera.wordpress.com/
 ---
 

@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/nervialmaxxxi.png
   alt: Nervi Exhibition at the MAXXI
-slug: nervi-exhibition-at-the-maxxi
 url: http://www.fondazionemaxxi.it/
 ---
 

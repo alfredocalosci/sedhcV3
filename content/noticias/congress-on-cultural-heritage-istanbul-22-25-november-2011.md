@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/istambul_2011.png
   alt: Congress on Cultural Heritage, Istanbul 22-25 November 2011
-slug: congress-on-cultural-heritage-istanbul-22-25-november-2011
 url: http://www.istanbulcongress2011.com/
 ---
 

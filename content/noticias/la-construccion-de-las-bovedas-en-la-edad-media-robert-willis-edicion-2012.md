@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/2012-11-22 Willis_.jpg
   alt: La construcción de las bóvedas en la Edad Media - Robert  Willis (Edición 2012)
-slug: la-construccion-de-las-bovedas-en-la-edad-media-robert-willis-edicion-2012
 url: http://www.facebook.com/instituto.juandeherrera
 ---
 

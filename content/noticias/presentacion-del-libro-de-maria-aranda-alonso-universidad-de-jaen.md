@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/CARTEL_MAA_VANDELVIRA.jpg
   alt: Presentación del libro de María Aranda Alonso (Universidad de Jaén)
-slug: presentacion-del-libro-de-maria-aranda-alonso-universidad-de-jaen
 url: https://editorial.ujaen.es/libro/el-libro-de-tracas-de-cortes-de-piedras-de-alonso-de-vandelvira_145887/
 ---
 

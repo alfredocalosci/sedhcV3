@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/358537172_306614635354246_8436703187599995094_n.jpg
   alt: Nueva publicación del Seminario de Historia de la Construcción (México)
-slug: nueva-publicacion-del-seminario-de-historia-de-la-construccion-mexico
 url: https://libros.uv.mx/index.php/UV
 ---
 

@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Portada.jpg
   alt: I CONGRESO INTERNACIONAL TEORÍA Y LITERATURA ARTÍSTICA EN ESPAÑA SIGLOS XVI, XVII Y XVIII
-slug: i-congreso-internacional-teoria-y-literatura-artistica-en-espana-siglos-xvi-xvii-y-xviii
 url: http://www.teoriayliteraturaartistica.es
 ---
 

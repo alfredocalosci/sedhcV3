@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Portada_1.jpg
   alt: Italy in China - International Workshop
-slug: italy-in-china-international-workshop
 url: http://www.biblhertz.it/aktuelles/veranstaltungen/veranstaltungsdetails/?tx_ttnews%5btt_news%5d=541
 ---
 

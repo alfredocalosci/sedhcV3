@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Portada web2.jpg
   alt: "II Conferencia Internacional: Sevilla 1514: Arquitectos tadogóticos en la encrucijada"
-slug: ii-conferencia-internacional-sevilla-1514-arquitectos-tadogoticos-en-la-encrucijada
 url: http://www.tardogotico.es/
 ---
 

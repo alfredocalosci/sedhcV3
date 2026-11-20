@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Call for papers.jpg
   alt: Monumentos al agua - Fábrica, descripción, e imagen de obras hidráulicas en el México Virreinal
-slug: monumentos-al-agua-fabrica-descripcion-e-imagen-de-obras-hidraulicas-en-el-mexico-virreinal
 url: https://sahcommunities.groupsite.com/beta/discussion/topics/553679/messages?page=1
 ---
 

@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Recorte web.jpg
   alt: "III Congreso Internacional del Tardogótico: De la traza a la edificación: la arquitectura de los siglos XV y XVI en Portugal y Europa. 20 al 22 de noviembre de 2017."
-slug: iii-congreso-internacional-del-tardogotico
 url: http://congressotardogotico2017.weebly.com/
 ---
 

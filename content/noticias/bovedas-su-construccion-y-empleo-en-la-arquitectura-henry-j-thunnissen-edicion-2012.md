@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/30-jul-2012 Thunnissen_1.jpg
   alt: "BÓVEDAS: SU CONSTRUCCIÓN Y EMPLEO EN LA ARQUITECTURA - Henry J. Thunnissen (Edición 2012)"
-slug: bovedas-su-construccion-y-empleo-en-la-arquitectura-henry-j-thunnissen-edicion-2012
 url: http://www.facebook.com/instituto.juandeherrera
 ---
 

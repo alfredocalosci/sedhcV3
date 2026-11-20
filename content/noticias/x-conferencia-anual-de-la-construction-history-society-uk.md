@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/IMG_5018.jpg
   alt: "X Conferencia anual de la Construction History Society (UK) "
-slug: x-conferencia-anual-de-la-construction-history-society-uk
 url: https://www.constructionhistory.co.uk/wp-content/uploads/2023/03/Cover.Programme.CHS_.2023.v.3.pdf
 ---
 

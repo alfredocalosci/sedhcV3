@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/Libro homenaje a Ruiz 2__ed.jpg
   alt: "Libro: Segovia, su catedral y su arquitectura. Ensayos en homenaje a José Antonio Ruiz Hernando"
-slug: libro-segovia-su-catedral-y-su-arquitectura-ensayos
 url: https://www.facebook.com/instituto.juandeherrera
 ---
 

@@ -8,7 +8,6 @@ featured: false
 image:
   src: /img/noticias/LOGO-SMHC.jpg
   alt: SMHC
-slug: smhc
 ---
 
 En julio de 2026 se ha fundado la Sociedad Mexicana de Historia de la Construcción, SMHC. 
