@@ -68,10 +68,16 @@ export default defineContentConfig({
               src: z.string().editor({ input: 'media' }),
               alt: z.string()
           }).optional(),
+          // default([]) works around a Nuxt Studio bug (still in 1.8.2):
+          // its change detection only compares keys present in the original
+          // document, so adding `actas` to a congreso without them is not seen
+          // as a change. With a default, the original has [] and the array
+          // length comparison detects the new item. Studio drops empty arrays
+          // when saving, so files stay clean.
           actas: z.array(z.object({
              title: z.string(),
              identifier: z.string()
-          })).optional(),
+          })).default([]),
           nacional_num: z.number().optional(),
           internacional_num: z.number().optional(),
           hispano_num: z.number().optional(),

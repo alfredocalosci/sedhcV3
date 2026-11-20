@@ -28,7 +28,7 @@
 
      <!-- actas on archive org -->
       <div
-        v-if="selectedCongreso?.actas"
+        v-if="selectedCongreso?.actas?.length"
         class="pt-4 border-t border-gray-600"
       >
         <p class="font-mono text-xs mb-4 text-gray-400">actas en archive.org:</p>
@@ -51,7 +51,7 @@
     
     <!-- poster -->
     <div 
-      v-if="selectedCongreso?.image?.src && !selectedCongreso?.actas"
+      v-if="selectedCongreso?.image?.src && !selectedCongreso?.actas?.length"
       class="mt-12 hidden lg:block"
     >
       <img 
@@ -62,7 +62,7 @@
     </div>
 
     <!-- actas thumbnails from archive.org -->
-    <div v-if="selectedCongreso?.actas" class="mt-6 hidden lg:block">
+    <div v-if="selectedCongreso?.actas?.length" class="mt-6 hidden lg:block">
       
       <div class="grid grid-cols-3 gap-4">
         <a 
