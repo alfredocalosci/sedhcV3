@@ -2,6 +2,8 @@ title: XIV Congreso Nacional y VI Congreso Internacional Hispanoamericano
 actas:
   - identifier: natividad-salcedo-calvo-huerta-2026-eds.-actas-del-decimocuarto-congreso-naciona_202604
     title: Volumen 2
+  - identifier: natividad-salcedo-calvo-huerta-2026-eds.-actas-del-decimocuarto-congreso-naciona
+    title: Volumen 1
 dateFrom: 2026-04-08
 dateTo: 2026-04-11
 hispano_num: 6
@@ -9,7 +11,7 @@ image:
   alt: Cartagena 2026
   src: /img/congresos/cartagena.jpg
 internacional_num: 0
-lat: 37.6052
+lat: 37.6053
 lng: -0.9863
 lugar: Cartagena
 nacional_num: 14

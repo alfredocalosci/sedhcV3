@@ -14,7 +14,7 @@ url: https://5cfhc.sciencesconf.org/
 
 Del 18 al 20 de junio de 2025 se celebrará el “Cinquième Congrès francophone d’Histoire de la Construction” en Toulouse, Francia. El evento es organizado por la Université Toulouse Jean-Jaurès y por la École nationale supérieure d’architecture de Toulouse, bajo el patrocinio de la Association francophone de l’histoire de la construction.
 
-Las proposiciones de ponencias serán esperadas hasta el 31 de mayo de 2024. Estas deben contener un el nombre y la pertenencia institucional, un resumen de 300 palabras como máximo, un título y 6 palabras claves elegidas entre las que han sido determinadas por el congreso (ver abajo). La lengua del congreso es el francés. El depósito de la proposiciones deberá hacerse a través de la plataforma sciencesconf.org (ver el link abajo).
+Las proposiciones de ponencias serán esperadas hasta el 31 de mayo de 2024. Estas deben contener un el nombre y la pertenencia institucional, un resumen de 300 palabras como máximo, un título y 6 palabras claves elegidas entre las que han sido determinadas por el congreso (ver abajo). La lengua del congreso es el francés. El depósito de la proposiciones deberá hacerse a través de la Plataforma sciencesconf.org (ver el link abajo).
 
 El congreso contará con 16 áreas temáticas:
 
