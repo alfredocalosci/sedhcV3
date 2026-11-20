@@ -1,12 +1,15 @@
 ---
 title: Congress on Cultural Heritage, Istanbul 22-25 November 2011
-description: La Historia de la Construcción es una disciplina académica que tiene como objetivo aumentar nuestro conocimiento sobre...
-slug: congress-on-cultural-heritage-istanbul-22-25-november-2011
+category:
+  - congresos
 date: 2011-02-14
-image: {"src": "/img/noticias/istambul_2011.png", "alt": "Congress on Cultural Heritage, Istanbul 22-25 November 2011"}
-url: http://www.istanbulcongress2011.com/
+description: La Historia de la Construcción es una disciplina académica que tiene como objetivo aumentar nuestro conocimiento sobre...
 featured: false
-category: ["congresos"]
+image:
+  src: /img/noticias/istambul_2011.png
+  alt: Congress on Cultural Heritage, Istanbul 22-25 November 2011
+slug: congress-on-cultural-heritage-istanbul-22-25-november-2011
+url: http://www.istanbulcongress2011.com/
 ---
 
 La Historia de la Construcción es una disciplina académica que tiene como objetivo aumentar nuestro conocimiento sobre las técnicas constructivas del pasado. Tiene interés per se, como campo de conocimiento. No obstante, tiene un interés fundamental en el campo de la Intervención y la Restauración.

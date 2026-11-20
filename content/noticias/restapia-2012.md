@@ -1,12 +1,15 @@
 ---
 title: Restapia 2012
-description: un congreso internacional sobre la arquitectura de tapia y su restauración
-slug: restapia-2012
+category:
+  - congresos
 date: 2011-11-07
-image: {"src": "/img/noticias/tapia_2011.png", "alt": "Restapia 2012"}
-url: http://www.restapia2012.es/
+description: un congreso internacional sobre la arquitectura de tapia y su restauración
 featured: false
-category: ["congresos"]
+image:
+  src: /img/noticias/tapia_2011.png
+  alt: Restapia 2012
+slug: restapia-2012
+url: http://www.restapia2012.es/
 ---
 
 RESTAPIA 2012 es un congreso internacional sobre la arquitectura de tapia y su restauración y, de forma más general, sobre las técnicas constructivas de tierra y su restauración, que tendrá lugar los días 21, 22 y 23 de Junio 2012, en Valencia.

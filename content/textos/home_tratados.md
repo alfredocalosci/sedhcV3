@@ -1,6 +1,6 @@
 ---
-webpage: home
 section: tratados
+webpage: home
 ---
 
 Los tratados de Arquitectura, Construcción e Ingeniería son una de las fuentes fundamentales para el estudio de la Historia de la Construcción.

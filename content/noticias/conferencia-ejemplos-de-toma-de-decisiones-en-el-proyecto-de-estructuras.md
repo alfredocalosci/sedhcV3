@@ -1,12 +1,15 @@
 ---
 title: Conferencia - Ejemplos de toma de decisiones en el proyecto de estructuras
-description: "Expone - Ricardo Aroca, catedrático emérito de la ETSAM "
-slug: conferencia-ejemplos-de-toma-decisiones-en-el-proyecto-de-estructuras
+category:
+  - conferencias
 date: 2012-03-14
-image: {"src": "/img/noticias/Cartel en 1 WEB. Conferencia 4_21 mar 2012.jpg", "alt": "Conferencia - Ejemplos de toma de decisiones en el proyecto de estructuras"}
-url: http://www.masterestructuras.org
+description: "Expone - Ricardo Aroca, catedrático emérito de la ETSAM "
 featured: false
-category: ['conferencias']
+image:
+  src: /img/noticias/Cartel en 1 WEB. Conferencia 4_21 mar 2012.jpg
+  alt: Conferencia - Ejemplos de toma de decisiones en el proyecto de estructuras
+slug: conferencia-ejemplos-de-toma-decisiones-en-el-proyecto-de-estructuras
+url: http://www.masterestructuras.org
 ---
 
 Expone: Ricardo Aroca, catedrático emérito de la ETSAM

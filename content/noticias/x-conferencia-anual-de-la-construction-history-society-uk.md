@@ -1,12 +1,15 @@
 ---
-title: X Conferencia anual de la Construction History Society (UK) 
-description: 12 y 13 de abril en el Queen's College, Cambridge (UK) 
-slug: x-conferencia-anual-de-la-construction-history-society-uk
+title: X Conferencia anual de la Construction History Society (UK)
+category:
+  - congresos
 date: 2023-03-28
-image: {"src": "/img/noticias/IMG_5018.jpg", "alt": "X Conferencia anual de la Construction History Society (UK) "}
-url: https://www.constructionhistory.co.uk/wp-content/uploads/2023/03/Cover.Programme.CHS_.2023.v.3.pdf
+description: 12 y 13 de abril en el Queen's College, Cambridge (UK)
 featured: false
-category: ["congresos"]
+image:
+  src: /img/noticias/IMG_5018.jpg
+  alt: "X Conferencia anual de la Construction History Society (UK) "
+slug: x-conferencia-anual-de-la-construction-history-society-uk
+url: https://www.constructionhistory.co.uk/wp-content/uploads/2023/03/Cover.Programme.CHS_.2023.v.3.pdf
 ---
 
 Fecha: 12 y 13 de abril 

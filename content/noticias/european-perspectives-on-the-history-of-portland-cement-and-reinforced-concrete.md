@@ -1,12 +1,15 @@
 ---
-title: Nueva publicación - European Perspectives on the History of Portland Cement and Reinforced Concrete, 19th and 20th Centuries 
-description: (Editado por João Mascarenhas-Mateus. Brill, 2023)
-slug: european-perspectives-on-the-history-of-portland-cement-and-reinforced-concrete
+title: Nueva publicación - European Perspectives on the History of Portland Cement and Reinforced Concrete, 19th and 20th Centuries
+category:
+  - publicaciones
 date: 2023-10-04
-image: {"src": "/img/noticias/71mMEhWXzUL._AC_UF1000,1000_QL80_.jpg", "alt": "Nueva publicación: European Perspectives on the History of Portland Cement and Reinforced Concrete, 19th and 20th Centuries (Editado por João Mascarenhas-Mateus. Brill, 2023)"}
-url: https://www.taylorfrancis.com/books/oa-edit/10.1201/9781003368656/changing-cultures-jo%C3%A3o-mascarenhas-mateus
+description: (Editado por João Mascarenhas-Mateus. Brill, 2023)
 featured: false
-category: ['publicaciones']
+image:
+  src: /img/noticias/71mMEhWXzUL._AC_UF1000,1000_QL80_.jpg
+  alt: "Nueva publicación: European Perspectives on the History of Portland Cement and Reinforced Concrete, 19th and 20th Centuries (Editado por João Mascarenhas-Mateus. Brill, 2023)"
+slug: european-perspectives-on-the-history-of-portland-cement-and-reinforced-concrete
+url: https://www.taylorfrancis.com/books/oa-edit/10.1201/9781003368656/changing-cultures-jo%C3%A3o-mascarenhas-mateus
 ---
 
 Resumen: Las prácticas de construcción que empleamos en nuestra vida cotidiana en las sociedades europeas de hoy en día fueron moldeadas por cambios importantes en el pasado, como la introducción y difusión del cemento Portland y el hormigón armado, un desarrollo que constituye un capítulo fundamental en la historia de la construcción en los siglos XIX y XX. Tales cambios fueron impulsados por varias innovaciones en los campos de las matemáticas aplicadas, la química y la física. Involucraron licencias de patentes, optimización de la producción de materiales y maquinaria. Hubo nuevos marcos legislativos, una transferencia específica de conocimientos dentro de una red de actores y la transformación de marcos jerárquicos.

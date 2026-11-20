@@ -1,12 +1,15 @@
 ---
 title: I CONGRESO INTERNACIONAL TEORÍA Y LITERATURA ARTÍSTICA EN ESPAÑA SIGLOS XVI, XVII Y XVIII
-description: DESDE EL ÚLTIMO TERCIO DEL SIGLO PASADO, LA INVESTIGACIÓN SOBRE LA TEORÍA Y LA LITERATURA ARTÍSTICA SE HA CONSOLIDAD...
-slug: i-congreso-internacional-teoria-y-literatura-artistica-en-espana-siglos-xvi-xvii-y-xviii
+category:
+  - congresos
 date: 2013-01-09
-image: {"src": "/img/noticias/Portada.jpg", "alt": "I CONGRESO INTERNACIONAL TEORÍA Y LITERATURA ARTÍSTICA EN ESPAÑA SIGLOS XVI, XVII Y XVIII"}
-url: http://www.teoriayliteraturaartistica.es
+description: DESDE EL ÚLTIMO TERCIO DEL SIGLO PASADO, LA INVESTIGACIÓN SOBRE LA TEORÍA Y LA LITERATURA ARTÍSTICA SE HA CONSOLIDAD...
 featured: false
-category: ['congresos']
+image:
+  src: /img/noticias/Portada.jpg
+  alt: I CONGRESO INTERNACIONAL TEORÍA Y LITERATURA ARTÍSTICA EN ESPAÑA SIGLOS XVI, XVII Y XVIII
+slug: i-congreso-internacional-teoria-y-literatura-artistica-en-espana-siglos-xvi-xvii-y-xviii
+url: http://www.teoriayliteraturaartistica.es
 ---
 
 DESDE EL ÚLTIMO TERCIO DEL SIGLO PASADO, LA INVESTIGACIÓN SOBRE LA TEORÍA Y LA LITERATURA ARTÍSTICA SE HA CONSOLIDADO COMO UN CAMPO INDISCUTIBLE DE ESTUDIO EN EL CONTEXTO DISCIPLINAR DE LA HISTORIA DEL ARTE.

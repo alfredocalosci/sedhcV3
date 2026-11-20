@@ -1,12 +1,16 @@
 ---
 title: Primer coloquio mexicano de Historia de la Construcción
-description: México DF, Palacio de Minería del 29 al 31 de octubre de 2014
-slug: primer-coloquio-mexicano-de-historia-de-la-construccion-mexico-df
+category:
+  - congresos
 date: 2014-03-17
-image: {"src": "/img/noticias/Cartel web.jpg", "alt": "Primer coloquio mexicano de Historia de la Construcción - México DF, Palacio de Minería del 29 al 31 de octubre de 2014"}
-url: http://www.sedhc.es/
+description: México DF, Palacio de Minería del 29 al 31 de octubre de 2014
 featured: false
-category: ["congresos"]
+image:
+  src: /img/noticias/Cartel web.jpg
+  alt: Primer coloquio mexicano de Historia de la Construcción - México DF, Palacio de Minería del 29 al 31 de octubre de 2014
+slug: primer-coloquio-mexicano-de-historia-de-la-construccion-mexico-df
+url: http://www.sedhc.es/
+---
 
 El interés de investigadores especializados en diversas instituciones mexicanas en esta área de investigación es el motivo fundamental para el lanzamiento de esta convocatoria. Con la misma se pretende abordar, con un enfoque multidisciplinar, los aspectos técnicos que han condicionado, incluso determinado, las formas de la arquitectura.
 

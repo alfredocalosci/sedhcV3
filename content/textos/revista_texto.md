@@ -1,6 +1,6 @@
 ---
-webpage: revista
 section: texto
+webpage: revista
 ---
 
 La revista aspira a fomentar el debate entre nuevas y viejas teorías y aportar revisiones generales en el campo de la Historia de la Construcción. Ocasionalmente, se publicarán números monográficos.

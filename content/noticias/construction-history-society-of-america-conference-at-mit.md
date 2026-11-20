@@ -1,12 +1,15 @@
 ---
 title: Construction History Society of America Conference at MIT
-description: The Construction History Society of America (CHSA) will host a two-day meeting at MIT on November 2-3, 2012. The first d...
-slug: construction-history-society-of-america-conference-at-mit
+category:
+  - conferencias
 date: 2012-10-31
-image: {"src": "/img/noticias/CHSA.jpg", "alt": "Construction History Society of America Conference at MIT"}
-url: http://www.constructionhistorysociety.org/images/CHSA%20meeting%20at%20MIT%20Nov2012.pdf
+description: The Construction History Society of America (CHSA) will host a two-day meeting at MIT on November 2-3, 2012. The first d...
 featured: false
-category: ['conferencias']
+image:
+  src: /img/noticias/CHSA.jpg
+  alt: Construction History Society of America Conference at MIT
+slug: construction-history-society-of-america-conference-at-mit
+url: http://www.constructionhistorysociety.org/images/CHSA%20meeting%20at%20MIT%20Nov2012.pdf
 ---
 
 The Construction History Society of America (CHSA) will host a two-day meeting at MIT on **November 2-3**, 2012.  

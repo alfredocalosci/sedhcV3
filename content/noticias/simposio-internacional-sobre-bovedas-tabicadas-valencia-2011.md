@@ -1,12 +1,15 @@
 ---
 title: Simposio Internacional sobre Bóvedas Tabicadas - Valencia 2011
-description: el programa definitivo de las actividades previstas
-slug: simposio-internacional-sobre-bovedas-tabicadas-valencia-2011
+category:
+  - conferencias
 date: 2011-04-04
-image: {"src": "/img/noticias/bovedas.png", "alt": "Simposio Internacional sobre Bóvedas Tabicadas - Valencia 2011"}
-url: http://bovedastabicadas.upv.es/
+description: el programa definitivo de las actividades previstas
 featured: false
-category: ["conferencias"]
+image:
+  src: /img/noticias/bovedas.png
+  alt: Simposio Internacional sobre Bóvedas Tabicadas - Valencia 2011
+slug: simposio-internacional-sobre-bovedas-tabicadas-valencia-2011
+url: http://bovedastabicadas.upv.es/
 ---
 
 Nos complace remitirle el programa definitivo de las actividades previstas dentro del Simposio Internacional sobre Bóvedas Tabicadas. En el mismo podrá consultar su fecha y hora de participación, así como las ponencias del resto de asistentes que participan en la misma sesión.

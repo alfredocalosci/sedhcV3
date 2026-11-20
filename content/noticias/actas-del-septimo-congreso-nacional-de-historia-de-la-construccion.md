@@ -1,12 +1,15 @@
 ---
 title: Actas del Séptimo Congreso Nacional de Historia de la Construcción - Santiago de Compostela, 26-29 octubre de 2011
-description: 2 Volúmenes, 1507 páginas (16,5 x 23,7 cm) 40 euros (tapa blanda). La compra de las actas da derecho a ser miembro de ...
-slug: actas-del-septimo-congreso-nacional-de-historia-de-la-construccion
+category:
+  - congresos
+  - publicaciones
 date: 2012-08-02
-image: {"src": "/img/noticias/7. VII Congreso Nacional HC_Vol I_reducido.jpg", "alt": "Actas del Séptimo Congreso Nacional de Historia de la Construcción - Santiago de Compostela, 26-29 octubre de 2011"}
-url: 
+description: 2 Volúmenes, 1507 páginas (16,5 x 23,7 cm) 40 euros (tapa blanda). La compra de las actas da derecho a ser miembro de ...
 featured: false
-category: ["congresos", "publicaciones"]
+image:
+  src: /img/noticias/7. VII Congreso Nacional HC_Vol I_reducido.jpg
+  alt: Actas del Séptimo Congreso Nacional de Historia de la Construcción - Santiago de Compostela, 26-29 octubre de 2011
+slug: actas-del-septimo-congreso-nacional-de-historia-de-la-construccion
 ---
 
 2 Volúmenes, 1507 páginas (16,5 x 23,7 cm)

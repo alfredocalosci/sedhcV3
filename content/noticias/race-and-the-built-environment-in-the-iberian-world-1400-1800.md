@@ -1,12 +1,15 @@
 ---
-title: "Llamado para propuestas de ensayos: \"Race and the Built Environment in the Iberian World, 1400-1800\""
-description: Laura Fernández-González (University of Lincoln, UK) está dirigiendo la publicación de una serie de ensayos cortos sobre raza y ambiente construido en el mundo ibérico entre 1400 y 1800.
-slug: race-and-the-built-environment-in-the-iberian-world-1400-1800
+title: 'Llamado para propuestas de ensayos: "Race and the Built Environment in the Iberian World, 1400-1800"'
+category:
+  - varios
 date: 2023-04-24
-image: {"src": "/img/noticias/24649.jpg", "alt": "Llamado para propuestas de ensayos:Race and the Built Environment in the Iberian World, 1400-1800"}
-url: https://www.sah.org/about-sah/news/news-detail/2023/04/03/call-for-proposals-jsah-roundtable---race-and-the-built-environment-in-the-iberian-world-1400-1800
+description: Laura Fernández-González (University of Lincoln, UK) está dirigiendo la publicación de una serie de ensayos cortos sobre raza y ambiente construido en el mundo ibérico entre 1400 y 1800.
 featured: false
-category: ["varios"]
+image:
+  src: /img/noticias/24649.jpg
+  alt: Llamado para propuestas de ensayos:Race and the Built Environment in the Iberian World, 1400-1800
+slug: race-and-the-built-environment-in-the-iberian-world-1400-1800
+url: https://www.sah.org/about-sah/news/news-detail/2023/04/03/call-for-proposals-jsah-roundtable---race-and-the-built-environment-in-the-iberian-world-1400-1800
 ---
 
 La profesora Laura Fernández-González (University of Lincoln, UK) está dirigiendo la publicación de una serie de ensayo cortos que serán publicados a modo de mesa redonda en la Journal of Society of Architectural Historians. El tema de la publicación es Raza y Ambiente Construido en el Mundo ibérico entre 1400 y 1800. 

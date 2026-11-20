@@ -1,6 +1,6 @@
 ---
-webpage: congresos
 section: lateral
+webpage: congresos
 ---
 
 Desde 1996, los **Congresos Nacionales** se han sucedido cada dos años.  

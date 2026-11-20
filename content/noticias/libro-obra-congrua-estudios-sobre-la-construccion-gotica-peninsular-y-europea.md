@@ -1,12 +1,15 @@
 ---
 title: Libro - Obra Congrua. Estudios sobre la construcción gótica peninsular y europea
-description: "E. Rabasa Díaz, A. López Mozo y M. A. Alonso Rodríguez (eds.) Madrid: Instituto Juan de Herrera, 2017 Rústica, 377 p..."
-slug: libro-obra-congrua-estudios-sobre-la-construccion-gotica-peninsular-y-europea
+category:
+  - publicaciones
 date: 2018-01-31
-image: {"src": "/img/noticias/Obra Congrua_web.jpg", "alt": "Libro: Obra Congrua. Estudios sobre la construcción gótica peninsular y europea"}
-url: https://librosjuandeherrera.wordpress.com/
+description: "E. Rabasa Díaz, A. López Mozo y M. A. Alonso Rodríguez (eds.) Madrid: Instituto Juan de Herrera, 2017 Rústica, 377 p..."
 featured: false
-category: ["publicaciones"]
+image:
+  src: /img/noticias/Obra Congrua_web.jpg
+  alt: "Libro: Obra Congrua. Estudios sobre la construcción gótica peninsular y europea"
+slug: libro-obra-congrua-estudios-sobre-la-construccion-gotica-peninsular-y-europea
+url: https://librosjuandeherrera.wordpress.com/
 ---
 
 E. Rabasa Díaz, A. López Mozo y M. A. Alonso Rodríguez (eds.)

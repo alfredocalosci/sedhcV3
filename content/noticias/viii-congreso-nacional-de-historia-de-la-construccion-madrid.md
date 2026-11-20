@@ -1,12 +1,15 @@
 ---
-title: VIII Congreso Nacional de Historia de la Construcción. 
-description: Madrid, 9 al 12 de octubre de 2013 
-slug: viii-congreso-nacional-de-historia-de-la-construccion-madrid
+title: VIII Congreso Nacional de Historia de la Construcción.
+category:
+  - congresos
 date: 2013-06-17
-image: {"src": "/img/noticias/Portada web MAD.jpg", "alt": "VIII Congreso Nacional de Historia de la Construcción. Madrid, 9 al 12 de octubre de 2013"}
-url: http://cnhc2013.net/
+description: Madrid, 9 al 12 de octubre de 2013
 featured: false
-category: ["congresos"]
+image:
+  src: /img/noticias/Portada web MAD.jpg
+  alt: VIII Congreso Nacional de Historia de la Construcción. Madrid, 9 al 12 de octubre de 2013
+slug: viii-congreso-nacional-de-historia-de-la-construccion-madrid
+url: http://cnhc2013.net/
 ---
 
 CALENDARIO:

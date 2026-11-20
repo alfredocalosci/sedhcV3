@@ -1,12 +1,15 @@
 ---
 title: Revista Engineering History and Heritage
-description: Nuestro colega Bill Addis nos invita a enviar contribuciones a la prestigiosa revista Engineering History and Heritage
-slug: revista-engineering-history-and-heritage
+category:
+  - publicaciones
 date: 2023-04-26
-image: {"src": "/img/noticias/ScreenHunter 1562.png", "alt": "Revista Engineering History and Heritage"}
-url: https://www.icevirtuallibrary.com/toc/jenhh/current
+description: Nuestro colega Bill Addis nos invita a enviar contribuciones a la prestigiosa revista Engineering History and Heritage
 featured: false
-category: ["publicaciones"]
+image:
+  src: /img/noticias/ScreenHunter 1562.png
+  alt: Revista Engineering History and Heritage
+slug: revista-engineering-history-and-heritage
+url: https://www.icevirtuallibrary.com/toc/jenhh/current
 ---
 
 Nuestro colega Bill Addis nos invita a enviar contribuciones a la prestigiosa revista Engineering History and Heritage 

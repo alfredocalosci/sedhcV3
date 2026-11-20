@@ -1,12 +1,15 @@
 ---
 title: Nueva publicación del Seminario de Historia de la Construcción (México)
-description: actas del 4to Coloquio Mexicano de Historia de la Construcción (2022)
-slug: nueva-publicacion-del-seminario-de-historia-de-la-construccion-mexico
+category:
+  - publicaciones
 date: 2023-08-16
-image: {"src": "/img/noticias/358537172_306614635354246_8436703187599995094_n.jpg", "alt": "Nueva publicación del Seminario de Historia de la Construcción (México)"}
-url: https://libros.uv.mx/index.php/UV
+description: actas del 4to Coloquio Mexicano de Historia de la Construcción (2022)
 featured: false
-category: ["publicaciones"]
+image:
+  src: /img/noticias/358537172_306614635354246_8436703187599995094_n.jpg
+  alt: Nueva publicación del Seminario de Historia de la Construcción (México)
+slug: nueva-publicacion-del-seminario-de-historia-de-la-construccion-mexico
+url: https://libros.uv.mx/index.php/UV
 ---
 
 El Seminario de Historia de la Construcción, perteneciente a la Coordinación Nacional de Monumentos Históricos del Instituto Nacional de Antropología e Historia de México ha publicado en acceso abierto a través de la editorial de la Universidad Veracruzana las actas del 4to Coloquio Mexicano de Historia de la Construcción (2022)

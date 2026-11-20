@@ -1,12 +1,15 @@
 ---
 title: Libro - The Art of Vaulting
-description: En el área mediterránea se sitúan algunas de las bóvedas más grandes construidas en la Edad Media. Edificios excepcionales como la catedral de Mallorca, evidencian la combinación de técnicas importadas con desarrollos locales contemporáneos.
-slug: libro-the-art-of-vaulting
+category:
+  - publicaciones
 date: 2019-10-04
-image: {"src": "/img/noticias/The art of vaulting.jpg", "alt": "Libro: The Art of Vaulting"}
-url: https://www.b-tu.de/en/news/article/13189-international-symposium-the-art-of-vaulting-design-a
+description: En el área mediterránea se sitúan algunas de las bóvedas más grandes construidas en la Edad Media. Edificios excepcionales como la catedral de Mallorca, evidencian la combinación de técnicas importadas con desarrollos locales contemporáneos.
 featured: false
-category: ["publicaciones"]
+image:
+  src: /img/noticias/The art of vaulting.jpg
+  alt: "Libro: The Art of Vaulting"
+slug: libro-the-art-of-vaulting
+url: https://www.b-tu.de/en/news/article/13189-international-symposium-the-art-of-vaulting-design-a
 ---
 
 En el área mediterránea se sitúan algunas de las bóvedas más grandes construidas en la Edad Media. Edificios excepcionales como la catedral de Mallorca, evidencian la combinación de técnicas importadas con desarrollos locales contemporáneos. 

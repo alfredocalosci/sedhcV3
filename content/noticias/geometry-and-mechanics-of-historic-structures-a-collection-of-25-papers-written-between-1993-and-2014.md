@@ -1,12 +1,15 @@
 ---
 title: Geometry and Mechanics of Historic Structures, a collection of 25 papers written between 1993 and 2014
-description: Published by Instituto Juan de Herrera
-slug: geometry-and-mechanics-of-historic-structures-a-collection-of-25-papers-written-between-1993-and-2014
+category:
+  - publicaciones
 date: 2016-06-12
-image: {"src": "/img/noticias/Portada web2_1.jpg", "alt": "Geometry and Mechanics of Historic Structures, a collection of 25 papers written between 1993 and 2014"}
-url: https://librosjuandeherrera.wordpress.com/category/sin-categoria/
+description: Published by Instituto Juan de Herrera
 featured: false
-category: ['publicaciones']
+image:
+  src: /img/noticias/Portada web2_1.jpg
+  alt: Geometry and Mechanics of Historic Structures, a collection of 25 papers written between 1993 and 2014
+slug: geometry-and-mechanics-of-historic-structures-a-collection-of-25-papers-written-between-1993-and-2014
+url: https://librosjuandeherrera.wordpress.com/category/sin-categoria/
 ---
 
 Hardbound, 260 pages, index

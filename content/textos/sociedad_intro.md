@@ -1,6 +1,6 @@
 ---
-webpage: sociedad
 section: intro
+webpage: sociedad
 ---
 
 La Sociedad Española de Historia de la Construcción –SEdHC– nace, a raíz de la celebración del I Congreso de Historia de la Construcción en Madrid, en Septiembre de 1996, como iniciativa de un grupo de profesionales (arquitectos, ingenieros, historiadores, arqueólogos, etc.).

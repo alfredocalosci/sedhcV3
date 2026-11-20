@@ -1,6 +1,6 @@
 ---
-webpage: home
 section: sociedad
+webpage: home
 ---
 
 La sociedad tiene entre sus fines: editar una **Revista** de Historia de la Construcción anual, celebrar un **Congreso** bienal, fomentar y difundir cursos y seminarios sobre la materia ademas de establecer contactos con instituciones análogas en diferentes países.

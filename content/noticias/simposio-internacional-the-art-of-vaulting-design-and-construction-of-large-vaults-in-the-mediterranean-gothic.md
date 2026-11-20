@@ -1,12 +1,15 @@
 ---
 title: Simposio Internacional - The Art of Vaulting. Design and Construction of Large Vaults in the Mediterranean Gothic
-description: 30 de noviembre y 1 de diciembre de 2017 en Cottbus
-slug: simposio-internacional-the-art-of-vaulting-design-and-construction-of-large-vaults-in-the-mediterranean-gothic
+category:
+  - conferencias
 date: 2017-11-05
-image: {"src": "/img/noticias/IntSymposium_vaults_BTU2017_poster_Red.jpg", "alt": "Simposio Internacional"}
-url: https://www.b-tu.de/dfg-graduiertenkolleg-1913/veranstaltungen/symposien-und-workshops/
+description: 30 de noviembre y 1 de diciembre de 2017 en Cottbus
 featured: false
-category: ["conferencias"]
+image:
+  src: /img/noticias/IntSymposium_vaults_BTU2017_poster_Red.jpg
+  alt: Simposio Internacional
+slug: simposio-internacional-the-art-of-vaulting-design-and-construction-of-large-vaults-in-the-mediterranean-gothic
+url: https://www.b-tu.de/dfg-graduiertenkolleg-1913/veranstaltungen/symposien-und-workshops/
 ---
 
 Los días 30 de noviembre y 1 de diciembre de 2017 tendrá lugar en Cottbus éste Simposio Internacional, que se centrará en las grandes bóvedas del gótico mediterráneo. Estas bóvedas presentan unas características constructivas y técnicas propias, fruto de la combinación de las nuevas corrientes del gótico del norte con las tradiciones constructivas locales.  

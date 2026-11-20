@@ -1,12 +1,16 @@
 ---
 title: Seminario sobre la Arquitectura Almohade (Proyecto ATARAL)
-description: Los días 13 y 14 de febrero de 2024 en la Sala Guitarte de la eal Academia de Bellas Artes de San Fernando
-slug: seminario-sobre-la-arquitectura-almohade-proyecto-ataral
+category:
+  - conferencias
 date: 2024-02-05
-image: {"src": "/img/noticias/Invitacio__n Seminario Atlas Arquitectura Almohade.jpg", "alt": "Seminario sobre la Arquitectura Almohade (Proyecto ATARAL)"}
-url: https://www.realacademiabellasartessanfernando.com/actividades/conferencias/seminario-sobre-arquitectura-almohade/
+description: Los días 13 y 14 de febrero de 2024 en la Sala Guitarte de la eal Academia de Bellas Artes de San Fernando
 featured: false
-category: ["conferencias"]
+image:
+  src: /img/noticias/Invitacio__n Seminario Atlas Arquitectura Almohade.jpg
+  alt: Seminario sobre la Arquitectura Almohade (Proyecto ATARAL)
+slug: seminario-sobre-la-arquitectura-almohade-proyecto-ataral
+url: https://www.realacademiabellasartessanfernando.com/actividades/conferencias/seminario-sobre-arquitectura-almohade/
+---
 
 Los días 13 y 14 de febrero de 2024 tendrá lugar en la Sala Guitarte de la Real Academia de Bellas Artes de San Fernando (Madrid) el seminario del proyecto "Atlas de Arquitectura Almohade (ATARAL)", cuyo investigador principal es Antonio Almagro Gorbea, académico y miembro de la SEdHC.  
 

@@ -1,12 +1,15 @@
 ---
 title: JORNADAS TÉCNICAS SOBRE HISTORIA DE LA CONSTRUCCIÓN MEDIEVAL
-description: Las Jornadas técnicas sobre historia de la construcción medieval (JHCM) se presentan como un foro de discusión científica interdisciplinar que reúne a especialistas de distintas ramas profesionales y académicas relacionadas con el mundo de la arqueología, la restauración, la arquitectura y la historia de la construcción en época medieval.
-slug: jornadas-tecnicas-sobre-historia-de-la-construccion-medieval
+category:
+  - conferencias
 date: 2017-05-18
-image: {"src": "/img/noticias/Captura de pantalla 2017-05-18 a la(s) 21.31.24.png", "alt": "JORNADAS TÉCNICAS SOBRE HISTORIA DE LA CONSTRUCCIÓN MEDIEVAL"}
-url: https://www.fundacioncastillodelaestrella.org
+description: Las Jornadas técnicas sobre historia de la construcción medieval (JHCM) se presentan como un foro de discusión científica interdisciplinar que reúne a especialistas de distintas ramas profesionales y académicas relacionadas con el mundo de la arqueología, la restauración, la arquitectura y la historia de la construcción en época medieval.
 featured: false
-category: ["conferencias"]
+image:
+  src: /img/noticias/Captura de pantalla 2017-05-18 a la(s) 21.31.24.png
+  alt: JORNADAS TÉCNICAS SOBRE HISTORIA DE LA CONSTRUCCIÓN MEDIEVAL
+slug: jornadas-tecnicas-sobre-historia-de-la-construccion-medieval
+url: https://www.fundacioncastillodelaestrella.org
 ---
 
 Las Jornadas técnicas sobre historia de la construcción medieval (JHCM) se presentan como un foro de discusión científica interdisciplinar que reúne a especialistas de distintas ramas profesionales y académicas relacionadas con el mundo de la arqueología, la restauración, la arquitectura y la historia de la construcción en época medieval.

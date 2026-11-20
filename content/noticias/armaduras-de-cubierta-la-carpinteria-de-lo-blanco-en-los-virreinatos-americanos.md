@@ -1,12 +1,15 @@
 ---
 title: Seminario "Armaduras de cubierta - la carpintería de lo blanco en los virreinatos americanos (siglos XVI-XVIII)"
-description: Actividad de Francisco Mamani (miembro de la SEdHC)
-slug: armaduras-de-cubierta-la-carpinteria-de-lo-blanco-en-los-virreinatos-americanos
+category:
+  - conferencias
 date: 2023-04-25
-image: {"src": "/img/noticias/seminario-armaduras-fb(1)(1).jpg", "alt": "Actividad de Francisco Mamani (miembro de la SEdHC). Seminario: Armaduras de cubierta: la carpintería de lo blanco en los virreinatos americanos (siglos XVI-XVIII)"}
-url: https://bit.ly/seminario-armaduras
+description: Actividad de Francisco Mamani (miembro de la SEdHC)
 featured: false
-category: ["conferencias"]
+image:
+  src: /img/noticias/seminario-armaduras-fb(1)(1).jpg
+  alt: "Actividad de Francisco Mamani (miembro de la SEdHC). Seminario: Armaduras de cubierta: la carpintería de lo blanco en los virreinatos americanos (siglos XVI-XVIII)"
+slug: armaduras-de-cubierta-la-carpinteria-de-lo-blanco-en-los-virreinatos-americanos
+url: https://bit.ly/seminario-armaduras
 ---
 
 Se han abierto las inscripciones para participar del seminario: "Armaduras de cubierta: la carpintería de lo blanco en los virreinatos americanos (siglos XVI-XVIII)"

@@ -1,12 +1,15 @@
 ---
-title: Undécimo Congreso Nacional de Historia de la Construcción, 
-description: Soria, 9-12 de octubre de 2019
-slug: undecimo-congreso-nacional-de-historia-de-la-construcciaon
+title: Undécimo Congreso Nacional de Historia de la Construcción,
+category:
+  - congresos
 date: 2019-10-04
-image: {"src": "/img/noticias/Captura de pantalla 2019-10-04 a las 0.57.34.png", "alt": "Undécimo Congreso Nacional de Historia de la Construcción, Soria, 9-12 de octubre de 2019"}
-url: http://historiaconstruccion.org/2019/index.htm
+description: Soria, 9-12 de octubre de 2019
 featured: false
-category: ["congresos"]
+image:
+  src: /img/noticias/Captura de pantalla 2019-10-04 a las 0.57.34.png
+  alt: Undécimo Congreso Nacional de Historia de la Construcción, Soria, 9-12 de octubre de 2019
+slug: undecimo-congreso-nacional-de-historia-de-la-construcciaon
+url: http://historiaconstruccion.org/2019/index.htm
 ---
 
 MIÉRCOLES 9 DE OCTUBRE DE 2019.

@@ -1,12 +1,15 @@
 ---
-title: Libro - Segovia, su catedral y su arquitectura. 
-description: Ensayos en homenaje a José Antonio Ruiz Hernando
-slug: libro-segovia-su-catedral-y-su-arquitectura-ensayos
+title: Libro - Segovia, su catedral y su arquitectura.
+category:
+  - publicaciones
 date: 2013-10-29
-image: {"src": "/img/noticias/Libro homenaje a Ruiz 2__ed.jpg", "alt": "Libro: Segovia, su catedral y su arquitectura. Ensayos en homenaje a José Antonio Ruiz Hernando"}
-url: https://www.facebook.com/instituto.juandeherrera
+description: Ensayos en homenaje a José Antonio Ruiz Hernando
 featured: false
-category: ["publicaciones"]
+image:
+  src: /img/noticias/Libro homenaje a Ruiz 2__ed.jpg
+  alt: "Libro: Segovia, su catedral y su arquitectura. Ensayos en homenaje a José Antonio Ruiz Hernando"
+slug: libro-segovia-su-catedral-y-su-arquitectura-ensayos
+url: https://www.facebook.com/instituto.juandeherrera
 ---
 
 Libro homenaje a D. José Antonio Ruiz Hernando, Cronista Oficial de la ciudad de Segovia, con laudatio a cargo de D. Pedro Nascués Palacio y la colaboración de destacados profesionales del arte, la historia y la arquitectura como Valentín Berriochoa, José Luis Gutiérrez Robledo, Ignacio Hernández, Raimundo Moreno, Santiago Huerta, José Miguel Merino de Cáceres, José Carlos Palacios, Enrique Rabasa, Miguel Sobrino, Fernando Vela y Bonifacio Bartolomé.

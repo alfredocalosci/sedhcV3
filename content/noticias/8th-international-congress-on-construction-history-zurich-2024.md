@@ -1,12 +1,15 @@
 ---
-title:  Llamado para el envío de ponencias para el 8ICCH 
-description: 8th International Congress on Construction History del 24 al 28 de junio de 2024 en el ETH Zurich,
-slug: 8th-international-congress-on-construction-history-zurich-2024
+title: Llamado para el envío de ponencias para el 8ICCH
+category:
+  - congresos
 date: 2023-03-07
-image: {"src": "/img/noticias/image.imageformat.carousel.135320217.jpg", "alt": " Llamado  para  el envío de ponencias para el 8ICCH (8th International Congress on Construction History Zurich 2024)"}
-url: https://8icch.ethz.ch/
+description: 8th International Congress on Construction History del 24 al 28 de junio de 2024 en el ETH Zurich,
 featured: false
-category: ["congresos"]
+image:
+  src: /img/noticias/image.imageformat.carousel.135320217.jpg
+  alt: " Llamado  para  el envío de ponencias para el 8ICCH (8th International Congress on Construction History Zurich 2024)"
+slug: 8th-international-congress-on-construction-history-zurich-2024
+url: https://8icch.ethz.ch/
 ---
 
 El 8º Congreso Internacional de Historia de la Construcción (8ICCH) se celebrará del 24 al 28 de junio de 2024 en el ETH Zurich, Suiza.

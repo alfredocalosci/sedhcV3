@@ -1,12 +1,15 @@
 ---
 title: La construcción de las bóvedas en la Edad Media - Robert  Willis (Edición 2012)
-description: Versión castellana de la edición original en Inglés
-slug: la-construccion-de-las-bovedas-en-la-edad-media-robert-willis-edicion-2012
+category:
+  - publicaciones
 date: 2012-11-22
-image: {"src": "/img/noticias/2012-11-22 Willis_.jpg", "alt": "La construcción de las bóvedas en la Edad Media - Robert  Willis (Edición 2012)"}
-url: http://www.facebook.com/instituto.juandeherrera
+description: Versión castellana de la edición original en Inglés
 featured: false
-category: ["publicaciones"]
+image:
+  src: /img/noticias/2012-11-22 Willis_.jpg
+  alt: La construcción de las bóvedas en la Edad Media - Robert  Willis (Edición 2012)
+slug: la-construccion-de-las-bovedas-en-la-edad-media-robert-willis-edicion-2012
+url: http://www.facebook.com/instituto.juandeherrera
 ---
 
 Versión castellana de la edición original en Inglés, traducido por Elena Pliego de Andrés, con prólogo de Santiago Huerta y ensayo introductorio de Alejandra Albuerne Rodríguez.

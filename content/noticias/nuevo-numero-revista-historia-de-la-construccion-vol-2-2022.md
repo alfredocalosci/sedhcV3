@@ -1,12 +1,15 @@
 ---
 title: Nuevo Numero de Revista Historia de la Construcción
-description: vol.2 - 2022
-slug: nuevo-numero-revista-historia-de-la-construccion-vol-2-2022
+category:
+  - publicaciones
 date: 2023-03-06
-image: {"src": "/img/noticias/1217-651-PB-1_page-0001(1).jpg", "alt": "Nuevo Numero Revista  Historia de la Construcción"}
-url: https://polipapers.upv.es/index.php/HC/issue/view/1217
+description: vol.2 - 2022
 featured: false
-category: ["publicaciones"]
+image:
+  src: /img/noticias/1217-651-PB-1_page-0001(1).jpg
+  alt: Nuevo Numero Revista  Historia de la Construcción
+slug: nuevo-numero-revista-historia-de-la-construccion-vol-2-2022
+url: https://polipapers.upv.es/index.php/HC/issue/view/1217
 ---
 
 Artículos

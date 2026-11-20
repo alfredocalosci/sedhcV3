@@ -1,12 +1,15 @@
 ---
-title: IX Congreso Nacional y I Congreso Internacional Hispanoamericano de Historia de la Construcción 
-description: La Sociedad Española de Historia de la Construcción convoca el IX Congreso Nacional y I Congreso Internacional Hispano...
-slug: ix-congreso-nacional-y-i-congreso-internacional-hispanoamericano-de-historia-de-la-construccion
+title: IX Congreso Nacional y I Congreso Internacional Hispanoamericano de Historia de la Construcción
+category:
+  - congresos
 date: 2015-07-02
-image: {"src": "/img/noticias/Captura de pantalla 2014-09-09 a la(s) 00.46.29.png", "alt": "IX Congreso Nacional y I Congreso Internacional Hispanoamericano de Historia de la Construcción "}
-url: http://www.chahc2015.net/
+description: La Sociedad Española de Historia de la Construcción convoca el IX Congreso Nacional y I Congreso Internacional Hispano...
 featured: false
-category: ['congresos']
+image:
+  src: /img/noticias/Captura de pantalla 2014-09-09 a la(s) 00.46.29.png
+  alt: "IX Congreso Nacional y I Congreso Internacional Hispanoamericano de Historia de la Construcción "
+slug: ix-congreso-nacional-y-i-congreso-internacional-hispanoamericano-de-historia-de-la-construccion
+url: http://www.chahc2015.net/
 ---
 
 La Sociedad Española de Historia de la Construcción convoca el IX Congreso Nacional y I Congreso Internacional Hispanoamericano de Historia de la Construcción.

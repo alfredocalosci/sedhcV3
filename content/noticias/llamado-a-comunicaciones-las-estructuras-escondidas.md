@@ -1,12 +1,15 @@
 ---
 title: Llamado a comunicaciones - Las estructuras escondidas
-description: El Grupo de Historia de la Construcción (CHG) del Politecnico di Torino (DAD) en Italia invita a enviar propuestas de comunicación para su jornada anual.
-slug: llamado-a-comunicaciones-las-estructuras-escondidas
+category:
+  - conferencias
 date: 2023-08-28
-image: {"src": "/img/noticias/367386091_10227717186210514_5993391111885825342_n.jpg", "alt": "Llamado a comunicaciones - Las estructuras escondidas"}
-url: http://constructionhistorygroup.polito.it/
+description: El Grupo de Historia de la Construcción (CHG) del Politecnico di Torino (DAD) en Italia invita a enviar propuestas de comunicación para su jornada anual.
 featured: false
-category: ["conferencias"]
+image:
+  src: /img/noticias/367386091_10227717186210514_5993391111885825342_n.jpg
+  alt: Llamado a comunicaciones - Las estructuras escondidas
+slug: llamado-a-comunicaciones-las-estructuras-escondidas
+url: http://constructionhistorygroup.polito.it/
 ---
 
 El Grupo de Historia de la Construcción (CHG) del Politecnico di Torino (DAD) en Italia invita a enviar propuestas de comunicación para su jornada anual que tendrá lugar en el Departamento de Arquitectura y Diseño del Politecnico di Torino (29 de febrero - 1 de marzo, 2024). 

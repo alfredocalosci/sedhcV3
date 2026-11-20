@@ -1,12 +1,14 @@
 ---
 title: Baugerüste vom 16. bis ins frühe 19. Jahrhundert
-description: Erstaunlich wenig wissen wir über ein technisches Hilfsmittel, das auf einer historischen Baustelle die Abläufe entscheidend bestimmte - Das Baugerüst.
-slug: baugeruste-vom-16-bis-ins-fruhe-19-jahrhundert
+category:
+  - publicaciones
 date: 2013-05-20
-image: {"src": "/img/noticias/Difusi__n Web.jpg", "alt": "Baugerüste vom 16. bis ins frühe 19. Jahrhundert"}
-url: 
+description: Erstaunlich wenig wissen wir über ein technisches Hilfsmittel, das auf einer historischen Baustelle die Abläufe entscheidend bestimmte - Das Baugerüst.
 featured: false
-category: ["publicaciones"]
+image:
+  src: /img/noticias/Difusi__n Web.jpg
+  alt: Baugerüste vom 16. bis ins frühe 19. Jahrhundert
+slug: baugeruste-vom-16-bis-ins-fruhe-19-jahrhundert
 ---
 
 Erstaunlich wenig wissen wir über ein technisches Hilfsmittel, das auf einer historischen Baustelle die Abläufe entscheidend bestimmte: Das Baugerüst. Als provisorische Konstruktion hinterließ es meist nur geringe Spuren; nur in

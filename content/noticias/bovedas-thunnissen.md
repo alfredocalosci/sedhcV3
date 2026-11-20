@@ -1,12 +1,15 @@
 ---
 title: "Presentación del libro: Bóvedas: su construcción y empleo en la construcción de Henry Thunnissen"
-description: "Presentación del libro e inauguración de la exposición del libro original en Holandés ed. 1950."
-slug: bovedas-thunnissen
+category:
+  - publicaciones
 date: 2012-10-08
-image: {"src": "/img/noticias/InvitacionThunnissenWeb.jpg", "alt": "BÓVEDAS - Thunnissen"}
-url: http://etsamadrid.aq.upm.es/sites/default/files/thunnissen_bn.png
+description: Presentación del libro e inauguración de la exposición del libro original en Holandés ed. 1950.
 featured: false
-category: ["publicaciones"]
+image:
+  src: /img/noticias/InvitacionThunnissenWeb.jpg
+  alt: BÓVEDAS - Thunnissen
+slug: bovedas-thunnissen
+url: http://etsamadrid.aq.upm.es/sites/default/files/thunnissen_bn.png
 ---
 
 Presentación del libro BÓVEDAS: SU CONSTRUCCIÓN Y EMPLEO EN LA CONSTRUCCIÓN de Henry Thunnissen (versión en Castellano); e inauguración de la exposición del libro original en Holandés ed. 1950.

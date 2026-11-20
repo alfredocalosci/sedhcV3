@@ -1,12 +1,15 @@
 ---
-title: III Congreso Nacional y I Congreso Internacional Arte de la Cantería & Taller práctico de Cantería 
-description: Este III Congreso Nacional y I Congreso Internacional, de carácter interdisciplinar, reúne a una serie de grandes espe...
-slug: iii-congreso-nacional-y-i-congreso-internacional-arte-de-la-canteria
+title: III Congreso Nacional y I Congreso Internacional Arte de la Cantería & Taller práctico de Cantería
+category:
+  - congresos
 date: 2023-03-27
-image: {"src": "/img/noticias/III Congreso Canteri__a A3(2).png", "alt": "III Congreso Nacional y I Congreso Internacional Arte de la Cantería & Taller práctico de Cantería "}
-url: https://www.patrimoniomonumentalenpiedra.com/iii-congreso-nacional-taller-de-canter%C3%ADa
+description: Este III Congreso Nacional y I Congreso Internacional, de carácter interdisciplinar, reúne a una serie de grandes espe...
 featured: false
-category: ["congresos"]
+image:
+  src: /img/noticias/III Congreso Canteri__a A3(2).png
+  alt: "III Congreso Nacional y I Congreso Internacional Arte de la Cantería & Taller práctico de Cantería "
+slug: iii-congreso-nacional-y-i-congreso-internacional-arte-de-la-canteria
+url: https://www.patrimoniomonumentalenpiedra.com/iii-congreso-nacional-taller-de-canter%C3%ADa
 ---
 
 Este III Congreso Nacional y I Congreso Internacional, de carácter interdisciplinar, reúne a una serie de grandes especialistas -nacionales e internacionales- que, durante cinco días, abordarán el estudio y uso de la piedra en la construcción a lo largo de la historia, desde ámbitos muy dispares, como la historia del arte, la literatura artística, o la arquitectura, entre otros, hasta hace poco alejados unos de otros. En el Taller práctico de Cantería se llevarán a cabo las actividades necesarias para levantar una bóveda de arista. Los participantes se iniciarán en la talla directa de la piedra arenisca de Villamayor siguiendo los procedimientos de labra tradicionales para, en la jornada del último día, proceder al montaje y descimbrado de la bóveda.  

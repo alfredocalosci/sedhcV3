@@ -1,12 +1,15 @@
 ---
 title: Actas del Octavo Congreso Nacional de Historia de la Construcción
-description: celebrado en Madrid, 9-12 octubre de 2013
-slug: actas-del-octavo-congreso-nacional-de-historia-de-la-construccion
+category:
+  - congresos
 date: 2014-02-24
-image: {"src": "/img/noticias/Portada Vol I.jpg", "alt": "Actas del Octavo Congreso Nacional de Historia de la Construcción"}
-url: https://www.facebook.com/instituto.juandeherrera
+description: celebrado en Madrid, 9-12 octubre de 2013
 featured: false
-category: ["congresos"]
+image:
+  src: /img/noticias/Portada Vol I.jpg
+  alt: Actas del Octavo Congreso Nacional de Historia de la Construcción
+slug: actas-del-octavo-congreso-nacional-de-historia-de-la-construccion
+url: https://www.facebook.com/instituto.juandeherrera
 ---
 
 2 Volúmenes, 1062 páginas (16,5 x 23,7 cm)

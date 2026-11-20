@@ -1,12 +1,15 @@
 ---
-title: New book - Robert Willis - Science, Technology and Architecture in the Nineteenth Century    
-description: published by Instituto Juan de Herrera Press
-slug: new-book-robert-willis-science-technology-and-architecture-in-the-nineteenth-century
+title: New book - Robert Willis - Science, Technology and Architecture in the Nineteenth Century
+category:
+  - publicaciones
 date: 2016-09-15
-image: {"src": "/img/noticias/Portada web_1.jpg", "alt": "New book - Robert Willis - Science, Technology and Architecture in the Nineteenth Century"}
-url: https://librosjuandeherrera.wordpress.com
+description: published by Instituto Juan de Herrera Press
 featured: false
-category: ["publicaciones"]
+image:
+  src: /img/noticias/Portada web_1.jpg
+  alt: New book - Robert Willis - Science, Technology and Architecture in the Nineteenth Century
+slug: new-book-robert-willis-science-technology-and-architecture-in-the-nineteenth-century
+url: https://librosjuandeherrera.wordpress.com
 ---
 
 320 pp + index, 15 articles

@@ -1,12 +1,15 @@
 ---
 title: III Congreso Internacional del Tardogótico - De la traza a la edificación - la arquitectura de los siglos XV y XVI en Portugal y Europa.
-description: El III Congreso Internacional del Tardogótico - tendrá lugar en la Universidad de Lisboa entre el 20 y 22 de noviembre de 2017.
-slug: iii-congreso-internacional-del-tardogotico
+category:
+  - congresos
 date: 2017-05-14
-image: {"src": "/img/noticias/Recorte web.jpg", "alt": "III Congreso Internacional del Tardogótico: De la traza a la edificación: la arquitectura de los siglos XV y XVI en Portugal y Europa. 20 al 22 de noviembre de 2017."}
-url: http://congressotardogotico2017.weebly.com/
+description: El III Congreso Internacional del Tardogótico - tendrá lugar en la Universidad de Lisboa entre el 20 y 22 de noviembre de 2017.
 featured: false
-category: ["congresos"]
+image:
+  src: /img/noticias/Recorte web.jpg
+  alt: "III Congreso Internacional del Tardogótico: De la traza a la edificación: la arquitectura de los siglos XV y XVI en Portugal y Europa. 20 al 22 de noviembre de 2017."
+slug: iii-congreso-internacional-del-tardogotico
+url: http://congressotardogotico2017.weebly.com/
 ---
 
 El III Congreso Internacional del Tardogótico - De la traza a la edificación: la arquitectura de los siglos XV y XVI en Portugal y Europa, se celebrará en la Universidad de Lisboa entre el 20 y 22 de noviembre de 2017 en la Facultad de Letras de la Universidad de Lisboa. 

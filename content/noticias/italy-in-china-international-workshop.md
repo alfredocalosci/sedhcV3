@@ -1,12 +1,15 @@
 ---
 title: Italy in China - International Workshop
-description: Gli Edifici Occidentali nel Vecchio Palazzo d'Estate Yuanmingyuan a Pechino. Giornata di Studio Internazionale.
-slug: italy-in-china-international-workshop
+category:
+  - conferencias
 date: 2014-03-12
-image: {"src": "/img/noticias/Portada_1.jpg", "alt": "Italy in China - International Workshop"}
-url: http://www.biblhertz.it/aktuelles/veranstaltungen/veranstaltungsdetails/?tx_ttnews%5btt_news%5d=541
+description: Gli Edifici Occidentali nel Vecchio Palazzo d'Estate Yuanmingyuan a Pechino. Giornata di Studio Internazionale.
 featured: false
-category: ['conferencias']
+image:
+  src: /img/noticias/Portada_1.jpg
+  alt: Italy in China - International Workshop
+slug: italy-in-china-international-workshop
+url: http://www.biblhertz.it/aktuelles/veranstaltungen/veranstaltungsdetails/?tx_ttnews%5btt_news%5d=541
 ---
 
 Italia in Cina. Gli Edifici Occidentali nel Vecchio Palazzo d'Estate Yuanmingyuan a Pechino. Giornata di Studio Internazionale.

@@ -1,12 +1,15 @@
 ---
 title: cfa del Departamento de Estudios Patrimoniales de la Facultad de Artes y Humanidades de la Universidad de Oporto
-description: propuestas de artículos para el Volumen 2 de la colección Soportes del Patrimonio
-slug: soportes-del-patrimonio-coleccion-2-piedra-2023
+category:
+  - publicaciones
 date: 2023-04-21
-image: {"src": "/img/noticias/colecao_suportes_patrimonio.jpg", "alt": "Soportes del Patrimonio - Colección 2 - Piedra (2023)"}
-url: https://suportes.weebly.com/chamada-para-textos.html
+description: propuestas de artículos para el Volumen 2 de la colección Soportes del Patrimonio
 featured: false
-category: ["publicaciones"]
+image:
+  src: /img/noticias/colecao_suportes_patrimonio.jpg
+  alt: Soportes del Patrimonio - Colección 2 - Piedra (2023)
+slug: soportes-del-patrimonio-coleccion-2-piedra-2023
+url: https://suportes.weebly.com/chamada-para-textos.html
 ---
 
 El Departamento de Estudios Patrimoniales de la Facultad de Artes y Humanidades de la Universidad de Oporto invita a la comunidad científica a presentar propuestas de artículos para el Volumen 2 de la colección Soportes del Patrimonio. 
