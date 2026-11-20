@@ -6,7 +6,7 @@ image:
   alt: Cartagena 2026
   src: /img/congresos/cartagena.jpg
 internacional_num: 0
-lat: 37.6053
+lat: 37.6052
 lng: -0.9863
 lugar: Cartagena
 nacional_num: 14
@@ -14,3 +14,6 @@ sede: Escuela Técnica Superior de Arquitectura y Edificación
 slug: xiv-congreso-nacional-vi-congreso-internacional-hispanoamericano
 url: http://historiaconstruccion.org/2026/
 year: 2026
+actas:
+  - identifier: natividad-salcedo-calvo-huerta-2026-eds.-actas-del-decimocuarto-congreso-naciona_202604
+    title: Actas Del XIV Congreso Nacional Y VI Congreso Internacional Hispanoamericano De Historia De La Construcción Vol. 2
