@@ -5,7 +5,7 @@ description: Based in Germany. Created in June  2013, the German Society of cons
 image:
   src: /img/entidades/gbtg.jpg
   alt: Gesellschaft für Bautechnikgeschichte
-rank: "2013"
+rank: 2013
 url: https://gesellschaft.bautechnikgeschichte.org/
 ---
 

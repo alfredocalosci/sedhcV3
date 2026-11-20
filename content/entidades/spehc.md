@@ -5,7 +5,7 @@ description: Created in 2015, covers Portugal and Brazil and other Portuguese-sp
 image:
   src: /img/entidades/spehc.jpg
   alt: Sociedade Portuguesa de História da Construção
-rank: "2015"
+rank: 2015
 url: https://www.spehc.pt/
 ---
 

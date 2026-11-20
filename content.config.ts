@@ -1,6 +1,19 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 // import { z } from 'zod'
 
+// Must match the `slug` values in content/temas/*.yaml.
+// Using an enum makes Nuxt Studio render a dropdown instead of free text.
+const TEMAS = [
+  'cfp',
+  'conferencias',
+  'congresos',
+  'exposiciones',
+  'novedades-miembros',
+  'publicaciones',
+  'sociedad',
+  'varios',
+] as const
+
 export default defineContentConfig({
   collections: {
     noticias: defineCollection({
@@ -14,7 +27,7 @@ export default defineContentConfig({
           slug: z.string(),
           description: z.string().optional(),
           date: z.date(),
-          category: z.array(z.string()),
+          category: z.array(z.enum(TEMAS)),
           image: z.object({
               src: z.string().editor({ input: 'media' }),
               alt: z.string()
@@ -32,7 +45,7 @@ export default defineContentConfig({
       schema: z.object({
           nombre: z.string(),
           desc: z.string(),
-          rank: z.number().int(),
+          rank: z.number(),
           slug: z.string()
       }),
     }),
@@ -45,7 +58,7 @@ export default defineContentConfig({
       schema: z.object({
           title: z.string(),
           slug: z.string(),
-          year: z.number().int(),
+          year: z.number(),
           dateFrom: z.date().optional(),
           dateTo: z.date().optional(),
           url: z.string().optional(),
@@ -59,9 +72,9 @@ export default defineContentConfig({
              title: z.string(),
              identifier: z.string()
           })).optional(),
-          nacional_num: z.number().int().optional(),
-          internacional_num: z.number().int().optional(),
-          hispano_num: z.number().int().optional(),
+          nacional_num: z.number().optional(),
+          internacional_num: z.number().optional(),
+          hispano_num: z.number().optional(),
           lat: z.number().optional(),
           lng: z.number().optional(),
           descripcion: z.string().optional(),
@@ -77,7 +90,7 @@ export default defineContentConfig({
           title: z.string(),
           acronym: z.string().optional(),
           url: z.string().optional(),
-          rank: z.number().int(),
+          rank: z.number(),
           image: z.object({
               src: z.string().editor({ input: 'media' }),
               alt: z.string()
@@ -102,8 +115,8 @@ export default defineContentConfig({
           exclude: ["**/.*"],
       },
       schema: z.object({
-        volumen: z.number().int(),
-        year: z.number().int(),
+        volumen: z.number(),
+        year: z.number(),
         url: z.string().optional(),
         image: z.object({
           src: z.string().editor({ input: 'media' }),

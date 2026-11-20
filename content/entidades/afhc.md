@@ -5,7 +5,7 @@ description: Based in France. Officially founded in 2013, after two successful c
 image:
   src: /img/entidades/afhc.png
   alt: L'association Francophone des Historiens de la Construction
-rank: "2012"
+rank: 2012
 url: https://www.histoireconstruction.fr/
 ---
 

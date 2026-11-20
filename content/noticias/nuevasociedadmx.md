@@ -1,7 +1,7 @@
 ---
 title: Sociedad Mexicana de Historia de la Construcción
 category:
-  - Varios
+  - varios
 date: 2026-07-13
 description: "En julio de 2026 se ha fundado la Sociedad Mexicana de Historia de la Construcción, SMHC."
 featured: false

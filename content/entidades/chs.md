@@ -5,7 +5,7 @@ description: Based in the United Kingdom and founded in 1985, it is the oldest S
 image:
   src: /img/entidades/chs.jpg
   alt: The Construction History Society
-rank: "1985"
+rank: 1985
 url: https://www.constructionhistory.co.uk/
 ---
 
